@@ -30,7 +30,7 @@
 
 <body>
 
-	<section class="header" id="header">
+	<header class="header" id="header">
 		<div class="header_top">
 			<div class="container">
 				<div class="row">
@@ -81,9 +81,9 @@
 							<div class="subscribe_box_title">Закажи <span>обратный</span> звонок прямо <span>сейчас</span></div>
 							<form action="#">
 								<label for="time" class="label-number">Кол-во минут</label>
-								<input type="number" class="input-number">
+								<input type="number" class="input-number" name="Минуты" value="0">
 								<label for="email" class="email-input">E-mail</label>
-								<input type="text" class="subscribe-input" id="email" placeholder="Введите свой E-mail" required>
+								<input type="text" class="subscribe-input" name="E-mail" id="email" placeholder="Введите свой E-mail" required>
 								<button class="subscribe_btn button" type="submit">Заказать от 17 рублей</button>
 							</form>
 						</div>
@@ -91,8 +91,8 @@
 				</div>
 			</div>
 		</div>
-	</section>
-	<section id="why">
+	</header>
+	<article id="why">
 		<div class="container">
 			<div class="row">
 				<div class="section-title">
@@ -110,28 +110,28 @@
 					<div class="row">
 						<div class="col-md-3 col-sm-6">
 							<div class="advantage-box">
-								<img src="img/1.png" alt="">
+								<img src="img/1.svg" alt="">
 								<div class="advantages-title">Индивидуальный подход</div>
 								<p>У вас сложности с распознаванием быстрой речи? Нет времени, чтобы создать книгу из аудиозаписей</p>
 							</div>
 						</div>
 						<div class="col-md-3 col-sm-6">
 							<div class="advantage-box">
-								<img src="img/2.png" alt="">
+								<img src="img/2.svg" alt="">
 								<div class="advantages-title">Качественно</div>
 								<p>Несем ответственность за порученную нам работу. Мы надежнее фриланса на 100%</p>
 							</div>
 						</div>
 						<div class="col-md-3 col-sm-6">
 							<div class="advantage-box">
-								<img src="img/3.png" alt="">
+								<img src="img/3.svg" alt="">
 								<div class="advantages-title">Быстро</div>
 								<p>У вас сложности с распознаванием быстрой речи? Нет времени, чтобы создать книгу из аудиозаписей</p>
 							</div>
 						</div>
 						<div class="col-md-3 col-sm-6">
 							<div class="advantage-box">
-								<img src="img/4.png" alt="">
+								<img src="img/4.svg" alt="">
 								<div class="advantages-title">Недорого</div>
 								<p>У вас сложности с распознаванием быстрой речи? Нет времени, чтобы создать книгу из аудиозаписей</p>
 							</div>
@@ -140,8 +140,8 @@
 				</div>
 			
 		</div>
-	</section>
-	<section class="discount" id="discount">
+	</article>
+	<article class="discount" id="discount">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -157,8 +157,8 @@
 				</div>
 			</div>
 		</div>		
-	</section>
-	<section class="offer" id="offer">
+	</article>
+	<article class="offer" id="offer">
 		<div class="container">
 			<div class="row">
 				<div class="section-title">
@@ -199,8 +199,8 @@
 				</div>
 				</div>
 		</div>
-	</section>
-	<section class="reviews" id="reviews">
+	</article>
+	<article class="reviews" id="reviews">
 		<div class="container">
 			<div class="row">
 				<div class="section-title">
@@ -267,8 +267,8 @@
 				</div>
 			</div>
 		</div>
-	</section>
-	<section class="footer" id="footer">
+	</article>
+	<footer class="footer" id="footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-7 col-lg-8">
@@ -286,18 +286,19 @@
 						info@vernoe-reshenie.ru
 					</div>
 					<div class="footer-social">
-						<a href="#"><img src="img/skype.png" alt="Позвонить нам в Skype"></i></a>
-						<a href="#"><img src="img/telegram.png" alt="Написать нам в Telegram"></i></a>
-						<a href="#"><img src="img/whatsapp.png" alt="Написать нам в WhatsApp"></i></a>
-						<a href="#"><img src="img/viber.png" alt="Написать нам в Viber"></i></a>
+						<a href="#"><object type="image/svg+xml" data="img/skype.svg"><img src="img/skype.png"></object></a>
+						<a href="#"><object type="image/svg+xml" data="img/telegram.svg"><img src="img/telegram.png"></object></a>
+						<a href="#"><object type="image/svg+xml" data="img/whatsapp.svg"><img src="img/whatsapp.png"></object></a>
+						<a href="#"><object type="image/svg+xml" data="img/viber.svg"><img src="img/viber.png"></object></a>
 					</div>
-					<div class="top" title="Наверх"><img src="img/top.png" alt="Наверх"></div>
+					<div class="top" title="Наверх"><img src="img/top.svg" alt="Наверх"></div>
 				</div>
 			</div>
 		</div>
-	</section>
+	</footer>
 	
 	<!-- Модальные окна -->
+	
 	<!-- Написать нам -->
 	<div class="popup">
 		<!--Само модальное окно-->
@@ -308,10 +309,10 @@
 				<div class="popup-header">Связаться с нами</div>
 				<div class="popup-form">
 					<form action="#">
-						<input class="popup-input" type="text" id="popup-name" placeholder="Ваше имя*" required>
-						<input class="popup-input" type="text" id="popup-email" placeholder="Ваш e-mail*" required>
-						<input class="popup-input" type="text" id="popup-phone" placeholder="Номер телефона*" required>
-						<textarea class="popup-input" rows="2" id="popup-message" placeholder="Текст"></textarea> 
+						<input class="popup-input" type="text" name="Имя" id="popup-name" placeholder="Ваше имя*" required>
+						<input class="popup-input" type="text" name="E-mail" id="popup-email" placeholder="Ваш e-mail*" required>
+						<input class="popup-input" type="text" name="Телефон" id="popup-phone" placeholder="Номер телефона*" required>
+						<textarea class="popup-input" rows="2" name="Сообщение" id="popup-message" placeholder="Текст"></textarea> 
 						<button class="button popup-button" type="submit">Написать нам</button>
 						<span>* обязательное поле</span>
 					</form>
