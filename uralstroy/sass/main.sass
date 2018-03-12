@@ -1,0 +1,560 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html, body
+	height: 100%
+
+body
+	font-size: 13px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: #4e4e4e
+	input, textarea
+			border: #666 1px solid
+			outline: none
+			&:focus:required:invalid
+				border-color: red
+			&:required:valid
+				border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+@mixin position-center
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  margin: auto
+
+a
+	color: $accent
+	&:hover
+		font-weight: bold
+		text-decoration: none
+
+/* Стилизация главного экрана  */
+.main
+	background: url(../img/top-bg.jpg) center center
+	background-repeat: no-repeat
+	background-size: cover
+	height: 485px
+	position: relative
+	&_phone
+		position: absolute
+		color: #fff
+		right: 5%
+		font-family: $mpcond
+		font-size: 48px
+		line-height: 1
+		top: 40%
+		&_title
+			font-size: 18px
+		span
+			font-size: 26px
+	&_wrap
+		height: 485px
+		position: relative
+		&_nav
+			background: linear-gradient(180deg, #04b1dd, #0194c4)
+			height: 36px
+			width: 100%
+			position: absolute
+			bottom: 0
+			ul
+				display: flex
+				justify-content: space-around
+				margin: 0
+				padding: 0
+				li
+					list-style: none
+					width: 100%
+					height: 36px
+					text-align: center
+					padding-top: 4px
+					z-index: 1
+					box-sizing: border-box
+					&:hover
+						background: #04c1e0
+						border-right: 20px solid #4eb8d9
+					a
+						color: #fff
+						text-transform: uppercase
+						font-family: $mpcond
+						font-size: 19px
+						z-index: 10
+						&:hover
+							font-weight: 400
+
+/*  Стилизация мобильного меню  */
+
+.main
+	&_top_nav
+		display: none
+		position: fixed
+		width: 100%
+		height: 70px
+		background: linear-gradient(180deg, #04b1dd, #0194c4)
+		z-index: 99
+
+ul
+  list-style: none
+  margin: 0
+  padding: 0
+
+.drawer-list
+  position: fixed
+  right: 0
+  top: 0
+  height: 100vh
+  width: 100vw
+  transform: translate(100vw, 0)
+  /* ie workaround*/
+  -ms-transform: translatex(-100vw)
+  box-sizing: border-box
+  pointer-events: none
+  padding-top: 125px
+  transition: width 475ms ease-out, transform 450ms ease, border-radius .8s .1s ease
+  border-bottom-left-radius: 100vw
+  background-color: #3d88ce
+  background-color: rgba(12, 106, 194, 0.8)
+  ul
+    height: 100%
+    width: 100%
+    margin: 0
+    padding: 0
+    overflow: hidden
+    overflow-x: hidden
+    pointer-events: auto
+  li
+    list-style: none
+    text-transform: uppercase
+    pointer-events: auto
+    white-space: nowrap
+    box-sizing: border-box
+    transform: translatex(100vw)
+    /* ie workaround*/
+    -ms-transform: translatex(-100vw)
+    &:last-child
+      margin-bottom: 2em
+    a
+      text-decoration: none
+      color: #FEFEFE
+      text-align: center
+      display: block
+      padding: 1rem
+      font-size: calc(24px - .5vw)
+      &:hover
+        cursor: pointer
+        background-color: #88c2f8
+        background-color: rgba(17, 132, 240, 0.5)
+
+@media (min-width: 768px)
+  .drawer-list
+    width: 40vw
+
+@media (min-width: 768px)
+  .drawer-list li a
+    text-align: right
+    padding: .5rem
+
+input.hamburger
+  display: none
+  &:checked ~
+    .drawer-list
+      transform: translatex(0)
+      border-bottom-left-radius: 0
+      li
+        transform: translatex(0)
+        &:nth-child(1)
+          transition: transform 1s 0.08s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(2)
+          transition: transform 1s 0.16s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(3)
+          transition: transform 1s 0.24s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(4)
+          transition: transform 1s 0.32s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(5)
+          transition: transform 1s 0.4s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(6)
+          transition: transform 1s 0.48s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(7)
+          transition: transform 1s 0.56s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(8)
+          transition: transform 1s 0.64s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(9)
+          transition: transform 1s 0.72s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(10)
+          transition: transform 1s 0.8s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(11)
+          transition: transform 1s 0.88s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(12)
+          transition: transform 1s 0.96s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(13)
+          transition: transform 1s 1.04s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(14)
+          transition: transform 1s 1.12s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(15)
+          transition: transform 1s 1.2s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(16)
+          transition: transform 1s 1.28s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(17)
+          transition: transform 1s 1.36s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(18)
+          transition: transform 1s 1.44s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(19)
+          transition: transform 1s 1.52s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(20)
+          transition: transform 1s 1.6s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(21)
+          transition: transform 1s 1.68s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(22)
+          transition: transform 1s 1.76s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(23)
+          transition: transform 1s 1.84s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(24)
+          transition: transform 1s 1.92s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(25)
+          transition: transform 1s 2s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(26)
+          transition: transform 1s 2.08s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(27)
+          transition: transform 1s 2.16s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(28)
+          transition: transform 1s 2.24s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(29)
+          transition: transform 1s 2.32s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(30)
+          transition: transform 1s 2.4s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(31)
+          transition: transform 1s 2.48s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(32)
+          transition: transform 1s 2.56s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(33)
+          transition: transform 1s 2.64s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(34)
+          transition: transform 1s 2.72s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(35)
+          transition: transform 1s 2.8s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(36)
+          transition: transform 1s 2.88s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(37)
+          transition: transform 1s 2.96s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(38)
+          transition: transform 1s 3.04s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(39)
+          transition: transform 1s 3.12s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(40)
+          transition: transform 1s 3.2s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(41)
+          transition: transform 1s 3.28s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(42)
+          transition: transform 1s 3.36s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(43)
+          transition: transform 1s 3.44s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(44)
+          transition: transform 1s 3.52s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(45)
+          transition: transform 1s 3.6s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(46)
+          transition: transform 1s 3.68s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(47)
+          transition: transform 1s 3.76s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(48)
+          transition: transform 1s 3.84s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(49)
+          transition: transform 1s 3.92s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        &:nth-child(50)
+          transition: transform 1s 4s cubic-bezier(0.29, 1.4, 0.44, 0.96)
+        a
+          padding-right: 15px
+    label
+      > i
+        background-color: transparent
+        transform: rotate(90deg)
+        &:before
+          transform: translate(-50%, -50%) rotate(315deg)
+        &:after
+          transform: translate(-50%, -50%) rotate(-315deg)
+      close
+        color: #FEFEFE
+        width: 100%
+      open
+        color: rgba(0, 0, 0, 0)
+        width: 0
+
+label.hamburger
+  z-index: 9999
+  position: relative
+  display: block
+  height: 50px
+  width: 50px
+  &:hover
+    cursor: pointer
+  text
+    close, open
+      text-transform: uppercase
+      font-size: .8em
+      align-text: center
+      position: absolute
+      transform: translateY(40px)
+      text-align: center
+      overflow: hidden
+      transition: width .25s .35s, color .45s .35s
+    close
+      color: rgba(0, 0, 0, 0)
+      right: 0
+      width: 0
+    open
+      color: #FEFEFE
+      width: 100%
+  > i
+    position: absolute
+    width: 100%
+    height: 2px
+    top: 40%
+    background-color: #FEFEFE
+    pointer-events: auto
+    transition-duration: .35s
+    transition-delay: .35s
+    &:before, &:after
+      position: absolute
+      display: block
+      width: 100%
+      height: 2px
+      left: 50%
+      background-color: #FEFEFE
+      content: ""
+      transition: transform 0.35s
+      transform-origin: 50% 50%
+    &:before
+      transform: translate(-50%, -14px)
+    &:after
+      transform: translate(-50%, 14px)
+  position: fixed
+  top: 8px
+  right: 10px
+
+/*  SCROLLBAR STYLE FOR IE  */
+
+body
+  scrollbar-base-color: #138a72
+  scrollbar-3dlight-color: #fff
+  scrollbar-highlight-color: #1abc9c
+  scrollbar-track-color: #fff
+  scrollbar-arrow-color: #1abc9c
+  scrollbar-shadow-color: #1abc9c
+  scrollbar-dark-shadow-color: #1abc9c
+  -ms-overflow-style: -ms-autohiding-scrollbar
+
+.icon
+  display: inline-block
+  width: 5vw
+  height: 4vw
+  stroke-width: 0
+  stroke: currentColor
+  fill: currentColor
+
+/* Второй блок виды услуг  */
+
+.activities
+	padding: 60px 0
+	&_item
+		display: flex
+		margin-bottom: 30px
+	&_img
+		margin-right: 10px
+	&_text
+		display: flex
+		flex-direction: column
+		line-height: 1.2
+		font-family: $tahoma
+		h4
+			font-size: 17px
+			font-family: $mpcond
+			text-transform: uppercase
+			margin: 0
+		p
+			display: inline-block
+			font-size: 11px
+		a
+			font-size: 11px
+			text-transform: uppercase
+			text-decoration: none
+			&:hover
+				font-weight: bold
+				text-decoration: none
+			
+/*  Стилизация левого сайдбара  */
+.left-sidebar
+	margin-bottom: 30px
+	&_news
+		padding-bottom: 20px
+		margin-bottom: 20px
+		border-bottom: 1px dashed #d5d5d5
+		h3
+			font-family: $mpcond
+			font-size: 23px
+			text-transform: uppercase
+			color: $accent
+			margin-bottom: 20px
+			border-bottom: 1px dashed #d5d5d5
+		p
+			text-decoration: underline
+			line-height: 1.4
+			font-size: 12px
+		span
+			a
+				color: #015967
+				text-decoration: underline
+	&_order
+		h3
+			font-family: $mpcond
+			font-size: 23px
+			text-transform: uppercase
+			color: $accent
+			margin-bottom: 5px
+		p
+			color: $accent
+		button
+			border-radius: 8px
+			background: linear-gradient(180deg, #04b1dd, #0194c4)
+			padding: 5px 65px
+			color: #fff
+			border: none
+			text-align: left
+			line-height: 1.2
+			cursor: pointer
+			position: relative
+			white-space: nowrap
+			&:hover
+				background: #04c1e0
+			&::before
+				content: ''
+				background: url(../img/double_arrow.png)
+				background-size: cover
+				background-repeat: no-repeat
+				width: 17px
+				height: 16px
+				position: absolute
+				top: 18px
+				left: 25px
+			span
+				font-size: 20px
+				font-weight: 600
+
+/*  Стилизация основного контента  */
+.content
+	h3
+		font-family: $mpcond
+		font-size: 23px
+		text-transform: uppercase
+		color: $accent
+		margin-bottom: 10px
+		border-bottom: 1px dashed #d5d5d5
+
+.services
+	border-top: 1px dashed #d5d5d5
+	border-bottom: 1px dashed #d5d5d5
+	h3
+		font-family: $mpcond
+		font-size: 19px
+		text-transform: uppercase
+		color: $accent
+		padding-top: 10px
+	ul
+		li
+			list-style: none
+			position: relative
+			&::before
+				content: '-'
+				color: $accent
+				position: absolute
+				left: -10px
+
+/*  Стилизация слайдера   */
+.project
+	width: 100%
+	margin-top: 30px
+	padding: 10px 30px
+	h3
+		font-family: $mpcond
+		font-size: 23px
+		text-transform: uppercase
+		color: $accent
+	&-block
+		&_content
+			margin: 0 auto
+			width: 170px
+			text-align: left
+		img
+			margin: 10px auto
+		h4
+			font-size: 15px
+			text-transform: uppercase
+			text-decoration: underline
+			color: $accent
+			margin-bottom: 0
+		p
+			margin-bottom: 0
+			font-style: italic
+			span
+				font-style: normal
+
+.slick-next, .slick-prev
+	&::before
+		color: $accent
+
+
+.description
+	padding: 10px 30px
+
+
+/*  Стилизация футера  */
+.footer_menu
+	width: 100%
+	border-top: 1px dashed #d5d5d5
+	ul
+		display: flex
+		font-size: 12px
+		text-transform: uppercase
+		color: $accent
+		margin-top: 15px
+		margin-bottom: 50px
+		li
+			list-style: none
+			margin-right: 50px
+			
+.address
+	text-align: left
+	padding-right: 50px
+	margin-bottom: 20px
+
+.contacts
+	margin-bottom: 20px
+	span
+		font-size: 22px
+		font-family: $mpcond
+		color: $accent
+		line-height: 1.2
+
+@import "media" // Always at the end
+
+
