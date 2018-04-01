@@ -61,13 +61,13 @@
 							<div class="row">
 								<div class="col-md-6 col-lg-5">
 									<div class="date">
-										<div class="icons"><img src="img/icons/Calendar-1.svg" alt=""></div>
+										<div class="icons"><img src="img/icons/Calendar-1.svg" alt="Дата"></div>
 										<div class="descript">15 апреля<br>с 12:00 до 15:00</div>
 									</div>
 								</div>
 								<div class="col-md-6 col-lg-7">
 									<div class="address">
-										<div class="icons"><img src="img/icons/location.svg" alt=""></div>
+										<div class="icons"><img src="img/icons/location.svg" alt="Адрес"></div>
 										<div class="descript">Санкт-Петербург, пр. Медиков 3, м. Петроградская</div>
 									</div>
 								</div>
@@ -75,7 +75,7 @@
 							<div class="row">
 								<div class="col-12">
 									<div class="cta">
-										<div class="icons"><img src="img/icons/accuracy.svg" alt=""></div>
+										<div class="icons"><img src="img/icons/accuracy.svg" alt="Запишитесь на тренинг"></div>
 										<div class="descript">80% студентов уже после тренинга применяют полученные знания и находят девушку. Не откладывай! Запишись!</div>
 									</div>
 								</div>
@@ -83,14 +83,21 @@
 						</div>
 						<div class="col-md-8 offset-md-2 col-lg-4 offset-lg-0">
 							<div class="main-form">
+								<div class="success"><span>Спасибо!<br>Ваша заявка принята!</span></div>
 								<div class="main-form_title">
 									<h4>Чтобы посетить тренинг, необходимо зарегистрироваться</h4>
 									<p>[ Осталось 3 места ]</p>
 								</div>
-								<form action="#" method="POST">
-									<input type="text" class="main-form_input" name="name" placeholder="Имя" required>
-									<input type="text" class="main-form_input" name="phone" placeholder="Телефон" required>
-									<label><input id="checkBox3" type="checkbox" name="checkbox3" checked required>Согласен на обработку перс. данных</label>
+								<form action="#" method="POST" class="application">
+									<!-- Hidden Required Fields -->
+									<input type="hidden" name="project_name" value="Мужской клуб">
+									<input type="hidden" name="admin_email" value="">
+									<input type="hidden" name="form_subject" value="Заявка с сайта Мужской клуб">
+									<!-- END Hidden Required Fields -->
+									<input type="hidden" name="Форма" value="Форма на главном экране">
+									<input type="text" class="main-form_input" name="Имя" placeholder="Имя" required>
+									<input type="text" class="main-form_input" name="Телефон" id="phone" placeholder="Телефон" required>
+									<label for="fz152" class="checkbox"><input type="checkbox" name="Согласие" id="fz152" hidden checked required><span></span>Я согласен(на) на обработку персональных данных</label>
 									<button class="main-form_btn" type="submit">Записаться</button>
 								</form>
 							</div>
@@ -114,7 +121,7 @@
 					<div class="col-lg-6">
 						<div class="problems-item">
 							<div class="problems-img">
-								<img src="img/problems/1.png" alt="">
+								<img src="img/problems/1.png" alt="Проблема 1">
 							</div>
 							<div class="problems-text">
 								Вас никто не учил знакомиться с девушками, а те «советы», которые Вам давали, не работают
@@ -122,7 +129,7 @@
 						</div>
 						<div class="problems-item">
 							<div class="problems-img">
-								<img src="img/problems/2.png" alt="">
+								<img src="img/problems/2.png" alt="Проблема 2">
 							</div>
 							<div class="problems-text">
 								Вы не знаете, на каком этапе знакомства и как правильно переходить к сексу
@@ -134,7 +141,7 @@
 					</div>
 					<div class="col-lg-6">
 						<div class="problems-photo">
-							<img src="img/problems2.jpg" alt="">
+							<img src="img/problems2.jpg" alt="Проблема 3">
 						</div>
 						<div class="problems-item">
 							<div class="problems-img">
@@ -146,7 +153,7 @@
 						</div>
 						<div class="problems-item">
 							<div class="problems-img">
-								<img src="img/problems/4.png" alt="">
+								<img src="img/problems/4.png" alt="Проблема 4">
 							</div>
 							<div class="problems-text">
 								Вы думаете, что отношения с девушкой - это дорого и Вам не по карману
@@ -169,55 +176,55 @@
 			<div class="event-items">
 				<div class="row">
 					<div class="col-md-3 col-lg-2">
-						<div class="time">12:00</div>
+						<div class="time"><p>12:00</p></div>
 					</div>
 					<div class="col-md-9 col-lg-10">
 						<div class="event">Регистрация студентов. Знакомство с тренером.</div>
 					</div>
 					<div class="col-md-3 col-lg-2">
-						<div class="time">12:20</div>
+						<div class="time"><p>12:20</p></div>
 					</div>
 					<div class="col-md-9 col-lg-10">
 						<div class="event">3 способа познакомиться или как преодолеть страх.</div>
 					</div>
 					<div class="col-md-3 col-lg-2">
-						<div class="time">13:00</div>
+						<div class="time"><p>13:00</p></div>
 					</div>
 					<div class="col-md-9 col-lg-10">
 						<div class="event">Несколько советов о том, как заинтересовать девушку в интернете.</div>
 					</div>
 					<div class="col-md-3 col-lg-2">
-						<div class="time">13:15</div>
+						<div class="time"><p>13:15</p></div>
 					</div>
 					<div class="col-md-9 col-lg-10">
 						<div class="event">Первое впечатление: на что обращают внимание девушки в первые 5 секунд знакомства.</div>
 					</div>
 					<div class="col-md-3 col-lg-2">
-						<div class="time">13:30</div>
+						<div class="time"><p>13:30</p></div>
 					</div>
 					<div class="col-md-9 col-lg-10">
 						<div class="event">10 лучших мест в Санкт-Петербурге для свидания с девушкой.</div>
 					</div>
 					<div class="col-md-3 col-lg-2">
-						<div class="time">13:45</div>
+						<div class="time"><p>13:45</p></div>
 					</div>
 					<div class="col-md-9 col-lg-10">
 						<div class="event">Сколько денег нужно для свидания и чего на самом деле девушки от него ждут?</div>
 					</div>
 					<div class="col-md-3 col-lg-2">
-						<div class="time">14:00</div>
+						<div class="time"><p>14:00</p></div>
 					</div>
 					<div class="col-md-9 col-lg-10">
 						<div class="event">Можно ли вернуть бывшую? Все «за» и «против».</div>
 					</div>
 					<div class="col-md-3 col-lg-2">
-						<div class="time">14:30</div>
+						<div class="time"><p>14:30</p></div>
 					</div>
 					<div class="col-md-9 col-lg-10">
 						<div class="event">Как оставаться мужчиной в любой ситуации.</div>
 					</div>
 					<div class="col-md-3 col-lg-2">
-						<div class="time no-margin">15:00</div>
+						<div class="time no-margin"><p>15:00</p></div>
 					</div>
 					<div class="col-md-9 col-lg-10">
 						<div class="event no-margin">Бонусы и подарки.</div>
@@ -271,7 +278,7 @@
 				<div class="row">
 					<div class="col-lg-6">
 						<div class="issues-item">
-							<h4>Это точно бесплатый тренинг?</h4>
+							<h4>Это точно бесплатный тренинг?</h4>
 							<p>Да, точно.<br>Мы искренне надеемся, что знания, которые мы даем на тренинге помогут Вам преодолеть страхи и сомнения. Сразу после тренинга у Вас будет очень высокая уверенность в себе и мы надеемся, что Вы не растратите эти знания и энергию в пустую, а сразу примените их на деле.</p>
 						</div>
 					</div>
@@ -307,70 +314,77 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-6 col-md-4">
+				<div class="col-xs-12 col-sm-6 col-md-4">
 					<div class="date date-bottom">
-						<div class="icons"><object type="image/svg+xml" data="img/Calendar-1.svg"><img src="img/Calendar-1.png"></object></div>
+						<div class="icons"><object type="image/svg+xml" data="img/Calendar-1.svg"><img src="img/Calendar-1.png" alt="Дата"></object></div>
 						<div class="descript">15 апреля<br>с 12:00 до 15:00</div>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-4">
+				<div class="col-xs-12 col-sm-6 col-md-4">
 					<div class="address address-bottom">
-						<div class="icons"><object type="image/svg+xml" data="img/location.svg"><img src="img/location.png"></object></div>
+						<div class="icons"><object type="image/svg+xml" data="img/location.svg"><img src="img/location.png" alt="Адрес"></object></div>
 						<div class="descript">Санкт-Петербург,<br> пр. Медиков 3, м. Петроградская</div>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-4">
+				<div class="col-xs-12 col-sm-6 col-md-4">
 					<div class="address address-bottom">
-						<div class="icons"><object type="image/svg+xml" data="img/phone-volume.svg"><img src="img/phone-volume.png"></object></div>
-						<div class="descript">По любым вопросам звоните<br>+7 (812) 930-20-77</div>
+						<div class="icons"><object type="image/svg+xml" data="img/phone-volume.svg"><img src="img/phone-volume.png" alt="Закажите звонок"></object></div>
+						<div class="descript"><a href="tel:+78129302077">По любым вопросам звоните<br>+7 (812) 930-20-77</a></div>
 					</div>
 				</div>
 			</div>
 			<div class="row justify-content-center">
 				<div class="col-sm-8 col-md-6 col-lg-4">
 					<div class="main-form bottom-form">
+						<div class="success"><span>Спасибо!<br>Ваша заявка принята!</span></div>
 						<div class="main-form_title">
 							<h4>Чтобы посетить тренинг, необходимо зарегистрироваться</h4>
 							<p>[ Осталось 3 места ]</p>
 						</div>
-						<form action="#" method="POST">
-							<input type="text" class="main-form_input" name="name" placeholder="Имя" required>
-							<input type="text" class="main-form_input" name="phone" placeholder="Телефон" required>
+						<form action="#" method="POST" class="application">
+							<!-- Hidden Required Fields -->
+									<input type="hidden" name="project_name" value="Мужской клуб">
+									<input type="hidden" name="admin_email" value="">
+									<input type="hidden" name="form_subject" value="Заявка с сайта Мужской клуб">
+									<!-- END Hidden Required Fields -->
+							<input type="text" class="main-form_input" name="Имя" placeholder="Имя" required>
+							<input type="text" class="main-form_input" name="Телефон" id="phone1" placeholder="Телефон" required>
+							<input type="hidden" name="Форма" value="Форма с последнего экрана">
 							<div class="friend">
-								<p>Я приду</p>
 								<div class="box">
-									<input class="Switcher__checkbox sr-only" id="io" type="checkbox"/>
+									<p>Я приду</p>
+									<input class="Switcher__checkbox sr-only" id="io" type="checkbox" checked/>
 									<label class="Switcher" for="io">
-										<div class="Switcher__trigger" data-value="Один"></div>
-										<div class="Switcher__trigger" data-value="С другом"></div>
+										<span class="Switcher__trigger" data-value="Один"></span>
+										<span class="Switcher__trigger" data-value="С другом"></span>
 									</label>
 								</div>
 							</div>
 							<div class="friend-contacts">
-								<input type="text" class="main-form_input" name="friend_name" placeholder="Имя друга">
-							<input type="text" class="main-form_input" name="friend_phone" placeholder="Телефон друга">
+								<input type="text" class="main-form_input" name="Имя_друга" placeholder="Имя друга">
+								<input type="text" class="main-form_input" name="Телефон_друга" id="phone2" placeholder="Телефон друга">
 							</div> 
-							<label><input id="checkBox3" type="checkbox" name="checkbox3" checked required>Согласен на обработку перс. данных</label>
+							<label for="fz153" class="checkbox"><input type="checkbox" name="Согласие" id="fz153" hidden checked required><span></span>Я согласен(на) на обработку персональных данных</label>
 							<button class="main-form_btn" type="submit">Записаться</button>
 						</form>
 					</div>
 				</div>
 			</div>
 			<div class="row justify-content-between align-items-end">
-				<div class="col-md-4 col-lg-3">
-					<div class="logo">
+				<div class="col-sm-6 col-md-5 col-lg-4">
+					<div class="logo logo-bottom">
 						<a href="#"><img src="img/logo.png" alt="Мужской клуб"></a>
 					</div>
 					<div class="policy">
 						<a href="policy.pdf" target="_blank">Политика конфиденциальности</a>
 					</div>
 				</div>
-				<div class="col-md-4 col-lg-3">
+				<div class="col-sm-6 col-md-5 col-lg-4">
 					<div class="phone-bottom">
 						<a href="tel:+78129302077"><img src="img/icons/phone.svg" alt="">+7 (812) 930-20-77</a>
 					</div>
 					<div class="callback callback-bottom">
-						<a href="#" class="main-btn popup-btn">Обратный звонок</a>
+						<a href="#" class="main-btn callback-btn">Обратный звонок</a>
 					</div>
 				</div>
 			</div>
@@ -378,19 +392,50 @@
 	</footer>
 
 	<!-- Модальные окна -->
-	<div class="popup">
+	<div class="popup-callback">
 		<div class="popup-content">
+			<div class="success-popup"><span>Спасибо!<br>Ваша заявка принята!</span></div>
 			<div class="popup-close"><i class="fa fa-close"></i></div>
 			<div class="popup-form">
 				<div class="popup-form_title">
 					<h4>Оставьте заявку</h4>
 					<p>и мы свяжемся с Вами <br>в ближайшее время</p>
 				</div>
-				<form action="#" method="POST">
-					<input type="text" class="popup-form_input" name="name" placeholder="Имя" required>
-					<input type="text" class="popup-form_input" name="phone" placeholder="Телефон" required>
-					<label><input id="checkBox3" type="checkbox" name="checkbox3" checked required>
-					Согласен на обработку перс. данных</label>
+				<form action="#" method="POST" class="callback">
+					<!-- Hidden Required Fields -->
+					<input type="hidden" name="project_name" value="Мужской клуб">
+					<input type="hidden" name="admin_email" value="">
+					<input type="hidden" name="form_subject" value="Заявка на обратный звонок с сайта Мужской клуб">
+					<!-- END Hidden Required Fields -->
+					<input type="hidden" name="Форма" value="Заявка на обратный звонок с кнопки в футере">
+					<input type="text" class="popup-form_input" name="Имя" placeholder="Имя" required>
+					<input type="text" class="popup-form_input" name="Телефон" id="phone4" placeholder="Телефон" required>
+					<label for="fz155" class="checkbox"><input type="checkbox" name="Согласие" id="fz155" hidden checked required><span></span>Я согласен(на) на обработку<br>персональных данных</label>
+					<button class="main-form_btn popup-form_btn" type="submit">Записаться</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup">
+		<div class="popup-content">
+			<div class="success-popup"><span>Спасибо!<br>Ваша заявка принята!</span></div>
+			<div class="popup-close"><i class="fa fa-close"></i></div>
+			<div class="popup-form">
+				<div class="popup-form_title">
+					<h4>Оставьте заявку</h4>
+					<p>и мы свяжемся с Вами <br>в ближайшее время</p>
+				</div>
+				<form action="#" method="POST" class="callback">
+					<!-- Hidden Required Fields -->
+					<input type="hidden" name="project_name" value="Мужской клуб">
+					<input type="hidden" name="admin_email" value="">
+					<input type="hidden" name="form_subject" value="Заявка на обратный звонок с сайта Мужской клуб">
+					<!-- END Hidden Required Fields -->
+					<input type="hidden" name="Форма" value="Заявка на обратный звонок с кнопки на главном экране">
+					<input type="text" class="popup-form_input" name="Имя" placeholder="Имя" required>
+					<input type="text" class="popup-form_input" name="Телефон" id="phone3" placeholder="Телефон" required>
+					<label for="fz154" class="checkbox"><input type="checkbox" name="Согласие" id="fz154" hidden checked required><span></span>Я согласен(на) на обработку<br>персональных данных</label>
 					<button class="main-form_btn popup-form_btn" type="submit">Записаться</button>
 				</form>
 			</div>
@@ -399,30 +444,37 @@
 
 	<div class="popup-record">
 		<div class="popup-content">
+			<div class="success-popup"><span>Спасибо!<br>Ваша заявка принята!</span></div>
 			<div class="popup-close"><i class="fa fa-close"></i></div>
 			<div class="popup-form">
 				<div class="popup-form_title">
 					<h4>Оставьте заявку</h4>
 					<p>и мы свяжемся с Вами <br>в ближайшее время</p>
 				</div>
-				<form action="#" method="POST">
-					<input type="text" class="popup-form_input" name="name" placeholder="Имя" required>
-					<input type="text" class="popup-form_input" name="phone" placeholder="Телефон" required>
+				<form action="#" method="POST" class="callback">
+					<!-- Hidden Required Fields -->
+					<input type="hidden" name="project_name" value="Мужской клуб">
+					<input type="hidden" name="admin_email" value="">
+					<input type="hidden" name="form_subject" value="Заявка с сайта Мужской клуб">
+					<!-- END Hidden Required Fields -->
+					<input type="hidden" name="Форма" value="Заявка со всплывающей формы на экране Расписание мероприятия">
+					<input type="text" class="popup-form_input" name="Имя" placeholder="Имя" required>
+					<input type="text" class="popup-form_input" name="Телефон" id="phone5" placeholder="Телефон" required>
 					<div class="friend">
-						<p>Я приду</p>
 						<div class="box">
-							<input class="Switcher__checkbox sr-only" id="io-popup" type="checkbox"/>
+							<p>Я приду</p>
+							<input class="Switcher__checkbox sr-only" id="io-popup" type="checkbox" checked/>
 							<label class="Switcher Swither-popup" for="io-popup">
-								<div class="Switcher__trigger Switcher__trigger_popup" data-value="Один"></div>
-								<div class="Switcher__trigger Switcher__trigger_popup" data-value="С другом"></div>
+								<span class="Switcher__trigger Switcher__trigger_popup" data-value="Один"></span>
+								<span class="Switcher__trigger Switcher__trigger_popup" data-value="С другом"></span>
 							</label>
 						</div>
 					</div>
 					<div class="friend-contacts friend-contacts-popup">
-						<input type="text" class="popup-form_input" name="friend_name" placeholder="Имя друга">
-						<input type="text" class="popup-form_input" name="friend_phone" placeholder="Телефон друга">
+						<input type="text" class="popup-form_input" name="Имя_друга" placeholder="Имя друга">
+						<input type="text" class="popup-form_input" name="Телефон_друга" id="phone6" placeholder="Телефон друга">
 					</div> 
-					<label><input id="checkBox3" type="checkbox" name="checkbox3" checked required>Согласен на обработку перс. данных</label>
+					<label for="fz156" class="checkbox"><input type="checkbox" name="Согласие" id="fz156" hidden checked required><span></span>Я согласен(на) на обработку<br>персональных данных</label>
 					<button class="main-form_btn popup-form_btn" type="submit">Записаться</button>
 				</form>
 			</div>
@@ -433,14 +485,3 @@
 
 </body>
 </html>
-
- 
-
-
-
-
-
-
-
-
-
