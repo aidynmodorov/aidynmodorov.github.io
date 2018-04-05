@@ -1,45 +1,19 @@
 $(function() {
 
-	$('.reviews-slider').slick({
-    slidesToShow: 5,
-		slidesToScroll: 1,
-		dots: true,
-		responsive: [
-		    {
-		      breakpoint: 1201,
-		      settings: {
-		        slidesToShow: 4,
-		        slidesToScroll: 1,
-		        infinite: true,
-		    	}
-		    },
-		    {
-		      breakpoint: 993,
-		      settings: {
-		        slidesToShow: 3,
-		        slidesToScroll: 1
-		      }
-		    },
-		    {
-		      breakpoint: 769,
-		      settings: {
-		      	slidesToShow: 2,
-		        slidesToScroll: 1,
-		        arrows: false,
-		        dots: true
-		      }
-		    },
-		    {
-		      breakpoint: 540,
-		      settings: {
-		      	slidesToShow: 1,
-		        slidesToScroll: 1,
-		        arrows: false,
-		        dots: true
-		      }
-		    }
-		  ]
+	var carousel = $('.reviews-slider').waterwheelCarousel({
+   	separationMultiplier: 0.7,
+   	autoPlay: 0,
+   	opacityMultiplier: 1
   });
+
+	$('#reviews-prev').bind('click',function(){
+		carousel.prev();
+		return false;
+	});
+	$('#reviews-next').bind('click',function(){
+		carousel.next();
+		return false;
+	});
 
   $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
     $(this)
@@ -64,6 +38,38 @@ $(function() {
 		      breakpoint: 768,
 		      settings: {
 		        slidesToShow: 1,
+		        slidesToScroll: 1
+		      }
+		    },
+		    {
+		      breakpoint: 576,
+		      settings: {
+		      	slidesToShow: 1,
+		        slidesToScroll: 1,
+		        arrows: false,
+		        dots: true
+		      }
+		    }
+		  ]
+	});
+
+	$('.reviews-slider-mob').slick({
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		dots: true,
+		responsive: [
+		    {
+		      breakpoint: 992,
+		      settings: {
+		        slidesToShow: 3,
+		        slidesToScroll: 1,
+		        infinite: true,
+		    	}
+		    },
+		    {
+		      breakpoint: 768,
+		      settings: {
+		        slidesToShow: 2,
 		        slidesToScroll: 1
 		      }
 		    },
