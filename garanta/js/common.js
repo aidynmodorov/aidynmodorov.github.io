@@ -18,7 +18,7 @@ $(function() {
   $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
     $(this)
       .addClass('active').siblings().removeClass('active')
-      $('.tabs').closest('div').find('div.tabs__content').fadeOut('1000').eq($(this).index()).fadeIn('1000');
+      $('.tabs').closest('div').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
   });
 
 	$('.clients-slider').slick({
@@ -90,7 +90,6 @@ $(function() {
 	$('.faq-tab').click(function(){
 		$(this).addClass('active').next().slideToggle();
 		$('.faq-tab').not(this).removeClass('active').next().stop(true,true).slideUp();
-
 	});
 
 	$('.mob-tab').next().hide();
