@@ -1,102 +1,48 @@
 $(document).ready(function() {
 
-  $("#phone").mask("+7 (999) 999-9999");
-  $("#phone1").mask("+7 (999) 999-9999");
-  $("#phone2").mask("+7 (999) 999-9999");
-  $("#phone3").mask("+7 (999) 999-9999");
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > $(this). height()) {
+			$('.main-sticky_nav').addClass('active');
+		} else {
+			$('.main-sticky_nav').removeClass('active');
+		}
+	});
 
-	var menuBtn = $('.mobile-nav-btn');
-	var menu = $('.main-nav');
+	var menuBtn = $('.hamburger');
+	var menu = $('.main-mobnav');
 	menuBtn.on('click', function(event) {
   	event.preventDefault();
-  	menu.toggleClass('main-nav__active');
+  	menu.toggleClass('main-mobnav__active');
+  	menuBtn.toggleClass('hamburger is-active');
   });
 
-	$('.events-slider').slick({
-		speed: 1000,
-		responsive: [
-    {
-      breakpoint: 576,
-      settings: {
-        arrows: false,
-        dots: true
-      }
-   	}
-  	],
-		prevArrow: '<button type="button" class="events-slider-btn events-prev-btn"><img src="img/icons/arrow-to-left.svg" alt=""/></button>',
-		nextArrow: '<button type="button" class="events-slider-btn events-next-btn"><img src="img/icons/arrow-to-right.svg" alt=""/></button>'
-	});
+  $('.packages-item p').equalHeights();
 
-	$('.reviews-slider').slick({
-		slidesToShow: 4,
-		slidesToScroll: 1,
-		speed: 1000,
-		prevArrow: '<button type="button" class="events-slider-btn events-prev-btn"><img src="img/icons/arrow-to-left.svg" alt=""/></button>',
-		nextArrow: '<button type="button" class="events-slider-btn events-next-btn"><img src="img/icons/arrow-to-right.svg" alt=""/></button>',
+  $('.reviews-slider').slick({
+  	slidesToShow: 3,
+  	slidesToScroll: 1,
+  	prevArrow: '<button type="button" class="reviews-slider-btn reviews-prev-btn"><img src="img/icons/left-arrow.svg" alt=""/></button>',
+		nextArrow: '<button type="button" class="reviews-slider-btn reviews-next-btn"><img src="img/icons/left-arrow.svg" alt=""/></button>',
 		responsive: [
-    {
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        infinite: true,
-      }
-    },
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        dots: true
-      }
-    }
-  ]
-	});
-
-	$('.clients-slider').slick({
-		speed: 1000,
-		arrows: true,
-		autoplay: true,
-		responsive: [
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        infinite: true,
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 576,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-      }
-    }
-  ]
-	});
-
-	$('.reviews-slider-item').magnificPopup({
-  	type : 'image'
+		    {
+		      breakpoint: 992,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 1,
+		        infinite: true,
+		    	}
+		    },
+		    {
+		      breakpoint: 768,
+		      settings: {
+		      	slidesToShow: 1,
+		        slidesToScroll: 1,
+		      }
+		    }
+		  ]
   });
 
-  $('.callback-btn').on('click', function(event) {
+	$('.callback-btn').on('click', function(event) {
 		event.preventDefault();
 	 	$('.popup').fadeIn();
 	});
@@ -106,23 +52,9 @@ $(document).ready(function() {
 	 	$('.popup').fadeOut();
 	});
 
-     //E-mail Ajax Send
-  $("form").submit(function() { //Change
-    var th = $(this);
-    $.ajax({
-      type: "POST",
-      url: "mail.php", //Change
-      data: th.serialize()
-    }).done(function() {
-      $('.success').hide().fadeIn();
-      setTimeout(function() {
-        $('.success').fadeOut();
-        th.trigger("reset");
-        $('.popup').fadeOut();
-      }, 3000);
-    });
-    return false;
-  });
+	$('.success-content-close').on('click', function(event) {
+	 	event.preventDefault();
+	 	$('.success').fadeOut();
+	});
 
 });
-
