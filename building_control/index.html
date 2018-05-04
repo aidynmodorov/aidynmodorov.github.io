@@ -23,12 +23,43 @@
 	<!-- Custom Browsers Color End -->
 
 	<link rel="stylesheet" href="css/main.min.css">
+	<noindex><script async src="https://stats.lptracker.ru/code/new/53483"></script></noindex>
 
 </head>
 
 <body>
 
-	<header class="main">
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter48747695 = new Ya.Metrika({
+                    id:48747695,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/48747695" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+	<header class="main" id="main">
 		<div class="main-sticky_nav">
 			<div class="container">
 			<div class="row align-items-center">
@@ -47,7 +78,7 @@
 						</ul>
 					</div>
 					<div class="main-mobnav">
-						<ul id="mobmenu">
+						<ul class="mobmenu">
 							<li><a href="#prices">Цены</a></li>
 							<li><a href="#company">О нас</a></li>
 							<li><a href="#reviews">Отзывы</a></li>
@@ -62,7 +93,7 @@
 				</div>
 				<div class="col-10 order-2 col-sm-5 order-sm-2 col-lg-3 order-lg-3">
 					<div class="main-phone">
-						<span class="main-phone-call"><object type="image/svg+xml" data="img/icons/call.svg"><img src=""></object></span><a href="tel:+78004567878">8 (800) 456-78-78</a>
+						<span class="main-phone-call"><object type="image/svg+xml" data="img/icons/call.svg"><img src=""></object></span><a href="tel:+73532423680">+7 (3532) 42-36-80</a>
 					</div>
 				</div>
 				<div class="col-5 order-3 col-sm-3 order-sm-3 col-lg-2 order-lg-4">
@@ -90,7 +121,7 @@
 						</ul>
 					</div>
 					<div class="main-mobnav">
-						<ul id="mobmenu">
+						<ul class="mobmenu">
 							<li><a href="#prices">Цены</a></li>
 							<li><a href="#company">О нас</a></li>
 							<li><a href="#reviews">Отзывы</a></li>
@@ -105,7 +136,7 @@
 				</div>
 				<div class="col-12 order-4 col-sm-5 order-sm-3 col-lg-3 order-lg-3">
 					<div class="main-phone">
-						<span class="main-phone-call"><object type="image/svg+xml" data="img/icons/call.svg"><img src=""></object></span><a href="tel:+78004567878">8 (800) 456-78-78</a>
+						<span class="main-phone-call"><object type="image/svg+xml" data="img/icons/call.svg"><img src=""></object></span><a href="tel:+73532423680">+7 (3532) 42-36-80</a>
 					</div>
 				</div>
 				<div class="col-5 order-3 col-sm-3 col-lg-2 order-lg-4">
@@ -140,7 +171,7 @@
 		</div>
 	</header>
 
-	<section class="services">
+	<section class="services" id="services">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6 col-lg-4">
@@ -206,7 +237,7 @@
 		</div>
 	</section>
 
-	<section class="steps">
+	<section class="steps" id="steps">
 		<div class="container">
 			<div class="steps-wrap">
 				<div class="steps-price">
@@ -338,7 +369,7 @@
 						</div>
 						<p>Только контроль качества строительства</p>
 						<span>50 000р</span>
-						<a href="#" class="standart-btn">Заказать</a>
+						<button class="button standart-btn">Заказать</button>
 					</div>
 				</div>
 				<div class="col-sm-6 col-lg-4">
@@ -353,7 +384,7 @@
 						</div>
 						<p>Контроль качества строительства, а так же проверка качества используемого  материала на объекте</p>
 						<span>70 000р</span>
-						<a href="#" class="prestige-btn">Заказать</a>
+						<button class="button prestige-btn">Заказать</button>
 					</div>
 				</div>
 				<div class="col-sm-6 col-lg-4">
@@ -368,7 +399,7 @@
 						</div>
 						<p>Полностью контролируем ход качества строительства, подбор материала, рекомендуем поставщиков с лучшими ценами</p>
 						<span>150 000р</span>
-						<a href="#" class="premium-btn">Заказать</a>
+						<button class="button premium-btn">Заказать</button>
 					</div>
 				</div>
 			</div>
@@ -378,7 +409,7 @@
 	<section class="company" id="company">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12 col-md-7 col-lg-8">
+				<div class="col-sm-12 col-lg-8">
 					<div class="row">
 						<div class="col-lg-5 offset-lg-0">
 							<div class="section-title company-title">
@@ -402,7 +433,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-10 offset-sm-1 col-md-5 offset-md-0 col-lg-4 offset-md-0 col-xl-3 offset-xl-1">
+				<div class="col-sm-10 offset-sm-1 col-lg-4 offset-lg-0">
 					<div class="company-photo1">
 						<img src="img/company1.jpg" class="img-responsive" alt="Строй контроль">
 					</div>
@@ -433,7 +464,7 @@
 						<div class="reviews-slider-item">
 							<div class="review-header">
 								<div class="review-header-photo">
-									<img src="img/reviews/1.png" alt="">
+									<img src="img/reviews/2.jpg" alt="">
 								</div>
 								<div class="review-header-name">
 									<h4>Иванов Дмитрий</h4>
@@ -441,13 +472,13 @@
 								</div>
 							</div>
 							<div class="review-text">
-								<p>Lorem ipsum dolor sit amet,ean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+								<p>Хочу выразить огромную благодарность компании Строй Контроль. Я долго сомневался в качестве работы строителей, которые строили мне дом. Решил заказть услугу по контролю за стройкой. И сделал это как оказалось вовремя, ребята выявили 5 грубых ошибок строителей. Еще немного и дом пришлось бы строить заново. Выгнал строителей и сэкономил много денег. Еще раз благодарю всех кто принимал участие в контроле за строительством моего дома!</p>
 							</div>
 						</div>
 						<div class="reviews-slider-item">
 							<div class="review-header">
 								<div class="review-header-photo">
-									<img src="img/reviews/1.png" alt="">
+									<img src="img/reviews/3.jpg" alt="">
 								</div>
 								<div class="review-header-name">
 									<h4>Сергеева Мария</h4>
@@ -455,13 +486,13 @@
 								</div>
 							</div>
 							<div class="review-text">
-								<p>Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifen</p>
+								<p>Огромное спасибо ребятам! Стала замечать, что строительный материал очень быстро заканчивается, а работы почти не сделано. Посоветовали обратиться в компанию Строй контроль. Ребята приехали, все посчитали, строители увозили часть материала себе, и плохо заложили фундамент. Благодаря вам строители достроили дом хорошо, и исправили брак.</p>
 							</div>
 						</div>
 						<div class="reviews-slider-item">
 							<div class="review-header">
 								<div class="review-header-photo">
-									<img src="img/reviews/1.png" alt="">
+									<img src="img/reviews/1.jpg" alt="">
 								</div>
 								<div class="review-header-name">
 									<h4>Пахоменко Кирилл</h4>
@@ -469,13 +500,13 @@
 								</div>
 							</div>
 							<div class="review-text">
-								<p>Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante.</p>
+								<p>Не знал, что бывают такие частные компании по строительному контролю. Позвонил и на следующий день уже специалист выехал на объект. За час на объекте я узнал больше чем из всех ранее просмотренных в интернете роликов. Голова конечно у технадзора Игоря варит отлично. Слава богу нашли только не критичные ошибки, но оставлять их было опасно. Пишу только потому, что хочу донести мысль — все что найдено плохого на объекте нужно сразу исправлять, а не откладывать в корзину. Фирму советую, спасибо им большое.</p>
 							</div>
 						</div>
 						<div class="reviews-slider-item">
 							<div class="review-header">
 								<div class="review-header-photo">
-									<img src="img/reviews/1.png" alt="">
+									<img src="img/reviews/4.jpg" alt="">
 								</div>
 								<div class="review-header-name">
 									<h4>Лукьяненко Роман</h4>
@@ -483,7 +514,7 @@
 								</div>
 							</div>
 							<div class="review-text">
-								<p>Lorem ipsum dolor sit amet,ean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+								<p>Хочу выразить благодарность всей команде «Строй Контроль» . Ребята молодые, но дело свое знают. Выявили недочеты в стройке, предложили более подходящие варианты, а бригада моих строителей успешно все переделала.</p>
 							</div>
 						</div>
 					</div>
@@ -494,7 +525,7 @@
 
 	<section class="contacts" id="contacts">
 		<div class="map">
-			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A45e7e43c10c98d54e84237eb264fe443815af64cc91e99c0f1d91ee0c7b3b675&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A51d88ba0c8aa72abdd54175ee32234902f36b1b4af722ff4423d8cf9074b8af9&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
 		</div>
 		<div class="container">
 			<div class="row">
@@ -507,11 +538,11 @@
 							<h2>Контакты</h2>
 						</div>
 						<p>телефон</p>
-						<a href="tel:+78004567878">8 (800) 456-78-78</a>
+						<a href="tel:+73532423680">+7 (3532) 42-36-80</a>
 						<p>e-mail</p>
-						<a href="mailto:pochta@gmail.com">pochta@gmail.com</a>
+						<a href="mailto:stroicontrol56@gmail.com">stroicontrol56@gmail.com</a>
 						<p>адрес</p>
-						<span>г. Москва, ул. Ленина, 23-44</span>
+						<span>г. Оренбург, ул. Транспортная, 2к2</span>
 					</div>
 				</div>
 			</div>
@@ -520,22 +551,25 @@
 
 	<footer class="footer">
 		<div class="container">
-			<div class="row">
-				<div class="col-sm-6">
-					<div class="footer-copyright">
-						2018 © Monarch Media
+			<div class="row align-items-center justify-content-between">
+				<div class="col-sm-12 col-md-4">
+					<div class="footer-logo">
+						<div class="footer-logo-img">
+							<img src="img/logo1.png" alt="">
+						</div>
+						<div class="footer-logo-description">
+							Проконтролируем строительство Вашего дома
+						</div>
 					</div>
 				</div>
-				<div class="col-sm-6">
+				<div class="col-sm-12 col-md-6">
 					<div class="footer-policy">
-						<a href="#">Политика конфиденциальности</a>
+						<a href="#" class="policy-popup">Политика конфиденциальности</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
-
-
 
 	<!-- Модальные окна -->
 	<div class="popup" id="callback">
@@ -560,7 +594,7 @@
 				<form action="#" method="POST">
 					<!-- Hidden Required Fields -->
 					<input type="hidden" name="project_name" value="Строй Контроль">
-					<input type="hidden" name="admin_email" value="aidynmodorov@yandex.ru">
+					<input type="hidden" name="admin_email" value="strcontrol@lp-seller.ru">
 					<input type="hidden" name="form_subject" value="Заявка с сайта Строй Контроль">
 					<!-- END Hidden Required Fields -->
 					<input type="hidden" name="Форма" value="Всплывающая форма Заказать звонок">
@@ -573,10 +607,10 @@
 						<input type="text" class="popup-block-input" name="Телефон" id="phone" required>
 					</div>
 					<div class="popup-agree">
-						<input id="ham" type="checkbox" name="toppings" value="ham" required>
+						<input id="ham" type="checkbox" name="Согласие" value="Да" checked required>
 						<label for="ham">Согласен(а) с обработкой<br>персональных данных</label>
       		</div>
-					<button class="button">Отправить</button>
+					<button class="button" onsubmit="yaCounter48747695.reachGoal('zayavka'); return true;">Отправить</button>
 				</form>
 			</div>
 		</div>
@@ -604,7 +638,7 @@
 				<form action="#" method="POST">
 					<!-- Hidden Required Fields -->
 					<input type="hidden" name="project_name" value="Строй Контроль">
-					<input type="hidden" name="admin_email" value="aidynmodorov@yandex.ru">
+					<input type="hidden" name="admin_email" value="strcontrol@lp-seller.ru">
 					<input type="hidden" name="form_subject" value="Заявка с сайта Строй Контроль">
 					<!-- END Hidden Required Fields -->
 					<input type="hidden" name="Форма" value="Главный экран Заказать надзор">
@@ -614,13 +648,13 @@
 					</div>
 					<div class="popup-block">
 						<label for="phone">Ваше телефон</label>
-						<input type="text" class="popup-block-input" name="Телефон" id="phone" required>
+						<input type="text" class="popup-block-input" name="Телефон" id="phone1" required>
 					</div>
 					<div class="popup-agree">
-						<input id="ham1" type="checkbox" name="toppings" value="ham" required>
+						<input id="ham1" type="checkbox" name="Согласие" value="Да" checked required>
 						<label for="ham1">Согласен(а) с обработкой<br>персональных данных</label>
       		</div>
-					<button class="button">Отправить</button>
+					<button class="button" onsubmit="yaCounter48747695.reachGoal('zayavka'); return true;">Отправить</button>
 				</form>
 			</div>
 		</div>
@@ -648,7 +682,7 @@
 				<form action="#" method="POST">
 					<!-- Hidden Required Fields -->
 					<input type="hidden" name="project_name" value="Строй Контроль">
-					<input type="hidden" name="admin_email" value="aidynmodorov@yandex.ru">
+					<input type="hidden" name="admin_email" value="strcontrol@lp-seller.ru">
 					<input type="hidden" name="form_subject" value="Заявка с сайта Строй Контроль">
 					<!-- END Hidden Required Fields -->
 					<input type="hidden" name="Форма" value="Заказ пакета Стандарт">
@@ -658,13 +692,13 @@
 					</div>
 					<div class="popup-block">
 						<label for="phone">Ваше телефон</label>
-						<input type="text" class="popup-block-input" name="Телефон" id="phone" required>
+						<input type="text" class="popup-block-input" name="Телефон" id="phone2" required>
 					</div>
 					<div class="popup-agree">
-						<input id="ham2" type="checkbox" name="toppings" value="ham" required>
+						<input id="ham2" type="checkbox" name="Согласие" value="Да" checked required>
 						<label for="ham2">Согласен(а) с обработкой<br>персональных данных</label>
       		</div>
-					<button class="button">Отправить</button>
+					<button class="button" onsubmit="yaCounter48747695.reachGoal('zayavka'); return true;">Отправить</button>
 				</form>
 			</div>
 		</div>
@@ -692,7 +726,7 @@
 				<form action="#" method="POST">
 					<!-- Hidden Required Fields -->
 					<input type="hidden" name="project_name" value="Строй Контроль">
-					<input type="hidden" name="admin_email" value="aidynmodorov@yandex.ru">
+					<input type="hidden" name="admin_email" value="strcontrol@lp-seller.ru">
 					<input type="hidden" name="form_subject" value="Заявка с сайта Строй Контроль">
 					<!-- END Hidden Required Fields -->
 					<input type="hidden" name="Форма" value="Заказ пакета Престиж">
@@ -702,13 +736,13 @@
 					</div>
 					<div class="popup-block">
 						<label for="phone">Ваше телефон</label>
-						<input type="text" class="popup-block-input" name="Телефон" id="phone" required>
+						<input type="text" class="popup-block-input" name="Телефон" id="phone3" required>
 					</div>
 					<div class="popup-agree">
-						<input id="ham3" type="checkbox" name="toppings" value="ham" required>
+						<input id="ham3" type="checkbox" name="Согласие" value="Да" checked required>
 						<label for="ham3">Согласен(а) с обработкой<br>персональных данных</label>
       		</div>
-					<button class="button">Отправить</button>
+					<button class="button" onsubmit="yaCounter48747695.reachGoal('zayavka'); return true;">Отправить</button>
 				</form>
 			</div>
 		</div>
@@ -733,10 +767,10 @@
 				Оставьте заявку и наш менеджер перезвонит вам в течении 10 минут
 			</div>
 			<div class="popup-form">
-				<form action="#" method="POST">
+				<form action="#" method="POST" onsubmit="yaCounter48747695.reachGoal('zayavka'); return true;">
 					<!-- Hidden Required Fields -->
 					<input type="hidden" name="project_name" value="Строй Контроль">
-					<input type="hidden" name="admin_email" value="aidynmodorov@yandex.ru">
+					<input type="hidden" name="admin_email" value="strcontrol@lp-seller.ru">
 					<input type="hidden" name="form_subject" value="Заявка с сайта Строй Контроль">
 					<!-- END Hidden Required Fields -->
 					<input type="hidden" name="Форма" value="Заказ пакета Премиум">
@@ -746,14 +780,33 @@
 					</div>
 					<div class="popup-block">
 						<label for="phone">Ваше телефон</label>
-						<input type="text" class="popup-block-input" name="Телефон" id="phone" required>
+						<input type="text" class="popup-block-input" name="Телефон" id="phone4" required>
 					</div>
 					<div class="popup-agree">
-						<input id="ham4" type="checkbox" name="toppings" value="ham" required>
+						<input id="ham4" type="checkbox" name="согласие" value="Да" checked required>
 						<label for="ham4">Согласен(а) с обработкой<br>персональных данных</label>
       		</div>
-					<button class="button">Отправить</button>
+					<button class="button" onsubmit="yaCounter48747695.reachGoal('zayavka'); return true;">Отправить</button>
 				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="policy">
+		<div class="policy-content">
+			<div class="policy-close">
+				<img src="img/icons/cancel.svg" alt="">
+			</div>
+			<div class="policy-title">
+				<h3>Соглашение об обработке персональных данных</h3>
+			</div>
+			<div class="policy-text">
+				<p>Данное соглашение об обработке персональных данных разработано в соответствии с федеральным законом РФ от 27 июля 2006 года № 152-ФЗ «О персональных данных» и законодательством Российской Федерации.</p>
+				<p>Все лица заполнившие сведения составляющие персональные данные на данном сайте, а также разместившие иную информацию обозначенными действиями подтверждают свое согласие на обработку персональных данных и их передачу оператору обработки персональных данных.</p>
+				<p>Под персональными данными Гражданина понимается нижеуказанная анкетная информация: общая информация (Ф.И.О), номер телефона, адрес почты email. Посетители сайта направляют свои персональные данные оператору в целях предоставления последним услуг по контролю строительства домов.</p>
+				<p>Гражданин, принимая настоящее Соглашение, выражают свою заинтересованность и полное согласие, что обработка их персональных данных может включать в себя следующие действия: сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, уничтожение.</p>
+				<p>Гражданин, принимая настоящее Соглашение, выражают свою заинтересованность и полное согласие с бессрочным хранением и обработкой предоставленной информации.</p>
+				<p>Гражданин гарантирует: информация, им предоставленная, является полной, точной и достоверной; при предоставлении информации не нарушается действующее законодательство Российской Федерации, законные права и интересы третьих лиц; вся предоставленная информация заполнена Гражданина в отношении себя лично.</p>
 			</div>
 		</div>
 	</div>
