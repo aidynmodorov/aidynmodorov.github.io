@@ -6,8 +6,9 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>Индивидуальное проектирование частных домов</title>
-	<meta name="description" content="">
+	<title>Проектирование частных домов в Астане | Заказать проект дома в thenable.kz</title>
+	<meta name="description" content="Заказать проект частного дома в студии дизайна Thenable. Разработаем индивидуальный архитектурный проект. Оставляйте заявку по телефону: +7 (702) 888 2017">
+	<meta name="keywords" content="проектирование домов, строительство домов в астане, проектирование коттеджей, архитектурная студия в астане">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -29,11 +30,44 @@
 <body>
 
 	<header class="main">
+		<div id="fixed-nav">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-2">
+						<div class="main-toggle">
+							<div class="main-toggle-img"></div>
+						</div>
+					</div>
+					<div class="col-10">
+						<div class="main-contacts">
+							<div class="main-contacts-phone">
+								<a href="tel:+77028882017">+7 (702) 888 2017</a>
+							</div>
+							<div class="main-contacts-email">
+								<a href="mailto:info@thenable.kz">info@thenable.kz</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="container main-wrap">
 			<div class="row justify-content-between align-items-center main-top">
 				<div class="col-2">
 					<div class="main-toggle">
-						<div class="main-toggle-img"></div>
+						<input id="hamburger" class="hamburger" type="checkbox"/>
+						<label class="hamburger" for="hamburger">
+						</label>
+						<div class="drawer-list">
+							<ul>
+								<li><a href="#">Главная</a></li>
+								<li><a href="#">Что мы сделали</a></li>
+								<li><a href="#">Предложения</a></li>
+								<li><a href="#">Преимущества</a></li>
+								<li><a href="#">Кейсы</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 				<div class="col-12 order-3 col-sm-4 order-sm-2 col-md-3 col-lg-2">
@@ -60,14 +94,14 @@
 				</div>
 				<div class="col-12">
 					<div class="main-scroll">
-						<a href="#"><span>Scroll</span></a>
+						<a href="#" class="scroll"><span>Scroll</span></a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</header>
 
-	<section class="home">
+	<section class="home" id="home">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -75,212 +109,198 @@
 						<h2>Какие дома мы проектируем и строим</h2>
 					</div>
 				</div>
-					<div class="tabs">
+				<div class="tabs">
 
-						<ul class="tabs__caption">
-							<li class="active"><img src="img/home/monolit.png" alt="Монолитные">Монолитные</li>
-							<li><img src="img/home/combined.png" alt="Сборные">Сборные</li>
-							<li><img src="img/home/wireframe.png" alt="Каркасные">Каркасные</li>
-							<li><img src="img/home/timber.png" alt="Дома из бруса">Дома из бруса</li>
-							<li><img src="img/home/modular.png" alt="Модульные">Модульные</li>
-						</ul>
+					<ul class="tabs__caption">
+						<li class="active"><img src="img/home/monolit.png" alt="Монолитные">Монолитные</li>
+						<li><img src="img/home/combined.png" alt="Сборные">Сборные</li>
+						<li><img src="img/home/wireframe.png" alt="Каркасные">Каркасные</li>
+						<li><img src="img/home/timber.png" alt="Дома из бруса">Дома из бруса</li>
+						<li><img src="img/home/modular.png" alt="Модульные">Модульные</li>
+					</ul>
 
-						<div class="tabs__content  active">
-							<div class="row">
-								<div class="col-md-6">
+					<div class="tabs__content  active">
+						<div class="row">
+							<div class="col-md-6">
 
-									<div class="pluses-wrap">
-										<div class="pluses-title">Плюсы</div>
-										<ul class="pluses">
-											<li>Строятся монолитные дома очень быстро, быстрее кирпичного</li>
-											<li>Надежность конструкции</li>
-											<li>Усадка здания незначительная и равномерная</li>
-											<li>Не имеют швов, что говорит об их прочности</li>
-											<li>Возможность возводить такие дома на проблемных, пучинистых почвах</li>
-											<li>В это время монолитный дом может быть, как самой разной формы, так и с самыми разными планировками</li>
-											<li>Полезная площадь больше</li>
-											<li>Долговечность 100–120 лет</li>
-											<li>Не страшны паводки и наводнения</li>
-										</ul>
-									</div>
-
-									<div class="minuses-wrap">
-										<div class="minuses-title">Минусы</div>
-										<ul class="minuses">
-											<li>Затраты средств и рабочей силы</li>
-											<li>Заливка бетона должна осуществляться непрерывно</li>
-											<li>Требуется применение специальной техники</li>
-										</ul>
-									</div>
-
+								<div class="pluses-wrap">
+									<div class="pluses-title">Плюсы</div>
+									<ul class="pluses">
+										<li>Строятся монолитные дома очень быстро, быстрее кирпичного</li>
+										<li>Надежность конструкции</li>
+										<li>Усадка здания незначительная и равномерная</li>
+										<li>Не имеют швов, что говорит об их прочности</li>
+										<li>Возможность возводить такие дома на проблемных, пучинистых почвах</li>
+										<li>В это время монолитный дом может быть, как самой разной формы, так и с самыми разными планировками</li>
+										<li>Полезная площадь больше</li>
+										<li>Долговечность 100–120 лет</li>
+										<li>Не страшны паводки и наводнения</li>
+									</ul>
 								</div>
 
-								<div class="col-md-6">
-									<div class="tab-img">
-										<img src="img/home/monolit_photo.jpg" alt="Монолитный">
-										<h3>Монолитный</h3>
-									</div>
+								<div class="minuses-wrap">
+									<div class="minuses-title">Минусы</div>
+									<ul class="minuses">
+										<li>Затраты средств и рабочей силы</li>
+										<li>Заливка бетона должна осуществляться непрерывно</li>
+										<li>Требуется применение специальной техники</li>
+									</ul>
+								</div>
+
+							</div>
+
+							<div class="col-md-6">
+								<div class="tab-img">
+									<img src="img/home/monolit_photo.jpg" alt="Монолитный">
+									<h3>Монолитный</h3>
 								</div>
 							</div>
 						</div>
+					</div>
 
-						<div class="tabs__content">
-							<div class="row">
-								<div class="col-md-6">
+					<div class="tabs__content">
+						<div class="row">
+							<div class="col-md-6">
 
-									<div class="pluses-wrap">
-										<div class="pluses-title">Плюсы</div>
-										<ul class="pluses">
-											<li>Строятся монолитные дома очень быстро, быстрее кирпичного</li>
-											<li>Надежность конструкции</li>
-											<li>Усадка здания незначительная и равномерная</li>
-											<li>Не имеют швов, что говорит об их прочности</li>
-											<li>Возможность возводить такие дома на проблемных, пучинистых почвах</li>
-											<li>В это время монолитный дом может быть, как самой разной формы, так и с самыми разными планировками</li>
-											<li>Полезная площадь больше</li>
-											<li>Долговечность 100–120 лет</li>
-											<li>Не страшны паводки и наводнения</li>
-										</ul>
-									</div>
-
-									<div class="minuses-wrap">
-										<div class="minuses-title">Минусы</div>
-										<ul class="minuses">
-											<li>Затраты средств и рабочей силы</li>
-											<li>Заливка бетона должна осуществляться непрерывно</li>
-											<li>Требуется применение специальной техники</li>
-										</ul>
-									</div>
-
+								<div class="pluses-wrap">
+									<div class="pluses-title">Плюсы</div>
+									<ul class="pluses">
+										<li>Они не боятся воздействия грибков и прочих микроорганизмов</li>
+										<li>Высокая теплопроводность каменных материалов</li>
+										<li>Стены «дышат»</li>
+									</ul>
 								</div>
-								
-								<div class="col-md-6">
-									<div class="tab-img">
-										<img src="img/home/monolit_photo.jpg" alt="Монолитный">
-										<h3>Сборный</h3>
-									</div>
+
+								<div class="minuses-wrap">
+									<div class="minuses-title">Минусы</div>
+									<ul class="minuses">
+										<li>Усадка дома</li>
+										<li>Требует мощного, хорошо заглубленного фундамента</li>
+										<li>Процесс кладки весьма сложен технологически</li>
+										<li>Ориентир планировок, на плиты перекрытия</li>
+									</ul>
+								</div>
+
+							</div>
+
+							<div class="col-md-6">
+								<div class="tab-img">
+									<img src="img/home/monolit_photo.jpg" alt="Монолитный">
+									<h3>Сборный</h3>
 								</div>
 							</div>
 						</div>
+					</div>
 
-						<div class="tabs__content">
-							<div class="row">
-								<div class="col-md-6">
+					<div class="tabs__content">
+						<div class="row">
+							<div class="col-md-6">
 
-									<div class="pluses-wrap">
-										<div class="pluses-title">Плюсы</div>
-										<ul class="pluses">
-											<li>Строятся монолитные дома очень быстро, быстрее кирпичного</li>
-											<li>Надежность конструкции</li>
-											<li>Усадка здания незначительная и равномерная</li>
-											<li>Не имеют швов, что говорит об их прочности</li>
-											<li>Возможность возводить такие дома на проблемных, пучинистых почвах</li>
-											<li>В это время монолитный дом может быть, как самой разной формы, так и с самыми разными планировками</li>
-											<li>Полезная площадь больше</li>
-											<li>Долговечность 100–120 лет</li>
-											<li>Не страшны паводки и наводнения</li>
-										</ul>
-									</div>
-
-									<div class="minuses-wrap">
-										<div class="minuses-title">Минусы</div>
-										<ul class="minuses">
-											<li>Затраты средств и рабочей силы</li>
-											<li>Заливка бетона должна осуществляться непрерывно</li>
-											<li>Требуется применение специальной техники</li>
-										</ul>
-									</div>
-
+								<div class="pluses-wrap">
+									<div class="pluses-title">Плюсы</div>
+									<ul class="pluses">
+										<li>Низкая стоимость</li>
+										<li>Время строительства каркасного дома в разы, а то и на порядок меньше</li>
+										<li>Простота строительства</li>
+										<li>Главная особенность домов из СИП панелей — их теплота</li>
+										<li>Облегченный фундамент</li>
+										<li>Каркасные дома не дают усадки</li>
+										<li>Высокая энергоэффективность</li>
+										<li>Возможность строить в зимний период</li>
+									</ul>
 								</div>
-								
-								<div class="col-md-6">
-									<div class="tab-img">
-										<img src="img/home/monolit_photo.jpg" alt="Монолитный">
-										<h3>Каркасный</h3>
-									</div>
+
+								<div class="minuses-wrap">
+									<div class="minuses-title">Минусы</div>
+									<ul class="minuses">
+										<li>Пожароопасность</li>
+										<li>Недолговечность</li>
+										<li>Низкий уровень шумоизоляции</li>
+										<li>Такие дома невозможно перепланировать после монтажа</li>
+									</ul>
+								</div>
+
+							</div>
+
+							<div class="col-md-6">
+								<div class="tab-img">
+									<img src="img/home/monolit_photo.jpg" alt="Монолитный">
+									<h3>Каркасный</h3>
 								</div>
 							</div>
 						</div>
+					</div>
 
-						<div class="tabs__content">
-							<div class="row">
-								<div class="col-md-6">
+					<div class="tabs__content">
+						<div class="row">
+							<div class="col-md-6">
 
-									<div class="pluses-wrap">
-										<div class="pluses-title">Плюсы</div>
-										<ul class="pluses">
-											<li>Строятся монолитные дома очень быстро, быстрее кирпичного</li>
-											<li>Надежность конструкции</li>
-											<li>Усадка здания незначительная и равномерная</li>
-											<li>Не имеют швов, что говорит об их прочности</li>
-											<li>Возможность возводить такие дома на проблемных, пучинистых почвах</li>
-											<li>В это время монолитный дом может быть, как самой разной формы, так и с самыми разными планировками</li>
-											<li>Полезная площадь больше</li>
-											<li>Долговечность 100–120 лет</li>
-											<li>Не страшны паводки и наводнения</li>
-										</ul>
-									</div>
-
-									<div class="minuses-wrap">
-										<div class="minuses-title">Минусы</div>
-										<ul class="minuses">
-											<li>Затраты средств и рабочей силы</li>
-											<li>Заливка бетона должна осуществляться непрерывно</li>
-											<li>Требуется применение специальной техники</li>
-										</ul>
-									</div>
-
+								<div class="pluses-wrap">
+									<div class="pluses-title">Плюсы</div>
+									<ul class="pluses">
+										<li>Прочность</li>
+										<li>Экологичность</li>
+									</ul>
 								</div>
-								
-								<div class="col-md-6">
-									<div class="tab-img">
-										<img src="img/home/monolit_photo.jpg" alt="Монолитный">
-										<h3>Из_бруса</h3>
-									</div>
+
+								<div class="minuses-wrap">
+									<div class="minuses-title">Минусы</div>
+									<ul class="minuses">
+										<li>Очередная просушка</li>
+										<li>Гниение</li>
+										<li>Дороговизна</li>
+									</ul>
+								</div>
+
+							</div>
+
+							<div class="col-md-6">
+								<div class="tab-img">
+									<img src="img/home/monolit_photo.jpg" alt="Монолитный">
+									<h3>Из_бруса</h3>
 								</div>
 							</div>
 						</div>
+					</div>
 
-						<div class="tabs__content">
-							<div class="row">
-								<div class="col-md-6">
+					<div class="tabs__content">
+						<div class="row">
+							<div class="col-md-6">
 
-									<div class="pluses-wrap">
-										<div class="pluses-title">Плюсы</div>
-										<ul class="pluses">
-											<li>Строятся монолитные дома очень быстро, быстрее кирпичного</li>
-											<li>Надежность конструкции</li>
-											<li>Усадка здания незначительная и равномерная</li>
-											<li>Не имеют швов, что говорит об их прочности</li>
-											<li>Возможность возводить такие дома на проблемных, пучинистых почвах</li>
-											<li>В это время монолитный дом может быть, как самой разной формы, так и с самыми разными планировками</li>
-											<li>Полезная площадь больше</li>
-											<li>Долговечность 100–120 лет</li>
-											<li>Не страшны паводки и наводнения</li>
-										</ul>
-									</div>
-
-									<div class="minuses-wrap">
-										<div class="minuses-title">Минусы</div>
-										<ul class="minuses">
-											<li>Затраты средств и рабочей силы</li>
-											<li>Заливка бетона должна осуществляться непрерывно</li>
-											<li>Требуется применение специальной техники</li>
-										</ul>
-									</div>
-
+								<div class="pluses-wrap">
+									<div class="pluses-title">Плюсы</div>
+									<ul class="pluses">
+										<li>Скорость возведения</li>
+										<li>Модульный частный дом можно возводить на любых типах грунта</li>
+										<li>Модульный каркасный дом, при желании, можно демонтировать и переустановить в другом месте</li>
+										<li>Если есть необходимость увеличить пространство дома, то достаточно лишь приобретая дополнительные модули для него</li>
+										<li>Низкая стоимость модулей и монтажа</li>
+									</ul>
 								</div>
-								
-								<div class="col-md-6">
-									<div class="tab-img">
-										<img src="img/home/monolit_photo.jpg" alt="Монолитный">
-										<h3>Модульный</h3>
-									</div>
+
+								<div class="minuses-wrap">
+									<div class="minuses-title">Минусы</div>
+									<ul class="minuses">
+										<li>При транспортировке дома требуется специализированная техника</li>
+										<li>Низкая теплоизоляция</li>
+										<li>Для монтажа необходим строительный кран, требующий много свободного места на стройплощадке</li>
+										<li>Меньшие теплоизоляционные показатели в сравнении с кирпичными домами (выход - утепление модульного дома)</li>
+										<li>Меньший средний срок эксплуатации. Несколько веков такой дом не простоит, но минимум 50 лет точно послужит</li>
+										<li>Сложности с транспортировкой быстровозводимых блоков в места с затрудненной доступностью (для перевозки модулей используют спецтрейлеры с широкими платформами)</li>
+									</ul>
+								</div>
+
+							</div>
+
+							<div class="col-md-6">
+								<div class="tab-img">
+									<img src="img/home/monolit_photo.jpg" alt="Монолитный">
+									<h3>Модульный</h3>
 								</div>
 							</div>
 						</div>
-
-					</div><!-- .tabs -->
+					</div>
+				</div><!-- табы -->
 			</div>
 		</div>
 	</section>
@@ -297,20 +317,1246 @@
 		</div>
 		<div class="works-wrap">
 			<div class="works-item works-item1" style="background-image: url(img/projects/1.jpg)">
+				<div class="works-item-caption">
+					<h5>Дизайн загородного дома</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat eligendi repellat, adipisci, error excepturi commodi.</p>
+					<div class="works-item-caption-icon"><img src="img/projects_icon.png" alt="">120 м<sup>2</sup></div>
+				</div>
 				<h4>Проект дома</h4>
 				<span><img src="img/projects_icon.png" alt="">120 м<sup>2</sup></span>
 			</div>
 			<div class="works-item works-item2" style="background-image: url(img/projects/2.jpg)">
-				<h4></h4>
+				<div class="works-item-caption">
+					<h5>Дизайн загородного дома</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat eligendi repellat, adipisci, error excepturi commodi.</p>
+					<div class="works-item-caption-icon"><img src="img/projects_icon.png" alt="">250 м<sup>2</sup></div>
+				</div>
+				<h4>Проект реконструкции коттеджа</h4>
+				<span><img src="img/projects_icon.png" alt="">205 м<sup>2</sup></span>
 			</div>
-			<div class="works-item works-item3" style="background-image: url(img/projects/4.jpg)"></div>
-			<div class="works-item works-item4" style="background-image: url(img/projects/3.jpg)">
+			<div class="works-item works-item3" style="background-image: url(img/projects/4.jpg)">
+				<div class="works-item-caption">
+					<h5>Дизайн загородного дома</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat eligendi repellat, adipisci, error excepturi commodi.</p>
+					<div class="works-item-caption-icon"><img src="img/projects_icon.png" alt="">120 м<sup>2</sup></div>
+				</div>
 				<h4>Проект дома</h4>
 				<span><img src="img/projects_icon.png" alt="">120 м<sup>2</sup></span>
 			</div>
-			<div class="works-item works-item5" style="background: #1f1f1f"></div>
+			<div class="works-item works-item4" style="background-image: url(img/projects/3.jpg)">
+				<div class="works-item-caption">
+					<h5>Дизайн загородного дома</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat eligendi repellat, adipisci, error excepturi commodi.</p>
+					<div class="works-item-caption-icon"><img src="img/projects_icon.png" alt="">120 м<sup>2</sup></div>
+				</div>
+				<h4>Проект дома</h4>
+				<span><img src="img/projects_icon.png" alt="">120 м<sup>2</sup></span>
+			</div>
+			<div class="works-item works-item5" style="background-image: url(img/projects/3.jpg)">
+				<div class="works-item-caption">
+					<h5>Дизайн загородного дома</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat eligendi repellat, adipisci, error excepturi commodi.</p>
+					<div class="works-item-caption-icon"><img src="img/projects_icon.png" alt="">120 м<sup>2</sup></div>
+				</div>
+				<h4>Проект дома</h4>
+				<span><img src="img/projects_icon.png" alt="">120 м<sup>2</sup></span>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row justify-content-center">
+				<a href="#" class="button works-btn callback-button">Смотреть больше</a>
+			</div>
 		</div>
 	</section>
+
+	<section class="projection">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12">
+					<div class="section-title projection-title">
+						<h2>Индивидуальное проектирование</h2>
+						<p>Разработка эскизного проекта по Вашим требованиям с рекомендациями экспертов, разработка нескольких концептов (планировок, фасадов, генплана) подходящих для Вашего участка. Что позволит Вам быть уверенным, что будущий дом – дом именно Вашей мечты.</p>
+					</div>
+				</div>
+				<div class="col-lg-8">
+					<h3>Оставьте заявку на расчет Вашего индивидуального проекта</h3>
+				</div>
+				<div class="col-lg-2">
+					<div class="projection-img">
+						<img src="img/calculation_img.png" alt="">
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="projection-calc">
+						<form action="#" method="POST">
+							<div class="row justify-content-center">
+								<div class="col-lg-10">
+									<div class="tabs_two">
+
+										<ul class="tabs__caption2">
+											<li class="active">1-й этаж</li>
+											<li>2-й этаж</li>
+										</ul>
+
+										<div class="tabs__content2  active">
+											<div class="calculation-wrap">
+
+												<div class="calculation-item">
+													<div class="calculation-item-check">
+														<label for="holl" class="label-cbx">
+															<input id="holl" type="checkbox" class="invisible" name="holl">
+															<div class="checkbox">
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Холл</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="zal" class="label-cbx">
+															<input id="zal" type="checkbox" class="invisible" name="Зал">
+															<div class="checkbox">
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																	<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Зал</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="gostinaya" class="label-cbx">
+															<input id="gostinaya" type="checkbox" class="invisible" name="Гостиная">
+															<div class="checkbox">
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																	<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Гостиная</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="cabinet" class="label-cbx">
+															<input id="cabinet" type="checkbox" class="invisible" name="Кабинет">
+															<div class="checkbox">
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Кабинет</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="kladovaya" class="label-cbx">
+															<input id="kladovaya" type="checkbox" class="invisible" name="Кладовая">
+															<div class="checkbox">
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Кладовая</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="garderob" class="label-cbx">
+															<input id="garderob" type="checkbox" class="invisible" name="Гардероб">
+															<div class="checkbox">
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Гардероб</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="biblioteka" class="label-cbx">
+															<input id="biblioteka" type="checkbox" class="invisible" name="Библиотека">
+															<div class="checkbox">
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Библиотека</span>
+														</label>
+													</div>
+												</div>
+
+												<div class="calculation-item">
+													<div class="calculation-item-check">
+														<label for="kitchen" class="label-cbx">
+															<input id="kitchen" type="checkbox" class="invisible" name="Кухня">
+															<div class="checkbox">
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Кухня</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="kitchen2" class="label-cbx">
+															<input id="kitchen2" type="checkbox" class="invisible" name="Кухня-столовая">
+															<div class="checkbox">
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Кухня-столовая</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="kitchen3" class="label-cbx">
+															<input id="kitchen3" type="checkbox" class="invisible" name="Столовая">
+															<div class="checkbox">
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Столовая</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="sauna" class="label-cbx">
+															<input id="sauna" type="checkbox" class="invisible" name="Сауна">
+															<div class="checkbox">
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Сауна</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="basseyn" class="label-cbx">
+															<input id="basseyn" type="checkbox" class="invisible" name="Бассейн">
+															<div class="checkbox">
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Бассейн</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="bilyardnaya" class="label-cbx">
+															<input id="bilyardnaya" type="checkbox" class="invisible" name="Бильярдная">
+															<div class="checkbox">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Бильярдная</span>
+														</label>
+													</div>
+												</div>
+
+												<div class="calculation-item">
+													<div class="calculation-item-check">
+														<label for="bedroom" class="label-cbx">
+															<input id="bedroom" type="checkbox" class="invisible" name="Спальня">
+															<div class="checkbox">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Спальня</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="bedroom2" class="label-cbx">
+															<input id="bedroom2" type="checkbox" class="invisible" name="Спальня с санузлом">
+															<div class="checkbox">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Спальня с санузлом</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="bedroom3" class="label-cbx">
+															<input id="bedroom3" type="checkbox" class="invisible" name="Спальня с санузлом и гардеробом">
+															<div class="checkbox">
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Спальня с санузлом и гардеробом</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="bedroom4" class="label-cbx">
+															<input id="bedroom4" type="checkbox" class="invisible" name="Спальня с гардеробом">
+															<div class="checkbox">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Спальня с гардеробом</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="sportzal" class="label-cbx">
+															<input id="sportzal" type="checkbox" class="invisible" name="Спортзал">
+															<div class="checkbox">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Спортзал</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="kinoteatr" class="label-cbx">
+															<input id="kinoteatr" type="checkbox" class="invisible" name="Кинотеатр">
+															<div class="checkbox">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Кинотеатр</span>
+														</label>
+													</div>
+												</div> 
+
+												<div class="calculation-item">
+													<div class="calculation-item-check">
+														<label for="sanusel" class="label-cbx">
+															<input id="sanusel" type="checkbox" class="invisible" name="Санузел">
+															<div class="checkbox">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Санузел</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="sanusel2" class="label-cbx">
+															<input id="sanusel2" type="checkbox" class="invisible" name="Санузел с душем">
+															<div class="checkbox">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Санузел с душем</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="sanusel3" class="label-cbx">
+															<input id="sanusel3" type="checkbox" class="invisible" name="Санузел с ванной">
+															<div class="checkbox">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Санузел с ванной</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="sanusel4" class="label-cbx">
+															<input id="sanusel4" type="checkbox" class="invisible" name="Санузел с постирочной">
+															<div class="checkbox">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Санузел с постирочной</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="garazh" class="label-cbx">
+															<input id="garazh" type="checkbox" class="invisible" name="Гараж на одну машину">
+															<div class="checkbox">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Гараж на одну машину</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="garazh2" class="label-cbx">
+															<input id="garazh2" type="checkbox" class="invisible" name="Гараж на две машины">
+															<div class="checkbox">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Гараж на две машины</span>
+														</label>
+													</div>
+												</div>
+
+											</div>
+										</div>
+
+										<div class="tabs__content2">
+											<div class="calculation-wrap">
+
+												<div class="calculation-item">
+													<div class="calculation-item-check">
+														<label for="holl2" class="label-cbx">
+															<input id="holl2" type="checkbox" class="invisible" name="Холл (2 этаж)">
+															<div class="checkbox">
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Холл</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="zal2" class="label-cbx">
+															<input id="zal2" type="checkbox" class="invisible" name="Зал(2 этаж)">
+															<div class="checkbox">
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																	<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Зал</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="gostinaya2" class="label-cbx">
+															<input id="gostinaya2" type="checkbox" class="invisible" name="Гостиная(2 этаж)">
+															<div class="checkbox">
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																	<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Гостиная</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="cabinet2" class="label-cbx">
+															<input id="cabinet2" type="checkbox" class="invisible" name="Кабинет(2 этаж)">
+															<div class="checkbox">
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Кабинет</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="kladovaya2" class="label-cbx">
+															<input id="kladovaya2" type="checkbox" class="invisible" name="Кладовая(2 этаж)">
+															<div class="checkbox">
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Кладовая</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="garderob2" class="label-cbx">
+															<input id="garderob2" type="checkbox" class="invisible" name="Гардероб(2 этаж)">
+															<div class="checkbox">
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Гардероб</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="biblioteka2" class="label-cbx">
+															<input id="biblioteka2" type="checkbox" class="invisible" name="Библиотека(2 этаж)">
+															<div class="checkbox">
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Библиотека</span>
+														</label>
+													</div>
+												</div>
+
+												<div class="calculation-item">
+													<div class="calculation-item-check">
+														<label for="kitchen5" class="label-cbx">
+															<input id="kitchen5" type="checkbox" class="invisible" name="Кухня(2 этаж)">
+															<div class="checkbox">
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Кухня</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="kitchen4" class="label-cbx">
+															<input id="kitchen4" type="checkbox" class="invisible" name="Кухня-столовая(2 этаж)">
+															<div class="checkbox">
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Кухня-столовая</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="kitchen6" class="label-cbx">
+															<input id="kitchen6" type="checkbox" class="invisible" name="Столовая(2 этаж)">
+															<div class="checkbox">
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Столовая</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="sauna2" class="label-cbx">
+															<input id="sauna2" type="checkbox" class="invisible" name="Сауна(2 этаж)">
+															<div class="checkbox">
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Сауна(2 этаж)</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="basseyn2" class="label-cbx">
+															<input id="basseyn2" type="checkbox" class="invisible" name="Бассейн(2 этаж)">
+															<div class="checkbox">
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Бассейн</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="bilyardnaya2" class="label-cbx">
+															<input id="bilyardnaya2" type="checkbox" class="invisible" name="Бильярдная(2 этаж)">
+															<div class="checkbox">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Бильярдная</span>
+														</label>
+													</div>
+												</div>
+
+												<div class="calculation-item">
+													<div class="calculation-item-check">
+														<label for="bedroom78" class="label-cbx">
+															<input id="bedroom78" type="checkbox" class="invisible" name="Спальня(2 этаж)">
+															<div class="checkbox">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Спальня</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="bedroom5" class="label-cbx">
+															<input id="bedroom5" type="checkbox" class="invisible" name="Спальня с санузлом(2 этаж)">
+															<div class="checkbox">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Спальня с санузлом</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="bedroom6" class="label-cbx">
+															<input id="bedroom6" type="checkbox" class="invisible" name="Спальня с санузлом и гардеробом(2 этаж)">
+															<div class="checkbox">
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Спальня с санузлом и гардеробом</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="bedroom8" class="label-cbx">
+															<input id="bedroom8" type="checkbox" class="invisible" name="Спальня с гардеробом(2 этаж)">
+															<div class="checkbox">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Спальня с гардеробом</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="sportzal2" class="label-cbx">
+															<input id="sportzal2" type="checkbox" class="invisible" name="Спортзал(2 этаж)">
+															<div class="checkbox">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Спортзал</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="kinoteatr2" class="label-cbx">
+															<input id="kinoteatr2" type="checkbox" class="invisible" name="Кинотеатр(2 этаж)">
+															<div class="checkbox">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Кинотеатр</span>
+														</label>
+													</div>
+												</div> 
+
+												<div class="calculation-item">
+													<div class="calculation-item-check">
+														<label for="sanusel9" class="label-cbx">
+															<input id="sanusel9" type="checkbox" class="invisible" name="Санузел(2 этаж)">
+															<div class="checkbox">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Санузел</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="sanusel5" class="label-cbx">
+															<input id="sanusel5" type="checkbox" class="invisible" name="Санузел с душем(2 этаж)">
+															<div class="checkbox">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Санузел с душем</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="sanusel7" class="label-cbx">
+															<input id="sanusel7" type="checkbox" class="invisible" name="Санузел с ванной(2 этаж)">
+															<div class="checkbox">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Санузел с ванной</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="sanusel8" class="label-cbx">
+															<input id="sanusel8" type="checkbox" class="invisible" name="Санузел с постирочной(2 этаж)">
+															<div class="checkbox">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Санузел с постирочной</span>
+														</label>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 projection-submit">
+									<div class="projection-form">
+										<!-- Hidden Required Fields -->
+										<input type="hidden" name="project_name" value="Выкуп велосипедов">
+										<input type="hidden" name="admin_email" value="vihrovilya96@gmail.com">
+										<input type="hidden" name="form_subject" value="Заявка с сайта продатьвелосипед.рф">
+										<!-- END Hidden Required Fields -->
+										<input type="hidden" name="Форма" value="Заявка с формы на главном экране">
+										<div class="projection-form-block">
+											<input type="text" class="projection-form-input" name="Имя" placeholder="Александр">
+										</div>
+										<div class="projection-form-block">
+											<label for="phone">Ваш телефон*</label>
+											<input type="text" class="projection-form-input" name="Телефон" id="phone" placeholder="+7 (900) 123-45 |" required>
+										</div>
+										<div class="projection-form-block">
+											<input type="text" class="projection-form-input" name="E-mail" id="email" placeholder="Ваша E-mail*" required>
+										</div>
+										<button type="submit" class="button projection-form-btn">Отправить</button>
+									</div>
+									<div class="projection-agree">
+										<p>Заполняя данную форму вы принимаете <a href="#">условия соглашения об использовании сайта</a>, в том числе в части обработки и использования персональных данных.</p>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- <div class="number">
+				<span class="minus">-</span>
+				<input type="text" value="1" name="Количество гостиной"/>
+				<span class="plus">+</span>
+			</div> -->
+
+	<section class="services">
+		<div class="container">
+			<div class="row services-item">
+				<div class="col-md-7">
+					<div class="services-item-img">
+						<img src="img/finished_project.png" alt="Готовый проект">
+						<div class="services-price"><p>от <span>100 000</span> тнг</p></div>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<div class="services-item-content">
+						<div class="section-title services-title">
+							<h2>Готовый проект</h2>
+						</div>
+						<p>Разработка эскизного проекта по Вашему найденному или нарисованному проекту (эскизу) или мы подберем сами, для получения разрешения на строительство, что позволит Вам быть уверенным в правильности будущего строения.</p>
+						<p>Есть вероятность несоответствия выбора проекта для Вашего участка. Мы Вам поможем выбрать проект.</p>
+						<a href="#" class="button services-btn callback-button">Получить проект</a>
+					</div>
+				</div>
+			</div>
+			<div class="row services-item__reverse">
+				<div class="col-md-5">
+					<div class="services-item-content">
+						<div class="section-title services-title">
+							<h2>Рабочий проект</h2>
+						</div>
+						<p>Разработка рабочего проекта который будет в себя включать расчеты конструкции, водоснабжения, канализации, отопления, вентиляции, электричества, расход земли, сметные расчеты это даст возможность быть уверенным в надежности конструкции и инженерных сетей, позволит Вам избежать лишних расходов.</p>
+						<div class="services-download">
+							<div class="services-download-img">
+								<img src="img/download.png" alt="">
+							</div>
+							<div class="services-download-text">
+								<a href="#"><h5>Смотреть пример рабочего проекта</h5><br>
+								<p>PDF-документ, 3 Мб</p></a>
+							</div>
+						</div>
+						<div class="services-download">
+							<div class="services-download-img">
+								<img src="img/download.png" alt="">
+							</div>
+							<div class="services-download-text">
+								<a href="#"><h5>Смотреть пример эскизного проекта</h5><br>
+								<p>PDF-документ, 3 Мб</p></a>
+							</div>
+						</div>
+						<a href="#" class="button services-btn callback-button">Заказать проект</a>
+					</div>
+				</div>
+				<div class="col-md-7">
+					<div class="services-item-img__right">
+						<img src="img/working_project.png" alt="Рабочий проект">
+						<div class="services-price__right"><p>от <span>100 000</span> тнг</p></div>
+					</div>
+				</div>
+			</div>
+			<div class="row services-item">
+				<div class="col-md-7">
+					<div class="services-item-img">
+						<img src="img/design.png" alt="Дизайн интерьера">
+						<div class="services-price"><p>от <span>100 000</span> тнг</p></div>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<div class="services-item-content">
+						<div class="section-title services-title">
+							<h2>Дизайн интерьера</h2>
+						</div>
+						<p>Дизайн интерьера – разработка дизайна, учитывая все потребности еще в момент проектирования для выдержки единого стиля. Придерживаясь гармоничности, как экстерьера, так и интерьера. Ведомость отделочных материалов позволит точно и безошибочно просчитать и закупить материалы.</p>
+						<a href="#" class="button services-btn callback-button">Заказать проект</a>
+					</div>
+				</div>
+			</div>
+			<div class="row services-item__reverse services-item-bottom">
+				<div class="col-md-5">
+					<div class="services-item-content">
+						<div class="section-title services-title">
+							<h2>Строительство дома</h2>
+						</div>
+						<p>Наша компания так же осуществляет строительство. Мы берем проекты «под ключ» с материалами и без них. Вы будете своевременно получать информация о текущих работах и результатах. В нашей команде высококвалифицированные бригады и прорабы, имеется необходимое специализированное оборудование. Так же будет предоставлен независимый тех надзор , работающий на Вашей стороне.</p>
+						<a href="#" class="button services-btn callback-button">Заказать проект</a>
+					</div>
+				</div>
+				<div class="col-md-7">
+					<div class="services-item-img__right">
+						<img src="img/building.png" alt="Рабочий проект">
+						<div class="services-price__right"><p>от <span>100 000</span> тнг</p></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="offers">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12">
+					<div class="section-title offers-title">
+						<h2>Комплексные предложения</h2>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div class="offers-item">
+						<h3>Эскизный проект + раздел рабочего проекта</h3>
+						<p>Разработка эскизного проекта Вашего будущего дома и какой-либо раздел рабочего проекта. Если нет необходимости в остальных разделах.</p>
+						<span>от 100 000 тнг</span>
+						<a href="#" class="button offers-btn callback-button">Подробнее</a>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div class="offers-item">
+						<h3>Эскизный проект + Рабочий проект</h3>
+						<p>Комплексная разработка эскизного и рабочего проекта Вашего дома по специальной цене</p>
+						<span>от 100 000 тнг</span>
+						<a href="#" class="button offers-btn callback-button">Подробнее</a>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div class="offers-item">
+						<h3>Полный пакет услуг "Под ключ"</h3>
+						<p>Вам не придется выяснять внештатные ситуации с множеством подрядчиков. Мы ответим за все.</p>
+						<span>от 100 000 тнг</span>
+						<a href="#" class="button offers-btn callback-button">Подробнее</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="services-two">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="section-title">
+						<h2>Дополнительные услуги</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center services-two-wrap">
+				<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+					<div class="services-two-item">
+						<img src="img/services/1.png" alt="Бани, сауны">
+						<p>Бани, сауны</p>
+					</div>
+				</div>
+				<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+					<div class="services-two-item">
+						<img src="img/services/2.png" alt="Летние кухни">
+						<p>Летние кухни</p>
+					</div>
+				</div>
+				<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+					<div class="services-two-item">
+						<img src="img/services/3.png" alt="Летние террасы">
+						<p>Летние террасы</p>
+					</div>
+				</div>
+				<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+					<div class="services-two-item">
+						<img src="img/services/4.png" alt="Гаражи">
+						<p>Гаражи</p>
+					</div>
+				</div>
+				<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+					<div class="services-two-item">
+						<img src="img/services/5.png" alt="Пристройки">
+						<p>Пристройки</p>
+					</div>
+				</div>
+				<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+					<div class="services-two-item">
+						<img src="img/services/6.png" alt="Бассейны">
+						<p>Бассейны</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="start">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<div class="section-title start-title">
+						<h2>С чего начинается проектирование дома</h2>
+					</div>
+				</div>
+				</div>
+				<div class="row start-wrap">
+				<div class="col-md-4 no-padding">
+					<div class="start-item">
+						<p>Ознакомление с конструктивными решениями домов (конструкции, фундаменты, стены, перекрытия, кровля, инженерные системы)</p>
+						<div class="start-number">01</div>
+					</div>
+				</div>
+				<div class="col-md-4 no-padding">
+					<div class="start-item">
+						<p>Опросный лист (анкета заполнения данных о будущих жильцах)</p>
+						<div class="start-number">02</div>
+					</div>
+				</div>
+				<div class="col-md-4 no-padding">
+					<div class="start-item">
+						<p>Разработка нескольких вариантов планировок (рекорд 10 вариантов)</p>
+						<div class="start-number">03</div>
+						<div class="circle"></div>
+					</div>
+				</div>
+				<div class="col-md-4 no-padding">
+					<div class="start-item">
+						<p>Ознакомление с фасадными материалами и примерами решения фасада</p>
+						<div class="start-number">04</div>
+					</div>
+				</div>
+				<div class="col-md-4 no-padding">
+					<div class="start-item start-item-five">
+						<p>Разработка фасадного решения (рекорд 13 вариантов)</p>
+						<div class="start-number">05</div>
+					</div>
+				</div>
+				<div class="col-md-4 no-padding">
+					<div class="start-item">
+						<p>Разработка генплана и хозяйственно-бытовую постройку</p>
+						<div class="start-number">06</div>
+						<div class="circle"></div>
+					</div>
+				</div>
+				<div class="col-md-4 no-padding">
+					<div class="start-item">
+						<p>Расчеты нагрузок и инженерных коммуникации</p>
+						<div class="start-number">07</div>
+					</div>
+				</div>
+				<div class="col-md-4 no-padding">
+					<div class="start-item">
+						<p>Дизайн интерьера</p>
+						<div class="start-number">08</div>
+					</div>
+				</div>
+				<div class="col-md-4 no-padding">
+					<div class="start-item">
+						<p>Строительство</p>
+						<div class="start-number">09</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="research">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-lg-8">
+					<div class="research-content">
+						<h3>Данные исследования показывают, что 80% домов, построенных без проекта, уже на 3-й год требуют капитального ремонта</h3>
+						<p>Появляются трещины в фундаменте и на стенах, плесень на цокольном этаже или в подвале, влажность и грибок на стропилах кровли, рушатся отделочные материалы фасадов.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="advantages">
+		<div class="container-fluid">
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+					<div class="section-title">
+						<h2>Преимущества индивидуального проектирования дома</h2>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="advantages-slider">
+						<div class="advantages-item">
+							<div class="row">
+								<div class="col-sm-6 no-padding">
+									<div class="advantages-item-img" style="background-image: url(img/advantages/1.jpg);"></div>
+								</div>
+								<div class="col-sm-6 no-padding">
+									<div class="advantages-item-text">
+										<p>В индивидуальном проекте площадь каждой комнаты планируется под ваши запросы. Также выбирается и взаимное расположение комнат - так, чтобы дом был комфортным для вашей семьи</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="advantages-item">
+							<div class="row">
+								<div class="col-sm-6 no-padding">
+									<div class="advantages-item-img" style="background-image: url(img/advantages/2.jpg);"></div>
+								</div>
+								<div class="col-sm-6 no-padding">
+									<div class="advantages-item-text">
+										<p>Планируются все дополнительные элементы: терраса, веранда, зимний сад, бассейн, гараж или мастерская. Выбирается внешний вид фасада, его стиль</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="advantages-item">
+							<div class="row">
+								<div class="col-sm-6 no-padding">
+									<div class="advantages-item-img" style="background-image: url(img/advantages/3.jpg);"></div>
+								</div>
+								<div class="col-sm-6 no-padding">
+									<div class="advantages-item-text">
+										<p>В индивидуальном проекте площадь каждой комнаты планируется под ваши запросы. Также выбирается и взаимное расположение комнат - так, чтобы дом был комфортным для вашей семьи</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="advantages-item">
+							<div class="row">
+								<div class="col-sm-6 no-padding">
+									<div class="advantages-item-img" style="background-image: url(img/advantages/4.jpg);"></div>
+								</div>
+								<div class="col-sm-6 no-padding">
+									<div class="advantages-item-text">
+										<p>Для дома выбирается оптимальное размещение, с учетом сторон света, подъездных путей и геометрии самого участка</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cases">
+		<div class="container-fluid">
+			<div class="row justify-content-center">
+				<div class="col-12">
+					<div class="section-title cases-title">
+						<h2>Кейсы</h2>
+					</div>
+				</div>
+				<div class="cases-slider">
+					<div class="cases-slider-item">
+						<div class="cases-overlay"></div>
+						<img src="img/cases/1.jpg" alt="">
+						<a href="#">Подробнее</a>
+					</div>
+					<div class="cases-slider-item">
+						<div class="cases-overlay"></div>
+						<img src="img/cases/1.jpg" alt="">
+						<a href="#">Подробнее</a>
+					</div>
+					<div class="cases-slider-item">
+						<div class="cases-overlay"></div>
+						<img src="img/cases/1.jpg" alt="">
+						<a href="#">Подробнее</a>
+					</div>
+					<div class="cases-slider-item">
+						<div class="cases-overlay"></div>
+						<img src="img/cases/1.jpg" alt="">
+						<a href="#">Подробнее</a>
+					</div>
+				</div>
+				<div class="col-lg-8">
+					<div class="cases-numbers">
+						<div class="cases-numbers-area">
+							<img src="img/blue_shadow.png" alt="">
+							1345
+							<small>м<sup>2</sup></small>
+							<div class="cases-numbers-text">общая<br>площадь</div>
+						</div>
+						<div class="cases-numbers-area cases-numbers-project">
+							6
+							<div class="cases-numbers-text">проектов<br>выполнено</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="callback">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6 col-lg-8 no-padding">
+					<div class="callback-content">
+						<div class="section-title callback-title">
+							<h2>Возможно у Вас остались вопросы?</h2>
+						</div>
+						<p>Вы можете задать их нам. Оставьте ваши контакты и мы свяжемся с Вами в ближайшее время.</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 no-padding">
+					<div class="callback-form">
+						<form action="#" method="POST">
+							<input type="hidden" name="project_name" value="Выкуп велосипедов">
+							<input type="hidden" name="admin_email" value="vihrovilya96@gmail.com">
+							<input type="hidden" name="form_subject" value="Заявка с сайта продатьвелосипед.рф">
+							<!-- END Hidden Required Fields -->
+							<input type="hidden" name="Форма" value="Заявка с формы на главном экране">
+							<div class="projection-form-block callback-form-block">
+								<input type="text" class="projection-form-input callback-form-input" name="Имя" placeholder="Александр">
+							</div>
+							<div class="projection-form-block callback-form-block">
+								<label for="phone1">Ваш телефон*</label>
+								<input type="text" class="projection-form-input callback-form-input" name="Телефон" id="phone1" placeholder="+7 (900) 123-45 |" required>
+							</div>
+							<div class="projection-form-block callback-form-block">
+								<input type="text" class="projection-form-input callback-form-input" name="E-mail" id="email" placeholder="Ваша E-mail*" required>
+							</div>
+							<button type="submit" class="button projection-form-btn callback-form-btn">Отправить</button>
+							<div class="projection-agree callback-agree">
+								<p>Заполняя данную форму вы принимаете <a href="#">условия соглашения об использовании сайта</a>, в том числе в части обработки и использования персональных данных.</p>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="section-title footer-title">
+						<h2>“Стройте не для себя, стройте для своих любимых”</h2>
+					</div>
+				</div>
+				<div class="footer-nav">
+					<div class="footer-nav-item">
+						<a href="#">Индивидуальный проект</a>
+					</div>	
+					<div class="footer-nav-item">
+						<a href="#">Готовый проект</a>
+					</div>
+					<div class="footer-nav-item">
+						<a href="#"><img src="img/logo.png" alt=""></a>
+					</div>
+					<div class="footer-nav-item">
+						<a href="#">Эскизный проект</a>
+					</div>
+					<div class="footer-nav-item">
+						<a href="#">Рабочий проект</a>
+					</div>
+				</div>
+				<div class="footer-contacts">
+					<div class="footer-contacts-item">
+						<p>Наши контакты</p>
+						<a href="tel:+77012088150">8 (701) 208-81-50</a>
+					</div>
+					<div class="footer-contacts-item">
+						<p>Электронная почта</p>
+						<a href="mailto:info@thenable.kz">info@thenable.kz</a>
+					</div>
+					<div class="footer-contacts-item">
+						<p>Адрес</p>
+						<span>Астана, улица 25, 8</span>
+					</div>
+					<div class="footer-contacts-item">
+						<p>Мы в соцсетях</p>
+						<div class="footer-social">
+							<a href="#" class="footer-social-vk"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								viewBox="0 0 511.962 511.962" style="enable-background:new 0 0 511.962 511.962;" xml:space="preserve">
+								<g>
+									<g>
+										<path d="M507.399,370.471c-1.376-2.304-9.888-20.8-50.848-58.816c-42.88-39.808-37.12-33.344,14.528-102.176
+										c31.456-41.92,44.032-67.52,40.096-78.464c-3.744-10.432-26.88-7.68-26.88-7.68l-76.928,0.448c0,0-5.696-0.768-9.952,1.76
+										c-4.128,2.496-6.784,8.256-6.784,8.256s-12.192,32.448-28.448,60.032c-34.272,58.208-48,61.28-53.6,57.664
+										c-13.024-8.416-9.76-33.856-9.76-51.904c0-56.416,8.544-79.936-16.672-86.016c-8.384-2.016-14.528-3.36-35.936-3.584
+										c-27.456-0.288-50.72,0.096-63.872,6.528c-8.768,4.288-15.52,13.856-11.392,14.4c5.088,0.672,16.608,3.104,22.72,11.424
+										c7.904,10.72,7.616,34.848,7.616,34.848s4.544,66.4-10.592,74.656c-10.4,5.664-24.64-5.888-55.2-58.72
+										c-15.648-27.04-27.488-56.96-27.488-56.96s-2.272-5.568-6.336-8.544c-4.928-3.616-11.84-4.768-11.84-4.768l-73.152,0.448
+										c0,0-10.976,0.32-15.008,5.088c-3.584,4.256-0.288,13.024-0.288,13.024s57.28,133.984,122.112,201.536
+										c59.488,61.92,127.008,57.856,127.008,57.856h30.592c0,0,9.248-1.024,13.952-6.112c4.352-4.672,4.192-13.44,4.192-13.44
+										s-0.608-41.056,18.464-47.104c18.784-5.952,42.912,39.68,68.48,57.248c19.328,13.28,34.016,10.368,34.016,10.368l68.384-0.96
+										C488.583,400.807,524.359,398.599,507.399,370.471z"/>
+									</g>
+								</g>
+							</svg></a>
+							<a href="#" class="footer-social-facebook"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								width="96.124px" height="96.123px" viewBox="0 0 96.124 96.123" style="enable-background:new 0 0 96.124 96.123;"
+								xml:space="preserve">
+								<g>
+									<path d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803
+									c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654
+									c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246
+									c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z"/>
+								</g>
+							</svg></a>
+							<a href="#" class="footer-social-instagram"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+								<g>
+									<g>
+										<path d="M352,0H160C71.648,0,0,71.648,0,160v192c0,88.352,71.648,160,160,160h192c88.352,0,160-71.648,160-160V160
+										C512,71.648,440.352,0,352,0z M464,352c0,61.76-50.24,112-112,112H160c-61.76,0-112-50.24-112-112V160C48,98.24,98.24,48,160,48
+										h192c61.76,0,112,50.24,112,112V352z"/>
+									</g>
+								</g>
+								<g>
+									<g>
+										<path d="M256,128c-70.688,0-128,57.312-128,128s57.312,128,128,128s128-57.312,128-128S326.688,128,256,128z M256,336
+										c-44.096,0-80-35.904-80-80c0-44.128,35.904-80,80-80s80,35.872,80,80C336,300.096,300.096,336,256,336z"/>
+									</g>
+								</g>
+								<g>
+									<g>
+										<circle cx="393.6" cy="118.4" r="17.056"/>
+									</g>
+								</g>
+							</svg></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Модальные окна -->
+	<div class="popup" id="callback">
+		<div class="popup-content">
+			<div class="popup-success">
+				<span>
+					<h5>Спасибо что выбрали нас</h5>
+					<p>Ваша заявка отправлена.</p>
+					<p>Наши менеджеры скоро с Вами свяжутся</p>
+				</span>
+			</div>
+			<div class="popup-close">
+				<img src="img/cancel.svg" alt="">
+			</div>
+			<div class="popup-title">
+				Заказать звонок
+			</div>
+			<div class="popup-subtitle">
+				Оставьте заявку и наш менеджер перезвонит вам в течении 10 минут
+			</div>
+			<div class="popup-form">
+				<form action="#" method="POST">
+						<!-- Hidden Required Fields -->
+										<input type="hidden" name="project_name" value="Выкуп велосипедов">
+										<input type="hidden" name="admin_email" value="vihrovilya96@gmail.com">
+										<input type="hidden" name="form_subject" value="Заявка с сайта продатьвелосипед.рф">
+										<!-- END Hidden Required Fields -->
+										<input type="hidden" name="Форма" value="Заявка с формы на главном экране">
+										<div class="popup-form-block">
+											<input type="text" class="projection-form-input popup-input" name="Имя" placeholder="Александр">
+										</div>
+										<div class="popup-form-block">
+											<label for="phone">Ваш телефон*</label>
+											<input type="text" class="projection-form-input popup-input" name="Телефон" id="phone" placeholder="+7 (900) 123-45 |" required>
+										</div>
+										<div class="popup-form-block">
+											<input type="text" class="projection-form-input popup-input" name="E-mail" id="email" placeholder="Ваша E-mail*" required>
+										</div>
+										<button type="submit" class="button projection-form-btn popup-btn">Отправить</button>
+									<div class="projection-agree">
+										<p>Заполняя данную форму вы принимаете <a href="#">условия соглашения об использовании сайта</a>, в том числе в части обработки и использования персональных данных.</p>
+									</div>
+						</form>
+				</form>
+			</div>
+		</div>
+	</div>
 
 	<script src="js/scripts.min.js"></script>
 
