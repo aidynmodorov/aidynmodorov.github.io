@@ -3,10 +3,6 @@ $(document).ready(function() {
   // $("#phone").mask("+7 (999) 999-9999");
   // $("#phone1").mask("+7 (999) 999-9999");
 
-  $('.scroll').click(function(){
-    $('html, body').animate({scrollTop:$('#home').position().top}, 1000);
-  });
-
   $(window).scroll(function() {
     if ($(this).scrollTop() > $(this). height()) {
       $('.main-top').addClass('active');
@@ -15,7 +11,29 @@ $(document).ready(function() {
     }
   });
 
-  $('.offers-item').equalHeights();
+  // var HeaderTop = $('.main-top').offset().top;
+
+  // $(window).scroll(function(){
+  //   if( $(window).scrollTop() > HeaderTop ) {
+  //     $('.main-top').css({position: 'fixed', top: '0px'});
+  //   } else {
+  //     $('.main-top').css({position: 'static'});
+  //   }
+  // });
+
+  $('.scroll').click(function(){
+    $('html, body').animate({scrollTop:$('#home').position().top}, 300);
+  });
+
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 1000
+  });
+
+  $('.menu a').click(function() {
+    $('input.hamburger').prop('checked', false);
+  });
+
+  $('.offers-item p').equalHeights();
 
 	$('ul.tabs__caption').on('click', 'li:not(.active)', function() {
 		$(this)
@@ -60,6 +78,66 @@ $(document).ready(function() {
         $input.val(parseInt($input.val()) + 1);
         $input.change();
         return false;
+    });
+
+    $('.open-popup-link').magnificPopup({
+      type:'inline',
+      midClick: true,
+      showCloseBtn: true,
+      fixedContentPos: true
+    });
+    $('.open-popup-link').click(function(){
+      $('.case-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<button type="button" class="slider-btn slider-btn-prev cases-btn"><img src="../img/left-arrow.svg" alt="Предыдущее" /></button>',
+        nextArrow: '<button type="button" class="slider-btn slider-btn-next cases-btn"><img src="../img/right-arrow.svg" alt="Следующее" /></button>'
+      });
+    });
+
+    $('.open-popup-link2').magnificPopup({
+      type:'inline',
+      midClick: true,
+      showCloseBtn: true,
+      fixedContentPos: true
+    });
+    $('.open-popup-link2').click(function(){
+      $('.case-slider2').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<button type="button" class="slider-btn slider-btn-prev cases-btn"><img src="../img/left-arrow.svg" alt="Предыдущее" /></button>',
+        nextArrow: '<button type="button" class="slider-btn slider-btn-next cases-btn"><img src="../img/right-arrow.svg" alt="Следующее" /></button>'
+      });
+    });
+
+    $('.open-popup-link3').magnificPopup({
+      type:'inline',
+      midClick: true,
+      showCloseBtn: true,
+      fixedContentPos: true
+    });
+    $('.open-popup-link3').click(function(){
+      $('.case-slider3').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<button type="button" class="slider-btn slider-btn-prev cases-btn"><img src="../img/left-arrow.svg" alt="Предыдущее" /></button>',
+        nextArrow: '<button type="button" class="slider-btn slider-btn-next cases-btn"><img src="../img/right-arrow.svg" alt="Следующее" /></button>'
+      });
+    });
+
+    $('.open-popup-link4').magnificPopup({
+      type:'inline',
+      midClick: true,
+      showCloseBtn: true,
+      fixedContentPos: true
+    });
+    $('.open-popup-link4').click(function(){
+      $('.case-slider4').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<button type="button" class="slider-btn slider-btn-prev cases-btn"><img src="../img/left-arrow.svg" alt="Предыдущее" /></button>',
+        nextArrow: '<button type="button" class="slider-btn slider-btn-next cases-btn"><img src="../img/right-arrow.svg" alt="Следующее" /></button>'
+      });
     });
 
    $('.advantages-slider').slick({

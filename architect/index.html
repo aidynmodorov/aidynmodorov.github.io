@@ -29,14 +29,26 @@
 
 <body>
 
-	<header class="main">
-		<div id="fixed-nav">
+	<header class="main" id="top">
+<!-- 		<div class="fixed-nav">
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-2">
 						<div class="main-toggle">
-							<div class="main-toggle-img"></div>
+						<input id="hamburger" class="hamburger" type="checkbox"/>
+						<label class="hamburger" for="hamburger">
+						</label>
+						<div class="drawer-list">
+							<ul class="menu">
+								<li><a href="#top">Главная</a></li>
+								<li><a href="#home">Что мы сделали</a></li>
+								<li><a href="#offers">Предложения</a></li>
+								<li><a href="#advantages">Преимущества</a></li>
+								<li><a href="#cases">Кейсы</a></li>
+								<li><a href="#contacts">Контакты</a></li>
+							</ul>
 						</div>
+					</div>
 					</div>
 					<div class="col-10">
 						<div class="main-contacts">
@@ -50,7 +62,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<div class="container main-wrap">
 			<div class="row justify-content-between align-items-center main-top">
 				<div class="col-2">
@@ -59,13 +71,13 @@
 						<label class="hamburger" for="hamburger">
 						</label>
 						<div class="drawer-list">
-							<ul>
-								<li><a href="#">Главная</a></li>
-								<li><a href="#">Что мы сделали</a></li>
-								<li><a href="#">Предложения</a></li>
-								<li><a href="#">Преимущества</a></li>
-								<li><a href="#">Кейсы</a></li>
-								<li><a href="#">Контакты</a></li>
+							<ul class="menu">
+								<li><a data-scroll href="#top">Главная</a></li>
+								<li><a data-scroll href="#home">Что мы сделали</a></li>
+								<li><a data-scroll href="#offers">Предложения</a></li>
+								<li><a data-scroll href="#advantages">Преимущества</a></li>
+								<li><a data-scroll href="#cases">Кейсы</a></li>
+								<li><a data-scroll href="#contacts">Контакты</a></li>
 							</ul>
 						</div>
 					</div>
@@ -101,6 +113,8 @@
 		</div>
 	</header>
 
+
+<!-- Какие дома мы проектируем и строим -->
 	<section class="home" id="home">
 		<div class="container">
 			<div class="row">
@@ -305,6 +319,7 @@
 		</div>
 	</section>
 
+<!-- Что мы сделали -->
 	<section class="works">
 		<div class="container">
 			<div class="row">
@@ -364,11 +379,13 @@
 		</div>
 		<div class="container">
 			<div class="row justify-content-center">
-				<a href="#" class="button works-btn callback-button">Смотреть больше</a>
+				<a href="" class="button works-btn callback-button">Смотреть больше</a>
 			</div>
 		</div>
 	</section>
 
+
+<!-- Индивидуальное проектирование -->
 	<section class="projection">
 		<div class="container">
 			<div class="row justify-content-center">
@@ -816,7 +833,7 @@
 																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
 																</svg>
 															</div>
-															<span>Сауна(2 этаж)</span>
+															<span>Сауна</span>
 														</label>
 													</div>
 													<div class="calculation-item-check">
@@ -972,14 +989,16 @@
 										<!-- END Hidden Required Fields -->
 										<input type="hidden" name="Форма" value="Заявка с формы на главном экране">
 										<div class="projection-form-block">
-											<input type="text" class="projection-form-input" name="Имя" placeholder="Александр">
+											<label for="name1" class="label">Ваше имя</label>
+											<input type="text" class="projection-form-input" id="name1" name="Имя" placeholder="Ваше имя">
 										</div>
 										<div class="projection-form-block">
-											<!-- <label for="phone">Ваш телефон*</label> -->
-											<input type="text" class="projection-form-input" name="Телефон" id="phone" placeholder="+7 (900) 123-45 |" required>
+											<label for="phone1">Ваш телефон*</label>
+											<input type="text" class="projection-form-input" name="Телефон" id="phone1" placeholder="Ваш телефон*" required>
 										</div>
 										<div class="projection-form-block">
-											<input type="text" class="projection-form-input" name="E-mail" id="email" placeholder="Ваша E-mail*" required>
+											<label for="email1">Ваш E-mail*</label>
+											<input type="text" class="projection-form-input" name="E-mail" id="email1" placeholder="Ваш E-mail*" required>
 										</div>
 										<button type="submit" class="button projection-form-btn">Отправить</button>
 									</div>
@@ -1001,6 +1020,8 @@
 				<span class="plus">+</span>
 			</div> -->
 
+
+<!-- Услуги -->
 	<section class="services">
 		<div class="container">
 			<div class="row services-item">
@@ -1017,7 +1038,7 @@
 						</div>
 						<p>Разработка эскизного проекта по Вашему найденному или нарисованному проекту (эскизу) или мы подберем сами, для получения разрешения на строительство, что позволит Вам быть уверенным в правильности будущего строения.</p>
 						<p>Есть вероятность несоответствия выбора проекта для Вашего участка. Мы Вам поможем выбрать проект.</p>
-						<a href="#" class="button services-btn callback-button">Получить проект</a>
+						<a href="" class="button services-btn callback-button">Получить проект</a>
 					</div>
 				</div>
 			</div>
@@ -1046,7 +1067,7 @@
 								<p>PDF-документ, 3 Мб</p></a>
 							</div>
 						</div>
-						<a href="#" class="button services-btn callback-button">Заказать проект</a>
+						<a href="" class="button services-btn callback-button">Заказать проект</a>
 					</div>
 				</div>
 				<div class="col-md-7">
@@ -1069,7 +1090,7 @@
 							<h2>Дизайн интерьера</h2>
 						</div>
 						<p>Дизайн интерьера – разработка дизайна, учитывая все потребности еще в момент проектирования для выдержки единого стиля. Придерживаясь гармоничности, как экстерьера, так и интерьера. Ведомость отделочных материалов позволит точно и безошибочно просчитать и закупить материалы.</p>
-						<a href="#" class="button services-btn callback-button">Заказать проект</a>
+						<a href="" class="button services-btn callback-button">Заказать проект</a>
 					</div>
 				</div>
 			</div>
@@ -1080,7 +1101,7 @@
 							<h2>Строительство дома</h2>
 						</div>
 						<p>Наша компания так же осуществляет строительство. Мы берем проекты «под ключ» с материалами и без них. Вы будете своевременно получать информация о текущих работах и результатах. В нашей команде высококвалифицированные бригады и прорабы, имеется необходимое специализированное оборудование. Так же будет предоставлен независимый тех надзор , работающий на Вашей стороне.</p>
-						<a href="#" class="button services-btn callback-button">Заказать проект</a>
+						<a href="" class="button services-btn callback-button">Заказать проект</a>
 					</div>
 				</div>
 				<div class="col-md-7">
@@ -1093,7 +1114,10 @@
 		</div>
 	</section>
 
-	<section class="offers">
+
+<!-- Комплексные предложения -->
+
+	<section class="offers" id="offers">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-12">
@@ -1106,7 +1130,7 @@
 						<h3>Эскизный проект + раздел рабочего проекта</h3>
 						<p>Разработка эскизного проекта Вашего будущего дома и какой-либо раздел рабочего проекта. Если нет необходимости в остальных разделах.</p>
 						<span>от 100 000 тнг</span>
-						<a href="#" class="button offers-btn callback-button">Подробнее</a>
+						<a href="" class="button offers-btn callback-button">Подробнее</a>
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-4">
@@ -1114,7 +1138,7 @@
 						<h3>Эскизный проект + Рабочий проект</h3>
 						<p>Комплексная разработка эскизного и рабочего проекта Вашего дома по специальной цене</p>
 						<span>от 100 000 тнг</span>
-						<a href="#" class="button offers-btn callback-button">Подробнее</a>
+						<a href="" class="button offers-btn callback-button">Подробнее</a>
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-4">
@@ -1122,13 +1146,16 @@
 						<h3>Полный пакет услуг "Под ключ"</h3>
 						<p>Вам не придется выяснять внештатные ситуации с множеством подрядчиков. Мы ответим за все.</p>
 						<span>от 100 000 тнг</span>
-						<a href="#" class="button offers-btn callback-button">Подробнее</a>
+						<a href="" class="button offers-btn callback-button">Подробнее</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
+
+
+<!-- Дополнительные услуги -->
 	<section class="services-two">
 		<div class="container">
 			<div class="row">
@@ -1179,6 +1206,8 @@
 		</div>
 	</section>
 
+
+<!-- С чего начинается проектирование дома -->
 	<section class="start">
 		<div class="container-fluid">
 			<div class="row">
@@ -1249,6 +1278,9 @@
 		</div>
 	</section>
 
+
+<!-- Данные исследований показывают... -->
+
 	<section class="research">
 		<div class="container">
 			<div class="row">
@@ -1262,7 +1294,10 @@
 		</div>
 	</section>
 
-	<section class="advantages">
+
+<!-- Преимущества -->
+
+	<section class="advantages" id="advantages">
 		<div class="container-fluid">
 			<div class="row justify-content-center">
 				<div class="col-lg-8">
@@ -1326,7 +1361,10 @@
 		</div>
 	</section>
 
-	<section class="cases">
+
+<!-- Кейсы -->
+
+	<section class="cases" id="cases">
 		<div class="container-fluid">
 			<div class="row justify-content-center">
 				<div class="col-12">
@@ -1338,22 +1376,22 @@
 					<div class="cases-slider-item">
 						<div class="cases-overlay"></div>
 						<img src="img/cases/1.jpg" alt="">
-						<a href="#">Подробнее</a>
+						<a href="mobile-friendly-page.html" data-mfp-src="#cases-popup" class="open-popup-link">Подробнее</a>
 					</div>
 					<div class="cases-slider-item">
 						<div class="cases-overlay"></div>
 						<img src="img/cases/1.jpg" alt="">
-						<a href="#">Подробнее</a>
+						<a href="#cases-popup2" class="open-popup-link2">Подробнее</a>
 					</div>
 					<div class="cases-slider-item">
 						<div class="cases-overlay"></div>
 						<img src="img/cases/1.jpg" alt="">
-						<a href="#">Подробнее</a>
+						<a href="#cases-popup3" class="open-popup-link3">Подробнее</a>
 					</div>
 					<div class="cases-slider-item">
 						<div class="cases-overlay"></div>
 						<img src="img/cases/1.jpg" alt="">
-						<a href="#">Подробнее</a>
+						<a href="#cases-popup4" class="open-popup-link4">Подробнее</a>
 					</div>
 				</div>
 				<div class="col-lg-8">
@@ -1373,6 +1411,9 @@
 			</div>
 		</div>
 	</section>
+
+
+<!-- Задать вопрос -->
 
 	<section class="callback">
 		<div class="container-fluid">
@@ -1394,14 +1435,14 @@
 							<!-- END Hidden Required Fields -->
 							<input type="hidden" name="Форма" value="Заявка с формы на главном экране">
 							<div class="projection-form-block callback-form-block">
-								<input type="text" class="projection-form-input callback-form-input" name="Имя" placeholder="Александр">
+								<input type="text" class="projection-form-input callback-form-input" name="Имя" placeholder="Ваше имя">
 							</div>
 							<div class="projection-form-block callback-form-block">
 								<!-- <label for="phone1">Ваш телефон*</label> -->
-								<input type="text" class="projection-form-input callback-form-input" name="Телефон" id="phone1" placeholder="+7 (900) 123-45 |" required>
+								<input type="text" class="projection-form-input callback-form-input" name="Телефон" id="phone1" placeholder="Ваш телефон*" required>
 							</div>
 							<div class="projection-form-block callback-form-block">
-								<input type="text" class="projection-form-input callback-form-input" name="E-mail" id="email" placeholder="Ваша E-mail*" required>
+								<input type="text" class="projection-form-input callback-form-input" name="E-mail" id="email" placeholder="Ваш E-mail*" required>
 							</div>
 							<button type="submit" class="button projection-form-btn callback-form-btn">Отправить</button>
 							<div class="projection-agree callback-agree">
@@ -1414,7 +1455,10 @@
 		</div>
 	</section>
 
-	<footer class="footer">
+
+<!-- Футер -->
+
+	<footer class="footer" id="contacts">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -1511,7 +1555,9 @@
 		</div>
 	</footer>
 
-	<!-- Модальные окна -->
+
+<!-- Модальные окна -->
+
 	<div class="popup" id="callback">
 		<div class="popup-content">
 			<div class="popup-success">
@@ -1532,29 +1578,64 @@
 			</div>
 			<div class="popup-form">
 				<form action="#" method="POST">
-						<!-- Hidden Required Fields -->
-										<input type="hidden" name="project_name" value="Выкуп велосипедов">
-										<input type="hidden" name="admin_email" value="vihrovilya96@gmail.com">
-										<input type="hidden" name="form_subject" value="Заявка с сайта продатьвелосипед.рф">
-										<!-- END Hidden Required Fields -->
-										<input type="hidden" name="Форма" value="Заявка с формы на главном экране">
-										<div class="popup-form-block">
-											<input type="text" class="projection-form-input popup-input" name="Имя" placeholder="Александр">
-										</div>
-										<div class="popup-form-block">
-											<!-- <label for="phone">Ваш телефон*</label> -->
-											<input type="text" class="projection-form-input popup-input" name="Телефон" id="phone" placeholder="+7 (900) 123-45 |" required>
-										</div>
-										<div class="popup-form-block">
-											<input type="text" class="projection-form-input popup-input" name="E-mail" id="email" placeholder="Ваша E-mail*" required>
-										</div>
-										<button type="submit" class="button projection-form-btn popup-btn">Отправить</button>
-									<div class="projection-agree">
-										<p>Заполняя данную форму вы принимаете <a href="#">условия соглашения об использовании сайта</a>, в том числе в части обработки и использования персональных данных.</p>
-									</div>
-						</form>
+					<!-- Hidden Required Fields -->
+					<input type="hidden" name="project_name" value="Выкуп велосипедов">
+					<input type="hidden" name="admin_email" value="vihrovilya96@gmail.com">
+					<input type="hidden" name="form_subject" value="Заявка с сайта продатьвелосипед.рф">
+					<!-- END Hidden Required Fields -->
+					<input type="hidden" name="Форма" value="Заявка с формы на главном экране">
+					<div class="popup-form-block">
+						<label for="name">Ваше имя</label>
+						<input type="text" class="projection-form-input popup-input" id="name" name="Имя" placeholder="Ваше имя">
+					</div>
+					<div class="popup-form-block">
+						<label for="phone">Ваш телефон*</label>
+						<input type="text" class="projection-form-input popup-input" name="Телефон" id="phone" placeholder="Ваш телефон*" required>
+					</div>
+					<div class="popup-form-block">
+						<label for="email">Ваш Email</label>
+						<input type="text" class="projection-form-input popup-input" name="E-mail" id="email" placeholder="Ваш E-mail*" required>
+					</div>
+					<button type="submit" class="button projection-form-btn popup-btn">Отправить</button>
+					<div class="projection-agree">
+						<p>Заполняя данную форму вы принимаете <a href="#">условия соглашения об использовании сайта</a>, в том числе в части обработки и использования персональных данных.</p>
+					</div>
 				</form>
 			</div>
+		</div>
+	</div>
+
+<!-- Всплывающий слайдер Кейсы -->
+
+	<div id="cases-popup" class="white-popup mfp-hide">
+		<div class="case-slider">
+				<div class="case-slider-item"><img src="img/cases/1.jpg" alt=""></div>
+				<div class="case-slider-item"><img src="img/cases/1.jpg" alt=""></div>
+				<div class="case-slider-item"><img src="img/cases/1.jpg" alt=""></div>
+		</div>
+	</div>
+
+	<div id="cases-popup2" class="white-popup mfp-hide">
+		<div class="case-slider2">
+				<div class="case-slider-item"><img src="img/cases/2.jpg" alt=""></div>
+				<div class="case-slider-item"><img src="img/cases/2.jpg" alt=""></div>
+				<div class="case-slider-item"><img src="img/cases/2.jpg" alt=""></div>
+		</div>
+	</div>
+
+	<div id="cases-popup3" class="white-popup mfp-hide">
+		<div class="case-slider3">
+				<div class="case-slider-item"><img src="img/cases/3.jpg" alt=""></div>
+				<div class="case-slider-item"><img src="img/cases/3.jpg" alt=""></div>
+				<div class="case-slider-item"><img src="img/cases/3.jpg" alt=""></div>
+		</div>
+	</div>
+
+	<div id="cases-popup4" class="white-popup mfp-hide">
+		<div class="case-slider4">
+				<div class="case-slider-item"><img src="img/cases/4.jpg" alt=""></div>
+				<div class="case-slider-item"><img src="img/cases/4.jpg" alt=""></div>
+				<div class="case-slider-item"><img src="img/cases/4.jpg" alt=""></div>
 		</div>
 	</div>
 
