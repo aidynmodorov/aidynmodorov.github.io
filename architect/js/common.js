@@ -1,7 +1,11 @@
 $(document).ready(function() {
 
-  // $("#phone").mask("+7 (999) 999-9999");
-  // $("#phone1").mask("+7 (999) 999-9999");
+  $("#phone").mask("+7 (999) 999-9999");
+  $("#phone1").mask("+7 (999) 999-9999");
+  $("#phone2").mask("+7 (999) 999-9999");
+  $("#phone3").mask("+7 (999) 999-9999");
+  $("#phone4").mask("+7 (999) 999-9999");
+  $("#phone5").mask("+7 (999) 999-9999");
 
   $(window).scroll(function() {
     if ($(this).scrollTop() > $(this). height()) {
@@ -11,29 +15,23 @@ $(document).ready(function() {
     }
   });
 
-  // var HeaderTop = $('.main-top').offset().top;
-
-  // $(window).scroll(function(){
-  //   if( $(window).scrollTop() > HeaderTop ) {
-  //     $('.main-top').css({position: 'fixed', top: '0px'});
-  //   } else {
-  //     $('.main-top').css({position: 'static'});
-  //   }
-  // });
-
-  $('.scroll').click(function(){
-    $('html, body').animate({scrollTop:$('#home').position().top}, 300);
-  });
-
   var scroll = new SmoothScroll('a[href*="#"]', {
-    speed: 1000
+    speed: 700
   });
 
   $('.menu a').click(function() {
     $('input.hamburger').prop('checked', false);
+    $('input.hamburger').removeAttr('checked');
   });
 
   $('.offers-item p').equalHeights();
+
+  function showOrHide(room, counter) {
+    room = document.getElementById(room);
+    counter = document.getElementById(counter);
+    if (room.checked) counter.style.display = 'block';
+    else counter.style.display = 'none';
+  }
 
 	$('ul.tabs__caption').on('click', 'li:not(.active)', function() {
 		$(this)
@@ -50,6 +48,16 @@ $(document).ready(function() {
   $('.callback-button').on('click', function(event) {
     event.preventDefault();
     $('#callback').fadeIn();
+  });
+
+  $('.services-two-item').on('click', function(event) {
+    event.preventDefault();
+    $('#callback').fadeIn();
+  });
+
+   $('.order-btn').on('click', function(event) {
+    event.preventDefault();
+    $('#order').fadeIn();
   });
 
   $(document).mouseup(function (e){
@@ -84,7 +92,9 @@ $(document).ready(function() {
       type:'inline',
       midClick: true,
       showCloseBtn: true,
-      fixedContentPos: true
+      fixedContentPos: true,
+      removalDelay: 300,
+      mainClass: 'mfp-fade'
     });
     $('.open-popup-link').click(function(){
       $('.case-slider').slick({
@@ -99,7 +109,9 @@ $(document).ready(function() {
       type:'inline',
       midClick: true,
       showCloseBtn: true,
-      fixedContentPos: true
+      fixedContentPos: true,
+      removalDelay: 300,
+      mainClass: 'mfp-fade'
     });
     $('.open-popup-link2').click(function(){
       $('.case-slider2').slick({
@@ -114,7 +126,9 @@ $(document).ready(function() {
       type:'inline',
       midClick: true,
       showCloseBtn: true,
-      fixedContentPos: true
+      fixedContentPos: true,
+      removalDelay: 300,
+      mainClass: 'mfp-fade'
     });
     $('.open-popup-link3').click(function(){
       $('.case-slider3').slick({
@@ -129,7 +143,9 @@ $(document).ready(function() {
       type:'inline',
       midClick: true,
       showCloseBtn: true,
-      fixedContentPos: true
+      fixedContentPos: true,
+      removalDelay: 300,
+      mainClass: 'mfp-fade'
     });
     $('.open-popup-link4').click(function(){
       $('.case-slider4').slick({
@@ -187,5 +203,27 @@ $(document).ready(function() {
       }
     ]
    });
+
+    //E-mail Ajax Send
+  $("form").submit(function() { //Change
+    var th = $(this);
+    $.ajax({
+      type: "POST",
+      url: "mail.php", //Change
+      data: th.serialize()
+    }).done(function() {
+        $('.popup-content').find('.popup-success').addClass('active').css('display', 'flex').hide().fadeIn();
+        $('.projection-submit').find('.popup-success').addClass('active').css('display', 'flex').hide().fadeIn();
+        $('.callback-form').find('.popup-success').addClass('active').css('display', 'flex').hide().fadeIn();
+      setTimeout(function() {
+        $('.popup-content').find('.popup-success').removeClass('active').fadeOut();
+        $('.projection-submit').find('.popup-success').removeClass('active').fadeOut();
+        $('.callback-form').find('.popup-success').removeClass('active').fadeOut();
+        $('.popup').fadeOut();
+        th.trigger("reset");
+      }, 3000);
+    });
+    return false;
+  });
 
 });

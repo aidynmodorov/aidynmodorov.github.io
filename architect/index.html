@@ -30,39 +30,6 @@
 <body>
 
 	<header class="main" id="top">
-<!-- 		<div class="fixed-nav">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-2">
-						<div class="main-toggle">
-						<input id="hamburger" class="hamburger" type="checkbox"/>
-						<label class="hamburger" for="hamburger">
-						</label>
-						<div class="drawer-list">
-							<ul class="menu">
-								<li><a href="#top">Главная</a></li>
-								<li><a href="#home">Что мы сделали</a></li>
-								<li><a href="#offers">Предложения</a></li>
-								<li><a href="#advantages">Преимущества</a></li>
-								<li><a href="#cases">Кейсы</a></li>
-								<li><a href="#contacts">Контакты</a></li>
-							</ul>
-						</div>
-					</div>
-					</div>
-					<div class="col-10">
-						<div class="main-contacts">
-							<div class="main-contacts-phone">
-								<a href="tel:+77028882017">+7 (702) 888 2017</a>
-							</div>
-							<div class="main-contacts-email">
-								<a href="mailto:info@thenable.kz">info@thenable.kz</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
 		<div class="container main-wrap">
 			<div class="row justify-content-between align-items-center main-top">
 				<div class="col-2">
@@ -73,7 +40,7 @@
 						<div class="drawer-list">
 							<ul class="menu">
 								<li><a data-scroll href="#top">Главная</a></li>
-								<li><a data-scroll href="#home">Что мы сделали</a></li>
+								<li><a data-scroll href="#works">Что мы сделали</a></li>
 								<li><a data-scroll href="#offers">Предложения</a></li>
 								<li><a data-scroll href="#advantages">Преимущества</a></li>
 								<li><a data-scroll href="#cases">Кейсы</a></li>
@@ -93,7 +60,7 @@
 							<a href="tel:+77028882017">+7 (702) 888 2017</a>
 						</div>
 						<div class="main-contacts-email">
-							<a href="mailto:info@thenable.kz">info@thenable.kz</a>
+							<a data-scroll href="mailto:info@thenable.kz">info@thenable.kz</a>
 						</div>
 					</div>
 				</div>
@@ -106,7 +73,7 @@
 				</div>
 				<div class="col-12">
 					<div class="main-scroll">
-						<a href="#" class="scroll"><span>Scroll</span></a>
+						<a href="#home" class="scroll"><span>Scroll</span></a>
 					</div>
 				</div>
 			</div>
@@ -199,7 +166,7 @@
 
 							<div class="col-md-6">
 								<div class="tab-img">
-									<img src="img/home/monolit_photo.jpg" alt="Монолитный">
+									<img src="img/home/combined.jpg" alt="Сборный">
 									<h3>Сборный</h3>
 								</div>
 							</div>
@@ -238,7 +205,7 @@
 
 							<div class="col-md-6">
 								<div class="tab-img">
-									<img src="img/home/monolit_photo.jpg" alt="Монолитный">
+									<img src="img/home/wireframe.jpg" alt="Каркасный">
 									<h3>Каркасный</h3>
 								</div>
 							</div>
@@ -270,7 +237,7 @@
 
 							<div class="col-md-6">
 								<div class="tab-img">
-									<img src="img/home/monolit_photo.jpg" alt="Монолитный">
+									<img src="img/home/timbler.jpg" alt="Дома из бруса">
 									<h3>Из_бруса</h3>
 								</div>
 							</div>
@@ -308,7 +275,7 @@
 
 							<div class="col-md-6">
 								<div class="tab-img">
-									<img src="img/home/monolit_photo.jpg" alt="Монолитный">
+									<img src="img/home/modular.jpg" alt="Модульный">
 									<h3>Модульный</h3>
 								</div>
 							</div>
@@ -320,7 +287,7 @@
 	</section>
 
 <!-- Что мы сделали -->
-	<section class="works">
+	<section class="works" id="works">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -420,8 +387,8 @@
 
 												<div class="calculation-item">
 													<div class="calculation-item-check">
-														<label for="holl" class="label-cbx">
-															<input id="holl" type="checkbox" class="invisible" name="holl">
+														<label for="room1" class="label-cbx">
+															<input id="room1" type="checkbox" class="invisible" name="Холл" onchange="showOrHide('room1', 'counter1');">
 															<div class="checkbox">
 																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
@@ -429,10 +396,15 @@
 															</div>
 															<span>Холл</span>
 														</label>
+														<!-- <div class="number" id="counter1">
+															<span class="minus">-</span>
+															<input type="text" value="1" name="Количество холла"/>
+															<span class="plus">+</span>
+														</div> -->
 													</div>
 													<div class="calculation-item-check">
-														<label for="zal" class="label-cbx">
-															<input id="zal" type="checkbox" class="invisible" name="Зал">
+														<label for="room2" class="label-cbx">
+															<input id="room2" type="checkbox" class="invisible" name="Зал">
 															<div class="checkbox">
 																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																	<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
@@ -440,6 +412,11 @@
 															</div>
 															<span>Зал</span>
 														</label>
+														<!-- <div class="number" id="counter2">
+															<span class="minus">-</span>
+															<input type="text" value="" name="Количество залов"/>
+															<span class="plus">+</span>
+														</div> -->
 													</div>
 													<div class="calculation-item-check">
 														<label for="gostinaya" class="label-cbx">
@@ -981,29 +958,37 @@
 									</div>
 								</div>
 								<div class="col-12 projection-submit">
+									<div class="popup-success">
+										<span>
+											<h5>Спасибо!</h5>
+											<p>Ваша заявка отправлена.</p>
+											<p>Наши менеджеры скоро с Вами свяжутся</p>
+										</span>
+									</div>
 									<div class="projection-form">
 										<!-- Hidden Required Fields -->
-										<input type="hidden" name="project_name" value="Выкуп велосипедов">
-										<input type="hidden" name="admin_email" value="vihrovilya96@gmail.com">
-										<input type="hidden" name="form_subject" value="Заявка с сайта продатьвелосипед.рф">
+										<input type="hidden" name="project_name" value="Индивидуальная проектировка домов">
+										<input type="hidden" name="admin_email" value="aidynmodorov@gmail.com">
+										<input type="hidden" name="form_subject" value="Заявка с сайта thenable.kz">
 										<!-- END Hidden Required Fields -->
-										<input type="hidden" name="Форма" value="Заявка с формы на главном экране">
+										<input type="hidden" name="Форма" value="Заявка с формы расчета индивидуального проекта">
 										<div class="projection-form-block">
-											<label for="name1" class="label">Ваше имя</label>
-											<input type="text" class="projection-form-input" id="name1" name="Имя" placeholder="Ваше имя">
+											<input type="text" class="projection-form-input" id="name1" name="Имя">
+											<span class="floating-label">Ваше имя</span>
 										</div>
 										<div class="projection-form-block">
-											<label for="phone1">Ваш телефон*</label>
-											<input type="text" class="projection-form-input" name="Телефон" id="phone1" placeholder="Ваш телефон*" required>
+											<!-- <label for="phone">Ваш телефон*</label> -->
+											<input type="text" class="projection-form-input" name="Телефон" id="phone" required>
+											<span class="floating-label">Ваш телефон*</span>
 										</div>
 										<div class="projection-form-block">
-											<label for="email1">Ваш E-mail*</label>
-											<input type="text" class="projection-form-input" name="E-mail" id="email1" placeholder="Ваш E-mail*" required>
+											<input type="text" class="projection-form-input" name="E-mail" id="email1" required>
+											<span class="floating-label">Ваш E-mail*</span>
 										</div>
 										<button type="submit" class="button projection-form-btn">Отправить</button>
 									</div>
 									<div class="projection-agree">
-										<p>Заполняя данную форму вы принимаете <a href="#">условия соглашения об использовании сайта</a>, в том числе в части обработки и использования персональных данных.</p>
+										<p>Заполняя данную форму вы принимаете <a href="policy.html" target="_blank">условия соглашения об использовании сайта</a>, в том числе в части обработки и использования персональных данных.</p>
 									</div>
 								</div>
 							</div>
@@ -1014,17 +999,10 @@
 		</div>
 	</section>
 
-	<!-- <div class="number">
-				<span class="minus">-</span>
-				<input type="text" value="1" name="Количество гостиной"/>
-				<span class="plus">+</span>
-			</div> -->
-
-
 <!-- Услуги -->
 	<section class="services">
 		<div class="container">
-			<div class="row services-item">
+			<div class="row services-item services-item1">
 				<div class="col-md-7">
 					<div class="services-item-img">
 						<img src="img/finished_project.png" alt="Готовый проект">
@@ -1038,11 +1016,11 @@
 						</div>
 						<p>Разработка эскизного проекта по Вашему найденному или нарисованному проекту (эскизу) или мы подберем сами, для получения разрешения на строительство, что позволит Вам быть уверенным в правильности будущего строения.</p>
 						<p>Есть вероятность несоответствия выбора проекта для Вашего участка. Мы Вам поможем выбрать проект.</p>
-						<a href="" class="button services-btn callback-button">Получить проект</a>
+						<a href="" class="button services-btn order-btn">Получить проект</a>
 					</div>
 				</div>
 			</div>
-			<div class="row services-item__reverse">
+			<div class="row services-item__reverse  services-item3">
 				<div class="col-md-5">
 					<div class="services-item-content">
 						<div class="section-title services-title">
@@ -1054,7 +1032,7 @@
 								<img src="img/download.png" alt="">
 							</div>
 							<div class="services-download-text">
-								<a href="#"><h5>Смотреть пример рабочего проекта</h5><br>
+								<a href=""><h5>Смотреть пример рабочего проекта</h5><br>
 								<p>PDF-документ, 3 Мб</p></a>
 							</div>
 						</div>
@@ -1063,11 +1041,11 @@
 								<img src="img/download.png" alt="">
 							</div>
 							<div class="services-download-text">
-								<a href="#"><h5>Смотреть пример эскизного проекта</h5><br>
+								<a href=""><h5>Смотреть пример эскизного проекта</h5><br>
 								<p>PDF-документ, 3 Мб</p></a>
 							</div>
 						</div>
-						<a href="" class="button services-btn callback-button">Заказать проект</a>
+						<a href="" class="button services-btn order-btn">Заказать проект</a>
 					</div>
 				</div>
 				<div class="col-md-7">
@@ -1077,7 +1055,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row services-item">
+			<div class="row services-item services-item4">
 				<div class="col-md-7">
 					<div class="services-item-img">
 						<img src="img/design.png" alt="Дизайн интерьера">
@@ -1090,7 +1068,7 @@
 							<h2>Дизайн интерьера</h2>
 						</div>
 						<p>Дизайн интерьера – разработка дизайна, учитывая все потребности еще в момент проектирования для выдержки единого стиля. Придерживаясь гармоничности, как экстерьера, так и интерьера. Ведомость отделочных материалов позволит точно и безошибочно просчитать и закупить материалы.</p>
-						<a href="" class="button services-btn callback-button">Заказать проект</a>
+						<a href="" class="button services-btn order-btn">Заказать проект</a>
 					</div>
 				</div>
 			</div>
@@ -1101,7 +1079,7 @@
 							<h2>Строительство дома</h2>
 						</div>
 						<p>Наша компания так же осуществляет строительство. Мы берем проекты «под ключ» с материалами и без них. Вы будете своевременно получать информация о текущих работах и результатах. В нашей команде высококвалифицированные бригады и прорабы, имеется необходимое специализированное оборудование. Так же будет предоставлен независимый тех надзор , работающий на Вашей стороне.</p>
-						<a href="" class="button services-btn callback-button">Заказать проект</a>
+						<a href="" class="button services-btn order-btn">Заказать проект</a>
 					</div>
 				</div>
 				<div class="col-md-7">
@@ -1381,17 +1359,17 @@
 					<div class="cases-slider-item">
 						<div class="cases-overlay"></div>
 						<img src="img/cases/1.jpg" alt="">
-						<a href="#cases-popup2" class="open-popup-link2">Подробнее</a>
+						<a href="mobile-friendly-page.html" data-mfp-src="#cases-popup2" class="open-popup-link2">Подробнее</a>
 					</div>
 					<div class="cases-slider-item">
 						<div class="cases-overlay"></div>
 						<img src="img/cases/1.jpg" alt="">
-						<a href="#cases-popup3" class="open-popup-link3">Подробнее</a>
+						<a href="mobile-friendly-page.html" data-mfp-src="#cases-popup3" class="open-popup-link3">Подробнее</a>
 					</div>
 					<div class="cases-slider-item">
 						<div class="cases-overlay"></div>
 						<img src="img/cases/1.jpg" alt="">
-						<a href="#cases-popup4" class="open-popup-link4">Подробнее</a>
+						<a href="mobile-friendly-page.html" data-mfp-src="#cases-popup4" class="open-popup-link4">Подробнее</a>
 					</div>
 				</div>
 				<div class="col-lg-8">
@@ -1428,25 +1406,35 @@
 				</div>
 				<div class="col-md-6 col-lg-4 no-padding">
 					<div class="callback-form">
+						<div class="popup-success callback-form-success">
+							<span>
+								<h5>Ваша заявка отправлена.</h5>
+								<p>Наши менеджеры скоро с Вами свяжутся</p>
+							</span>
+						</div>
 						<form action="#" method="POST">
-							<input type="hidden" name="project_name" value="Выкуп велосипедов">
-							<input type="hidden" name="admin_email" value="vihrovilya96@gmail.com">
-							<input type="hidden" name="form_subject" value="Заявка с сайта продатьвелосипед.рф">
+							<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="Индивидуальная проектировка домов">
+							<input type="hidden" name="admin_email" value="aidynmodorov@gmail.com">
+							<input type="hidden" name="form_subject" value="Заявка с сайта thenable.kz">
 							<!-- END Hidden Required Fields -->
-							<input type="hidden" name="Форма" value="Заявка с формы на главном экране">
+							<input type="hidden" name="Форма" value="Заявка с экрана Задать вопрос">
 							<div class="projection-form-block callback-form-block">
-								<input type="text" class="projection-form-input callback-form-input" name="Имя" placeholder="Ваше имя">
+								<input type="text" class="projection-form-input callback-form-input" name="Имя">
+								<span class="floating-label">Ваше имя</span>
 							</div>
 							<div class="projection-form-block callback-form-block">
 								<!-- <label for="phone1">Ваш телефон*</label> -->
-								<input type="text" class="projection-form-input callback-form-input" name="Телефон" id="phone1" placeholder="Ваш телефон*" required>
+								<input type="text" class="projection-form-input callback-form-input" name="Телефон" id="phone1" required>
+								<span class="floating-label">Ваш телефон*</span>
 							</div>
 							<div class="projection-form-block callback-form-block">
-								<input type="text" class="projection-form-input callback-form-input" name="E-mail" id="email" placeholder="Ваш E-mail*" required>
+								<input type="text" class="projection-form-input callback-form-input" name="E-mail" id="email" required>
+								<span class="floating-label">Ваш E-mail*</span>
 							</div>
 							<button type="submit" class="button projection-form-btn callback-form-btn">Отправить</button>
 							<div class="projection-agree callback-agree">
-								<p>Заполняя данную форму вы принимаете <a href="#">условия соглашения об использовании сайта</a>, в том числе в части обработки и использования персональных данных.</p>
+								<p>Заполняя данную форму вы принимаете <a href="policy.html" target="_blank">условия соглашения об использовании сайта</a>, в том числе в части обработки и использования персональных данных.</p>
 							</div>
 						</form>
 					</div>
@@ -1468,19 +1456,19 @@
 				</div>
 				<div class="footer-nav">
 					<div class="footer-nav-item">
-						<a href="#">Индивидуальный проект</a>
+						<a href="">Индивидуальный проект</a>
 					</div>	
 					<div class="footer-nav-item">
-						<a href="#">Готовый проект</a>
+						<a href="">Готовый проект</a>
 					</div>
 					<div class="footer-nav-item">
-						<a href="#"><img src="img/logo.png" alt=""></a>
+						<a href=""><img src="img/logo.png" alt=""></a>
 					</div>
 					<div class="footer-nav-item">
-						<a href="#">Эскизный проект</a>
+						<a href="">Эскизный проект</a>
 					</div>
 					<div class="footer-nav-item">
-						<a href="#">Рабочий проект</a>
+						<a href="">Рабочий проект</a>
 					</div>
 				</div>
 				<div class="footer-contacts">
@@ -1499,35 +1487,8 @@
 					<div class="footer-contacts-item">
 						<p>Мы в соцсетях</p>
 						<div class="footer-social">
-							<a href="#" class="footer-social-vk"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-								viewBox="0 0 511.962 511.962" style="enable-background:new 0 0 511.962 511.962;" xml:space="preserve">
-								<g>
-									<g>
-										<path d="M507.399,370.471c-1.376-2.304-9.888-20.8-50.848-58.816c-42.88-39.808-37.12-33.344,14.528-102.176
-										c31.456-41.92,44.032-67.52,40.096-78.464c-3.744-10.432-26.88-7.68-26.88-7.68l-76.928,0.448c0,0-5.696-0.768-9.952,1.76
-										c-4.128,2.496-6.784,8.256-6.784,8.256s-12.192,32.448-28.448,60.032c-34.272,58.208-48,61.28-53.6,57.664
-										c-13.024-8.416-9.76-33.856-9.76-51.904c0-56.416,8.544-79.936-16.672-86.016c-8.384-2.016-14.528-3.36-35.936-3.584
-										c-27.456-0.288-50.72,0.096-63.872,6.528c-8.768,4.288-15.52,13.856-11.392,14.4c5.088,0.672,16.608,3.104,22.72,11.424
-										c7.904,10.72,7.616,34.848,7.616,34.848s4.544,66.4-10.592,74.656c-10.4,5.664-24.64-5.888-55.2-58.72
-										c-15.648-27.04-27.488-56.96-27.488-56.96s-2.272-5.568-6.336-8.544c-4.928-3.616-11.84-4.768-11.84-4.768l-73.152,0.448
-										c0,0-10.976,0.32-15.008,5.088c-3.584,4.256-0.288,13.024-0.288,13.024s57.28,133.984,122.112,201.536
-										c59.488,61.92,127.008,57.856,127.008,57.856h30.592c0,0,9.248-1.024,13.952-6.112c4.352-4.672,4.192-13.44,4.192-13.44
-										s-0.608-41.056,18.464-47.104c18.784-5.952,42.912,39.68,68.48,57.248c19.328,13.28,34.016,10.368,34.016,10.368l68.384-0.96
-										C488.583,400.807,524.359,398.599,507.399,370.471z"/>
-									</g>
-								</g>
-							</svg></a>
-							<a href="#" class="footer-social-facebook"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-								width="96.124px" height="96.123px" viewBox="0 0 96.124 96.123" style="enable-background:new 0 0 96.124 96.123;"
-								xml:space="preserve">
-								<g>
-									<path d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803
-									c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654
-									c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246
-									c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z"/>
-								</g>
-							</svg></a>
-							<a href="#" class="footer-social-instagram"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							
+							<a href="https://www.instagram.com/the_nable/" class="footer-social-instagram" target="_blank"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 								viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 								<g>
 									<g>
@@ -1562,7 +1523,7 @@
 		<div class="popup-content">
 			<div class="popup-success">
 				<span>
-					<h5>Спасибо что выбрали нас</h5>
+					<h5>Спасибо!</h5>
 					<p>Ваша заявка отправлена.</p>
 					<p>Наши менеджеры скоро с Вами свяжутся</p>
 				</span>
@@ -1579,26 +1540,73 @@
 			<div class="popup-form">
 				<form action="#" method="POST">
 					<!-- Hidden Required Fields -->
-					<input type="hidden" name="project_name" value="Выкуп велосипедов">
-					<input type="hidden" name="admin_email" value="vihrovilya96@gmail.com">
-					<input type="hidden" name="form_subject" value="Заявка с сайта продатьвелосипед.рф">
-					<!-- END Hidden Required Fields -->
-					<input type="hidden" name="Форма" value="Заявка с формы на главном экране">
+							<input type="hidden" name="project_name" value="Индивидуальная проектировка домов">
+							<input type="hidden" name="admin_email" value="aidynmodorov@gmail.com">
+							<input type="hidden" name="form_subject" value="Заявка с сайта thenable.kz">
+							<!-- END Hidden Required Fields -->
+							<input type="hidden" name="Форма" value="Заявка на обратный звонок">
 					<div class="popup-form-block">
-						<label for="name">Ваше имя</label>
-						<input type="text" class="projection-form-input popup-input" id="name" name="Имя" placeholder="Ваше имя">
+						<input type="text" class="projection-form-input popup-input" id="name" name="Имя">
+						<span class="floating-label">Ваше имя</span>
 					</div>
 					<div class="popup-form-block">
-						<label for="phone">Ваш телефон*</label>
-						<input type="text" class="projection-form-input popup-input" name="Телефон" id="phone" placeholder="Ваш телефон*" required>
+						<input type="text" class="projection-form-input popup-input" name="Телефон" id="phone2" required>
+						<span class="floating-label">Ваш телефон*</span>
 					</div>
 					<div class="popup-form-block">
-						<label for="email">Ваш Email</label>
-						<input type="text" class="projection-form-input popup-input" name="E-mail" id="email" placeholder="Ваш E-mail*" required>
+						<input type="text" class="projection-form-input popup-input" name="E-mail" id="email" required>
+						<span class="floating-label">Ваш E-mail*</span>
 					</div>
 					<button type="submit" class="button projection-form-btn popup-btn">Отправить</button>
 					<div class="projection-agree">
-						<p>Заполняя данную форму вы принимаете <a href="#">условия соглашения об использовании сайта</a>, в том числе в части обработки и использования персональных данных.</p>
+						<p>Заполняя данную форму вы принимаете <a href="policy.html" target="_blank">условия соглашения об использовании сайта</a>, в том числе в части обработки и использования персональных данных.</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup" id="order">
+		<div class="popup-content">
+			<div class="popup-success">
+				<span>
+					<h5>Спасибо что выбрали нас</h5>
+					<p>Ваша заявка отправлена.</p>
+					<p>Наши менеджеры скоро с Вами свяжутся</p>
+				</span>
+			</div>
+			<div class="popup-close">
+				<img src="img/cancel.svg" alt="">
+			</div>
+			<div class="popup-title">
+				Заказать проект
+			</div>
+			<div class="popup-subtitle">
+				Оставьте заявку и наш менеджер перезвонит вам в течении 10 минут
+			</div>
+			<div class="popup-form">
+				<form action="#" method="POST">
+				<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="Индивидуальная проектировка домов">
+							<input type="hidden" name="admin_email" value="aidynmodorov@gmail.com">
+							<input type="hidden" name="form_subject" value="Заявка с сайта thenable.kz">
+							<!-- END Hidden Required Fields -->
+							<input type="hidden" name="Форма" value="Заявка на проект">
+					<div class="popup-form-block">
+						<input type="text" class="projection-form-input popup-input" id="name" name="Имя">
+						<span class="floating-label">Ваше имя</span>
+					</div>
+					<div class="popup-form-block">
+						<input type="text" class="projection-form-input popup-input" name="Телефон" id="phone3" required>
+						<span class="floating-label">Ваш телефон*</span>
+					</div>
+					<div class="popup-form-block">
+						<input type="text" class="projection-form-input popup-input" name="E-mail" id="email" required>
+						<span class="floating-label">Ваш E-mail*</span>
+					</div>
+					<button type="submit" class="button projection-form-btn popup-btn">Отправить</button>
+					<div class="projection-agree">
+						<p>Заполняя данную форму вы принимаете <a href="policy.html" target="_blank">условия соглашения об использовании сайта</a>, в том числе в части обработки и использования персональных данных.</p>
 					</div>
 				</form>
 			</div>
