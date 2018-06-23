@@ -6,6 +6,11 @@ $(document).ready(function() {
   $("#phone3").mask("+7 (999) 999-9999");
   $("#phone4").mask("+7 (999) 999-9999");
   $("#phone5").mask("+7 (999) 999-9999");
+  $("#phone6").mask("+7 (999) 999-9999");
+  $("#phone7").mask("+7 (999) 999-9999");
+  $("#phone8").mask("+7 (999) 999-9999");
+  $("#phone9").mask("+7 (999) 999-9999");
+  $("#phone10").mask("+7 (999) 999-9999");
 
   $(window).scroll(function() {
     if ($(this).scrollTop() > $(this). height()) {
@@ -50,14 +55,74 @@ $(document).ready(function() {
     $('#callback').fadeIn();
   });
 
-  $('.services-two-item').on('click', function(event) {
+  $('.more-projects-btn').on('click', function(event) {
     event.preventDefault();
-    $('#callback').fadeIn();
+    $('#more-projects').fadeIn();
   });
 
-   $('.order-btn').on('click', function(event) {
+  $('.order-offer').on('click', function(event) {
+    event.preventDefault();
+    $('#order-offer').fadeIn();
+  });
+
+  $('.order-offer1').on('click', function(event) {
+    event.preventDefault();
+    $('#order-offer1').fadeIn();
+  });
+
+  $('.order-offer2').on('click', function(event) {
+    event.preventDefault();
+    $('#order-offer2').fadeIn();
+  });
+
+  $('.order-btn').on('click', function(event) {
     event.preventDefault();
     $('#order').fadeIn();
+  });
+
+  $('.order-btn1').on('click', function(event) {
+    event.preventDefault();
+    $('#order1').fadeIn();
+  });
+
+  $('.order-btn2').on('click', function(event) {
+    event.preventDefault();
+    $('#order2').fadeIn();
+  });
+
+  $('.order-btn3').on('click', function(event) {
+    event.preventDefault();
+    $('#order3').fadeIn();
+  });
+
+  $('#bathhouse-btn').on('click', function(event) {
+    event.preventDefault();
+    $('#bathhouse').fadeIn();
+  });
+
+  $('#summer_kitchens-btn').on('click', function(event) {
+    event.preventDefault();
+    $('#summer_kitchens').fadeIn();
+  });
+
+  $('#terrace-btn').on('click', function(event) {
+    event.preventDefault();
+    $('#terrace').fadeIn();
+  });
+
+  $('#garages-btn').on('click', function(event) {
+    event.preventDefault();
+    $('#garages').fadeIn();
+  });
+
+  $('#extensions-btn').on('click', function(event) {
+    event.preventDefault();
+    $('#extensions').fadeIn();
+  });
+
+  $('#swimming_pools-btn').on('click', function(event) {
+    event.preventDefault();
+    $('#swimming_pools').fadeIn();
   });
 
   $(document).mouseup(function (e){
@@ -190,13 +255,13 @@ $(document).ready(function() {
     dots: true,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 992,
         settings: {
           slidesToShow: 2
         }
       },
       {
-        breakpoint: 500,
+        breakpoint: 576,
         settings: {
           slidesToShow: 1
         }

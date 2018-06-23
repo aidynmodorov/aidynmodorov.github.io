@@ -29,6 +29,46 @@
 
 <body>
 
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+		(function (d, w, c) {
+			(w[c] = w[c] || []).push(function() {
+				try {
+					w.yaCounter49119280 = new Ya.Metrika2({
+						id:49119280,
+						clickmap:true,
+						trackLinks:true,
+						accurateTrackBounce:true,
+						webvisor:true
+					});
+				} catch(e) { }
+			});
+
+			var n = d.getElementsByTagName("script")[0],
+			s = d.createElement("script"),
+			f = function () { n.parentNode.insertBefore(s, n); };
+			s.type = "text/javascript";
+			s.async = true;
+			s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+			if (w.opera == "[object Opera]") {
+				d.addEventListener("DOMContentLoaded", f, false);
+			} else { f(); }
+		})(document, window, "yandex_metrika_callbacks2");
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/49119280" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120201195-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-120201195-1');
+	</script>
+
 	<header class="main" id="top">
 		<div class="container main-wrap">
 			<div class="row justify-content-between align-items-center main-top">
@@ -39,9 +79,12 @@
 						</label>
 						<div class="drawer-list">
 							<ul class="menu">
-								<li><a data-scroll href="#top">Главная</a></li>
+								<li><a data-scroll href="#home">Какие дома мы проектируем и строим</a></li>
 								<li><a data-scroll href="#works">Что мы сделали</a></li>
-								<li><a data-scroll href="#offers">Предложения</a></li>
+								<li><a href="" class="callback-button">Оставить заявку</a></li>
+								<li><a data-scroll href="#services">Услуги</a></li>
+								<li><a data-scroll href="#offers">Комплексные предложения</a></li>
+								<li><a data-scroll href="#start">Схема работ</a></li>
 								<li><a data-scroll href="#advantages">Преимущества</a></li>
 								<li><a data-scroll href="#cases">Кейсы</a></li>
 								<li><a data-scroll href="#contacts">Контакты</a></li>
@@ -166,7 +209,7 @@
 
 							<div class="col-md-6">
 								<div class="tab-img">
-									<img src="img/home/combined.jpg" alt="Сборный">
+									<img src="img/home/combined2.jpg" alt="Сборный">
 									<h3>Сборный</h3>
 								</div>
 							</div>
@@ -346,7 +389,7 @@
 		</div>
 		<div class="container">
 			<div class="row justify-content-center">
-				<a href="" class="button works-btn callback-button">Смотреть больше</a>
+				<a href="" class="button works-btn more-projects-btn">Смотреть больше</a>
 			</div>
 		</div>
 	</section>
@@ -968,16 +1011,15 @@
 									<div class="projection-form">
 										<!-- Hidden Required Fields -->
 										<input type="hidden" name="project_name" value="Индивидуальная проектировка домов">
-										<input type="hidden" name="admin_email" value="aidynmodorov@gmail.com">
+										<input type="hidden" name="admin_email" value="info@thenable.kz">
 										<input type="hidden" name="form_subject" value="Заявка с сайта thenable.kz">
 										<!-- END Hidden Required Fields -->
 										<input type="hidden" name="Форма" value="Заявка с формы расчета индивидуального проекта">
 										<div class="projection-form-block">
-											<input type="text" class="projection-form-input" id="name1" name="Имя">
+											<input type="text" class="projection-form-input" id="name1" name="Имя" required>
 											<span class="floating-label">Ваше имя</span>
 										</div>
 										<div class="projection-form-block">
-											<!-- <label for="phone">Ваш телефон*</label> -->
 											<input type="text" class="projection-form-input" name="Телефон" id="phone" required>
 											<span class="floating-label">Ваш телефон*</span>
 										</div>
@@ -1000,13 +1042,13 @@
 	</section>
 
 <!-- Услуги -->
-	<section class="services">
+	<section class="services" id="services">
 		<div class="container">
 			<div class="row services-item services-item1">
 				<div class="col-md-7">
 					<div class="services-item-img">
 						<img src="img/finished_project.png" alt="Готовый проект">
-						<div class="services-price"><p>от <span>100 000</span> тнг</p></div>
+						<div class="services-price"><p>от <span>100 000</span> тг</p></div>
 					</div>
 				</div>
 				<div class="col-md-5">
@@ -1045,13 +1087,13 @@
 								<p>PDF-документ, 3 Мб</p></a>
 							</div>
 						</div>
-						<a href="" class="button services-btn order-btn">Заказать проект</a>
+						<a href="" class="button services-btn order-btn1">Заказать проект</a>
 					</div>
 				</div>
 				<div class="col-md-7">
 					<div class="services-item-img__right">
 						<img src="img/working_project.png" alt="Рабочий проект">
-						<div class="services-price__right"><p>от <span>100 000</span> тнг</p></div>
+						<div class="services-price__right"><p>от <span>100 000</span> тг</p></div>
 					</div>
 				</div>
 			</div>
@@ -1059,7 +1101,7 @@
 				<div class="col-md-7">
 					<div class="services-item-img">
 						<img src="img/design.png" alt="Дизайн интерьера">
-						<div class="services-price"><p>от <span>100 000</span> тнг</p></div>
+						<div class="services-price"><p>от <span>100 000</span> тг</p></div>
 					</div>
 				</div>
 				<div class="col-md-5">
@@ -1068,7 +1110,7 @@
 							<h2>Дизайн интерьера</h2>
 						</div>
 						<p>Дизайн интерьера – разработка дизайна, учитывая все потребности еще в момент проектирования для выдержки единого стиля. Придерживаясь гармоничности, как экстерьера, так и интерьера. Ведомость отделочных материалов позволит точно и безошибочно просчитать и закупить материалы.</p>
-						<a href="" class="button services-btn order-btn">Заказать проект</a>
+						<a href="" class="button services-btn order-btn2">Заказать проект</a>
 					</div>
 				</div>
 			</div>
@@ -1079,13 +1121,13 @@
 							<h2>Строительство дома</h2>
 						</div>
 						<p>Наша компания так же осуществляет строительство. Мы берем проекты «под ключ» с материалами и без них. Вы будете своевременно получать информация о текущих работах и результатах. В нашей команде высококвалифицированные бригады и прорабы, имеется необходимое специализированное оборудование. Так же будет предоставлен независимый тех надзор , работающий на Вашей стороне.</p>
-						<a href="" class="button services-btn order-btn">Заказать проект</a>
+						<a href="" class="button services-btn order-btn3">Заказать проект</a>
 					</div>
 				</div>
 				<div class="col-md-7">
 					<div class="services-item-img__right">
 						<img src="img/building.png" alt="Рабочий проект">
-						<div class="services-price__right"><p>от <span>100 000</span> тнг</p></div>
+						<div class="services-price__right"><p>от <span>100 000</span> тг</p></div>
 					</div>
 				</div>
 			</div>
@@ -1108,7 +1150,7 @@
 						<h3>Эскизный проект + раздел рабочего проекта</h3>
 						<p>Разработка эскизного проекта Вашего будущего дома и какой-либо раздел рабочего проекта. Если нет необходимости в остальных разделах.</p>
 						<span>от 100 000 тнг</span>
-						<a href="" class="button offers-btn callback-button">Подробнее</a>
+						<a href="" class="button offers-btn order-offer">Подробнее</a>
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-4">
@@ -1116,7 +1158,7 @@
 						<h3>Эскизный проект + Рабочий проект</h3>
 						<p>Комплексная разработка эскизного и рабочего проекта Вашего дома по специальной цене</p>
 						<span>от 100 000 тнг</span>
-						<a href="" class="button offers-btn callback-button">Подробнее</a>
+						<a href="" class="button offers-btn order-offer1">Подробнее</a>
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-4">
@@ -1124,7 +1166,7 @@
 						<h3>Полный пакет услуг "Под ключ"</h3>
 						<p>Вам не придется выяснять внештатные ситуации с множеством подрядчиков. Мы ответим за все.</p>
 						<span>от 100 000 тнг</span>
-						<a href="" class="button offers-btn callback-button">Подробнее</a>
+						<a href="" class="button offers-btn order-offer2">Подробнее</a>
 					</div>
 				</div>
 			</div>
@@ -1145,37 +1187,37 @@
 			</div>
 			<div class="row justify-content-center services-two-wrap">
 				<div class="col-6 col-sm-4 col-md-3 col-lg-2">
-					<div class="services-two-item">
+					<div class="services-two-item" id="bathhouse-btn">
 						<img src="img/services/1.png" alt="Бани, сауны">
 						<p>Бани, сауны</p>
 					</div>
 				</div>
 				<div class="col-6 col-sm-4 col-md-3 col-lg-2">
-					<div class="services-two-item">
+					<div class="services-two-item" id="summer_kitchens-btn">
 						<img src="img/services/2.png" alt="Летние кухни">
 						<p>Летние кухни</p>
 					</div>
 				</div>
 				<div class="col-6 col-sm-4 col-md-3 col-lg-2">
-					<div class="services-two-item">
+					<div class="services-two-item" id="terrace-btn">
 						<img src="img/services/3.png" alt="Летние террасы">
 						<p>Летние террасы</p>
 					</div>
 				</div>
 				<div class="col-6 col-sm-4 col-md-3 col-lg-2">
-					<div class="services-two-item">
+					<div class="services-two-item" id="garages-btn">
 						<img src="img/services/4.png" alt="Гаражи">
 						<p>Гаражи</p>
 					</div>
 				</div>
 				<div class="col-6 col-sm-4 col-md-3 col-lg-2">
-					<div class="services-two-item">
+					<div class="services-two-item" id="extensions-btn">
 						<img src="img/services/5.png" alt="Пристройки">
 						<p>Пристройки</p>
 					</div>
 				</div>
 				<div class="col-6 col-sm-4 col-md-3 col-lg-2">
-					<div class="services-two-item">
+					<div class="services-two-item" id="swimming_pools-btn">
 						<img src="img/services/6.png" alt="Бассейны">
 						<p>Бассейны</p>
 					</div>
@@ -1186,7 +1228,7 @@
 
 
 <!-- С чего начинается проектирование дома -->
-	<section class="start">
+	<section class="start" id="start">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-12">
@@ -1351,24 +1393,24 @@
 					</div>
 				</div>
 				<div class="cases-slider">
-					<div class="cases-slider-item">
+					<div class="cases-slider-item" style="background-image: url(img/cases/1.jpg);">
 						<div class="cases-overlay"></div>
-						<img src="img/cases/1.jpg" alt="">
+						<!-- <img src="img/cases/1.jpg" alt=""> -->
 						<a href="mobile-friendly-page.html" data-mfp-src="#cases-popup" class="open-popup-link">Подробнее</a>
 					</div>
-					<div class="cases-slider-item">
+					<div class="cases-slider-item" style="background-image: url(img/cases/2.jpg);">
 						<div class="cases-overlay"></div>
-						<img src="img/cases/1.jpg" alt="">
+						<!-- <img src="img/cases/2.jpg" alt=""> -->
 						<a href="mobile-friendly-page.html" data-mfp-src="#cases-popup2" class="open-popup-link2">Подробнее</a>
 					</div>
-					<div class="cases-slider-item">
+					<div class="cases-slider-item" style="background-image: url(img/cases/3.jpg);">
 						<div class="cases-overlay"></div>
-						<img src="img/cases/1.jpg" alt="">
+						<!-- <img src="img/cases/3.jpg" alt=""> -->
 						<a href="mobile-friendly-page.html" data-mfp-src="#cases-popup3" class="open-popup-link3">Подробнее</a>
 					</div>
-					<div class="cases-slider-item">
+					<div class="cases-slider-item" style="background-image: url(img/cases/4.jpg);">
 						<div class="cases-overlay"></div>
-						<img src="img/cases/1.jpg" alt="">
+						<!-- <img src="img/cases/4.jpg" alt=""> -->
 						<a href="mobile-friendly-page.html" data-mfp-src="#cases-popup4" class="open-popup-link4">Подробнее</a>
 					</div>
 				</div>
@@ -1415,12 +1457,12 @@
 						<form action="#" method="POST">
 							<!-- Hidden Required Fields -->
 							<input type="hidden" name="project_name" value="Индивидуальная проектировка домов">
-							<input type="hidden" name="admin_email" value="aidynmodorov@gmail.com">
+							<input type="hidden" name="admin_email" value="info@thenable.kz">
 							<input type="hidden" name="form_subject" value="Заявка с сайта thenable.kz">
 							<!-- END Hidden Required Fields -->
 							<input type="hidden" name="Форма" value="Заявка с экрана Задать вопрос">
 							<div class="projection-form-block callback-form-block">
-								<input type="text" class="projection-form-input callback-form-input" name="Имя">
+								<input type="text" class="projection-form-input callback-form-input" name="Имя" required>
 								<span class="floating-label">Ваше имя</span>
 							</div>
 							<div class="projection-form-block callback-form-block">
@@ -1456,19 +1498,19 @@
 				</div>
 				<div class="footer-nav">
 					<div class="footer-nav-item">
-						<a href="">Индивидуальный проект</a>
+						Индивидуальный проект
 					</div>	
 					<div class="footer-nav-item">
-						<a href="">Готовый проект</a>
+						Готовый проект
 					</div>
 					<div class="footer-nav-item">
 						<a href=""><img src="img/logo.png" alt=""></a>
 					</div>
 					<div class="footer-nav-item">
-						<a href="">Эскизный проект</a>
+						Эскизный проект
 					</div>
 					<div class="footer-nav-item">
-						<a href="">Рабочий проект</a>
+						Рабочий проект
 					</div>
 				</div>
 				<div class="footer-contacts">
@@ -1482,7 +1524,7 @@
 					</div>
 					<div class="footer-contacts-item">
 						<p>Адрес</p>
-						<span>Астана, улица 25, 8</span>
+						<span>г. Астана пр. Сарыарка 11 нп 17</span>
 					</div>
 					<div class="footer-contacts-item">
 						<p>Мы в соцсетях</p>
@@ -1541,16 +1583,204 @@
 				<form action="#" method="POST">
 					<!-- Hidden Required Fields -->
 							<input type="hidden" name="project_name" value="Индивидуальная проектировка домов">
-							<input type="hidden" name="admin_email" value="aidynmodorov@gmail.com">
+							<input type="hidden" name="admin_email" value="info@thenable.kz">
 							<input type="hidden" name="form_subject" value="Заявка с сайта thenable.kz">
 							<!-- END Hidden Required Fields -->
 							<input type="hidden" name="Форма" value="Заявка на обратный звонок">
 					<div class="popup-form-block">
-						<input type="text" class="projection-form-input popup-input" id="name" name="Имя">
+						<input type="text" class="projection-form-input popup-input" id="name" name="Имя" required>
 						<span class="floating-label">Ваше имя</span>
 					</div>
 					<div class="popup-form-block">
 						<input type="text" class="projection-form-input popup-input" name="Телефон" id="phone2" required>
+						<span class="floating-label">Ваш телефон*</span>
+					</div>
+					<div class="popup-form-block">
+						<input type="text" class="projection-form-input popup-input" name="E-mail" id="email" required>
+						<span class="floating-label">Ваш E-mail*</span>
+					</div>
+					<button type="submit" class="button projection-form-btn popup-btn">Отправить</button>
+					<div class="projection-agree">
+						<p>Заполняя данную форму вы принимаете <a href="policy.html" target="_blank">условия соглашения об использовании сайта</a>, в том числе в части обработки и использования персональных данных.</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup" id="more-projects">
+		<div class="popup-content">
+			<div class="popup-success">
+				<span>
+					<h5>Спасибо!</h5>
+					<p>Ваша заявка отправлена.</p>
+					<p>Наши менеджеры скоро с Вами свяжутся</p>
+				</span>
+			</div>
+			<div class="popup-close">
+				<img src="img/cancel.svg" alt="">
+			</div>
+			<div class="popup-title">
+				Получите доступ
+			</div>
+			<div class="popup-subtitle">
+				к остальным проектам, оставьте Ваши данные
+			</div>
+			<div class="popup-form">
+				<form action="#" method="POST">
+					<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="Индивидуальная проектировка домов">
+							<input type="hidden" name="admin_email" value="info@thenable.kz">
+							<input type="hidden" name="form_subject" value="Заявка с сайта thenable.kz">
+							<!-- END Hidden Required Fields -->
+							<input type="hidden" name="Форма" value="Заявка с экрана Что мы сделали">
+					<div class="popup-form-block">
+						<input type="text" class="projection-form-input popup-input" id="name" name="Имя" required>
+						<span class="floating-label">Ваше имя</span>
+					</div>
+					<div class="popup-form-block">
+						<input type="text" class="projection-form-input popup-input" name="Телефон" id="phone3" required>
+						<span class="floating-label">Ваш телефон*</span>
+					</div>
+					<div class="popup-form-block">
+						<input type="text" class="projection-form-input popup-input" name="E-mail" id="email" required>
+						<span class="floating-label">Ваш E-mail*</span>
+					</div>
+					<button type="submit" class="button projection-form-btn popup-btn">Отправить</button>
+					<div class="projection-agree">
+						<p>Заполняя данную форму вы принимаете <a href="policy.html" target="_blank">условия соглашения об использовании сайта</a>, в том числе в части обработки и использования персональных данных.</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup" id="order-offer">
+		<div class="popup-content">
+			<div class="popup-success">
+				<span>
+					<h5>Спасибо что выбрали нас</h5>
+					<p>Ваша заявка отправлена.</p>
+					<p>Наши менеджеры скоро с Вами свяжутся</p>
+				</span>
+			</div>
+			<div class="popup-close">
+				<img src="img/cancel.svg" alt="">
+			</div>
+			<div class="popup-title">
+				Заказать проект
+			</div>
+			<div class="popup-subtitle">
+				Оставьте заявку и наш менеджер перезвонит вам в течении 10 минут
+			</div>
+			<div class="popup-form">
+				<form action="#" method="POST">
+				<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="Индивидуальная проектировка домов">
+							<input type="hidden" name="admin_email" value="info@thenable.kz">
+							<input type="hidden" name="form_subject" value="Заявка с сайта thenable.kz">
+							<!-- END Hidden Required Fields -->
+							<input type="hidden" name="Форма" value="Эскизный проект + раздел рабочего проекта">
+					<div class="popup-form-block">
+						<input type="text" class="projection-form-input popup-input" id="name" name="Имя" required>
+						<span class="floating-label">Ваше имя</span>
+					</div>
+					<div class="popup-form-block">
+						<input type="text" class="projection-form-input popup-input" name="Телефон" id="phone4" required>
+						<span class="floating-label">Ваш телефон*</span>
+					</div>
+					<div class="popup-form-block">
+						<input type="text" class="projection-form-input popup-input" name="E-mail" id="email" required>
+						<span class="floating-label">Ваш E-mail*</span>
+					</div>
+					<button type="submit" class="button projection-form-btn popup-btn">Отправить</button>
+					<div class="projection-agree">
+						<p>Заполняя данную форму вы принимаете <a href="policy.html" target="_blank">условия соглашения об использовании сайта</a>, в том числе в части обработки и использования персональных данных.</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup" id="order-offer1">
+		<div class="popup-content">
+			<div class="popup-success">
+				<span>
+					<h5>Спасибо что выбрали нас</h5>
+					<p>Ваша заявка отправлена.</p>
+					<p>Наши менеджеры скоро с Вами свяжутся</p>
+				</span>
+			</div>
+			<div class="popup-close">
+				<img src="img/cancel.svg" alt="">
+			</div>
+			<div class="popup-title">
+				Заказать проект
+			</div>
+			<div class="popup-subtitle">
+				Оставьте заявку и наш менеджер перезвонит вам в течении 10 минут
+			</div>
+			<div class="popup-form">
+				<form action="#" method="POST">
+				<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="Индивидуальная проектировка домов">
+							<input type="hidden" name="admin_email" value="info@thenable.kz">
+							<input type="hidden" name="form_subject" value="Заявка с сайта thenable.kz">
+							<!-- END Hidden Required Fields -->
+							<input type="hidden" name="Форма" value="Эскизный проект + Рабочий проект">
+					<div class="popup-form-block">
+						<input type="text" class="projection-form-input popup-input" id="name" name="Имя" required>
+						<span class="floating-label">Ваше имя</span>
+					</div>
+					<div class="popup-form-block">
+						<input type="text" class="projection-form-input popup-input" name="Телефон" id="phone5" required>
+						<span class="floating-label">Ваш телефон*</span>
+					</div>
+					<div class="popup-form-block">
+						<input type="text" class="projection-form-input popup-input" name="E-mail" id="email" required>
+						<span class="floating-label">Ваш E-mail*</span>
+					</div>
+					<button type="submit" class="button projection-form-btn popup-btn">Отправить</button>
+					<div class="projection-agree">
+						<p>Заполняя данную форму вы принимаете <a href="policy.html" target="_blank">условия соглашения об использовании сайта</a>, в том числе в части обработки и использования персональных данных.</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup" id="order-offer2">
+		<div class="popup-content">
+			<div class="popup-success">
+				<span>
+					<h5>Спасибо что выбрали нас</h5>
+					<p>Ваша заявка отправлена.</p>
+					<p>Наши менеджеры скоро с Вами свяжутся</p>
+				</span>
+			</div>
+			<div class="popup-close">
+				<img src="img/cancel.svg" alt="">
+			</div>
+			<div class="popup-title">
+				Заказать проект
+			</div>
+			<div class="popup-subtitle">
+				Оставьте заявку и наш менеджер перезвонит вам в течении 10 минут
+			</div>
+			<div class="popup-form">
+				<form action="#" method="POST">
+				<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="Индивидуальная проектировка домов">
+							<input type="hidden" name="admin_email" value="info@thenable.kz">
+							<input type="hidden" name="form_subject" value="Заявка с сайта thenable.kz">
+							<!-- END Hidden Required Fields -->
+							<input type="hidden" name="Форма" value="Полный пакет услуг Под ключ">
+					<div class="popup-form-block">
+						<input type="text" class="projection-form-input popup-input" id="name" name="Имя" required>
+						<span class="floating-label">Ваше имя</span>
+					</div>
+					<div class="popup-form-block">
+						<input type="text" class="projection-form-input popup-input" name="Телефон" id="phone6" required>
 						<span class="floating-label">Ваш телефон*</span>
 					</div>
 					<div class="popup-form-block">
@@ -1588,16 +1818,16 @@
 				<form action="#" method="POST">
 				<!-- Hidden Required Fields -->
 							<input type="hidden" name="project_name" value="Индивидуальная проектировка домов">
-							<input type="hidden" name="admin_email" value="aidynmodorov@gmail.com">
+							<input type="hidden" name="admin_email" value="info@thenable.kz">
 							<input type="hidden" name="form_subject" value="Заявка с сайта thenable.kz">
 							<!-- END Hidden Required Fields -->
-							<input type="hidden" name="Форма" value="Заявка на проект">
+							<input type="hidden" name="Форма" value="Заявка на получение готового проекта">
 					<div class="popup-form-block">
-						<input type="text" class="projection-form-input popup-input" id="name" name="Имя">
+						<input type="text" class="projection-form-input popup-input" id="name" name="Имя" required>
 						<span class="floating-label">Ваше имя</span>
 					</div>
 					<div class="popup-form-block">
-						<input type="text" class="projection-form-input popup-input" name="Телефон" id="phone3" required>
+						<input type="text" class="projection-form-input popup-input" name="Телефон" id="phone7" required>
 						<span class="floating-label">Ваш телефон*</span>
 					</div>
 					<div class="popup-form-block">
@@ -1612,6 +1842,209 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="popup" id="order1">
+		<div class="popup-content">
+			<div class="popup-success">
+				<span>
+					<h5>Спасибо что выбрали нас</h5>
+					<p>Ваша заявка отправлена.</p>
+					<p>Наши менеджеры скоро с Вами свяжутся</p>
+				</span>
+			</div>
+			<div class="popup-close">
+				<img src="img/cancel.svg" alt="">
+			</div>
+			<div class="popup-title">
+				Заказать проект
+			</div>
+			<div class="popup-subtitle">
+				Оставьте заявку и наш менеджер перезвонит вам в течении 10 минут
+			</div>
+			<div class="popup-form">
+				<form action="#" method="POST">
+				<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="Индивидуальная проектировка домов">
+							<input type="hidden" name="admin_email" value="info@thenable.kz">
+							<input type="hidden" name="form_subject" value="Заявка с сайта thenable.kz">
+							<!-- END Hidden Required Fields -->
+							<input type="hidden" name="Форма" value="Заявка на рабочий проект">
+					<div class="popup-form-block">
+						<input type="text" class="projection-form-input popup-input" id="name" name="Имя" required>
+						<span class="floating-label">Ваше имя</span>
+					</div>
+					<div class="popup-form-block">
+						<input type="text" class="projection-form-input popup-input" name="Телефон" id="phone8" required>
+						<span class="floating-label">Ваш телефон*</span>
+					</div>
+					<div class="popup-form-block">
+						<input type="text" class="projection-form-input popup-input" name="E-mail" id="email" required>
+						<span class="floating-label">Ваш E-mail*</span>
+					</div>
+					<button type="submit" class="button projection-form-btn popup-btn">Отправить</button>
+					<div class="projection-agree">
+						<p>Заполняя данную форму вы принимаете <a href="policy.html" target="_blank">условия соглашения об использовании сайта</a>, в том числе в части обработки и использования персональных данных.</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup" id="order2">
+		<div class="popup-content">
+			<div class="popup-success">
+				<span>
+					<h5>Спасибо что выбрали нас</h5>
+					<p>Ваша заявка отправлена.</p>
+					<p>Наши менеджеры скоро с Вами свяжутся</p>
+				</span>
+			</div>
+			<div class="popup-close">
+				<img src="img/cancel.svg" alt="">
+			</div>
+			<div class="popup-title">
+				Заказать проект
+			</div>
+			<div class="popup-subtitle">
+				Оставьте заявку и наш менеджер перезвонит вам в течении 10 минут
+			</div>
+			<div class="popup-form">
+				<form action="#" method="POST">
+				<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="Индивидуальная проектировка домов">
+							<input type="hidden" name="admin_email" value="info@thenable.kz">
+							<input type="hidden" name="form_subject" value="Заявка с сайта thenable.kz">
+							<!-- END Hidden Required Fields -->
+							<input type="hidden" name="Форма" value="Заявка на дизайн интерьера">
+					<div class="popup-form-block">
+						<input type="text" class="projection-form-input popup-input" id="name" name="Имя" required>
+						<span class="floating-label">Ваше имя</span>
+					</div>
+					<div class="popup-form-block">
+						<input type="text" class="projection-form-input popup-input" name="Телефон" id="phone9" required>
+						<span class="floating-label">Ваш телефон*</span>
+					</div>
+					<div class="popup-form-block">
+						<input type="text" class="projection-form-input popup-input" name="E-mail" id="email" required>
+						<span class="floating-label">Ваш E-mail*</span>
+					</div>
+					<button type="submit" class="button projection-form-btn popup-btn">Отправить</button>
+					<div class="projection-agree">
+						<p>Заполняя данную форму вы принимаете <a href="policy.html" target="_blank">условия соглашения об использовании сайта</a>, в том числе в части обработки и использования персональных данных.</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup" id="order3">
+		<div class="popup-content">
+			<div class="popup-success">
+				<span>
+					<h5>Спасибо что выбрали нас</h5>
+					<p>Ваша заявка отправлена.</p>
+					<p>Наши менеджеры скоро с Вами свяжутся</p>
+				</span>
+			</div>
+			<div class="popup-close">
+				<img src="img/cancel.svg" alt="">
+			</div>
+			<div class="popup-title">
+				Заказать проект
+			</div>
+			<div class="popup-subtitle">
+				Оставьте заявку и наш менеджер перезвонит вам в течении 10 минут
+			</div>
+			<div class="popup-form">
+				<form action="#" method="POST">
+				<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="Индивидуальная проектировка домов">
+							<input type="hidden" name="admin_email" value="info@thenable.kz">
+							<input type="hidden" name="form_subject" value="Заявка с сайта thenable.kz">
+							<!-- END Hidden Required Fields -->
+							<input type="hidden" name="Форма" value="Заявка на строительство дома">
+					<div class="popup-form-block">
+						<input type="text" class="projection-form-input popup-input" id="name" name="Имя" required>
+						<span class="floating-label">Ваше имя</span>
+					</div>
+					<div class="popup-form-block">
+						<input type="text" class="projection-form-input popup-input" name="Телефон" id="phone10" required>
+						<span class="floating-label">Ваш телефон*</span>
+					</div>
+					<div class="popup-form-block">
+						<input type="text" class="projection-form-input popup-input" name="E-mail" id="email" required>
+						<span class="floating-label">Ваш E-mail*</span>
+					</div>
+					<button type="submit" class="button projection-form-btn popup-btn">Отправить</button>
+					<div class="projection-agree">
+						<p>Заполняя данную форму вы принимаете <a href="policy.html" target="_blank">условия соглашения об использовании сайта</a>, в том числе в части обработки и использования персональных данных.</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+<!-- Всплывающие окна дополнительных услуг -->
+	<div class="popup" id="bathhouse">
+		<div class="popup-content dop-services-content">
+			<div class="popup-close">
+				<img src="img/cancel.svg" alt="">
+			</div>
+			<h5>Бани, сауны</h5>
+			<p>Объясним в чём отличие русской, финской и турецкой бань. Подберём и расскажем о видах дерева для отделки и для парной. Исходя из Вашего выбора, посоветуем печь и заложим все элементы бани с соблюдением всех норм пожарной безопасности.</p>
+		</div>
+	</div>
+
+	<div class="popup" id="extensions">
+		<div class="popup-content dop-services-content">
+			<div class="popup-close">
+				<img src="img/cancel.svg" alt="">
+			</div>
+			<h5>Пристройки</h5>
+			<p>Важно обеспечить бережный подход к пристройке на этапе проектирования. Планировать нужно, учитывая материальную часть существующего объекта. Мы отражаем общий стиль и сохраняем целостный облик здания. Находим оптимальные формы для задач, которые Вы ожидаете от пристройки.</p>
+		</div>
+	</div>
+
+	<div class="popup" id="summer_kitchens">
+		<div class="popup-content dop-services-content">
+			<div class="popup-close">
+				<img src="img/cancel.svg" alt="">
+			</div>
+			<h5>Летние кухни</h5>
+			<p>К летним кухням мы относимся с особым трепетом. Мы понимаем - это место, где будут проводить время семьи и создаём атмосферу уюта, в которой приятно готовить любимые блюда и отдыхать.</p>
+		</div>
+	</div>
+
+	<div class="popup" id="terrace">
+		<div class="popup-content dop-services-content">
+			<div class="popup-close">
+				<img src="img/cancel.svg" alt="">
+			</div>
+			<h5>Террасса</h5>
+			<p>Терраса придаст уникальности каждому дому. При проектировании террасы мы изучаем технические нюансы и концептуально связываем будущую постройку с ландшафтным дизайном и архитектурой.</p>
+		</div>
+	</div>
+
+	<div class="popup" id="garages">
+		<div class="popup-content dop-services-content">
+			<div class="popup-close">
+				<img src="img/cancel.svg" alt="">
+			</div>
+			<h5>Гаражи</h5>
+			<p>При проектировании гаража важно определить выгодное место, которое обеспечит грамотный подъезд к гаражу. При разработке проекта мы учитываем важные детали -количество машин, наличие удобного технического помещения и комнаты для мастерской.</p>
+		</div>
+	</div>
+
+	<div class="popup" id="swimming_pools">
+		<div class="popup-content dop-services-content">
+			<div class="popup-close">
+				<img src="img/cancel.svg" alt="">
+			</div>
+			<h5>Бассейны</h5>
+			<p>Посоветуем оптимальные размеры бассейна, исходя из технической спецификации. Для создания комфортной атмосферы обеспечения долгим сроком службы - заложим гидроизоляцию и циркуляцию воздуха в помещении бассейна. Спроектируем системы осушения и обогрева.</p>
+		</div>
+	</div>
+
 
 <!-- Всплывающий слайдер Кейсы -->
 
