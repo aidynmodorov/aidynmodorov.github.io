@@ -165,8 +165,8 @@ $(document).ready(function() {
       $('.case-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow: '<button type="button" class="slider-btn slider-btn-prev cases-btn"><img src="../img/left-arrow.svg" alt="Предыдущее" /></button>',
-        nextArrow: '<button type="button" class="slider-btn slider-btn-next cases-btn"><img src="../img/right-arrow.svg" alt="Следующее" /></button>'
+        prevArrow: '<button type="button" class="slider-btn slider-btn-prev cases-btn"><img src="img/left-arrow.svg" alt="Предыдущее" /></button>',
+        nextArrow: '<button type="button" class="slider-btn slider-btn-next cases-btn"><img src="img/right-arrow.svg" alt="Следующее" /></button>'
       });
     });
 
@@ -182,8 +182,8 @@ $(document).ready(function() {
       $('.case-slider2').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow: '<button type="button" class="slider-btn slider-btn-prev cases-btn"><img src="../img/left-arrow.svg" alt="Предыдущее" /></button>',
-        nextArrow: '<button type="button" class="slider-btn slider-btn-next cases-btn"><img src="../img/right-arrow.svg" alt="Следующее" /></button>'
+        prevArrow: '<button type="button" class="slider-btn slider-btn-prev cases-btn"><img src="img/left-arrow.svg" alt="Предыдущее" /></button>',
+        nextArrow: '<button type="button" class="slider-btn slider-btn-next cases-btn"><img src="img/right-arrow.svg" alt="Следующее" /></button>'
       });
     });
 
@@ -199,8 +199,8 @@ $(document).ready(function() {
       $('.case-slider3').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow: '<button type="button" class="slider-btn slider-btn-prev cases-btn"><img src="../img/left-arrow.svg" alt="Предыдущее" /></button>',
-        nextArrow: '<button type="button" class="slider-btn slider-btn-next cases-btn"><img src="../img/right-arrow.svg" alt="Следующее" /></button>'
+        prevArrow: '<button type="button" class="slider-btn slider-btn-prev cases-btn"><img src="img/left-arrow.svg" alt="Предыдущее" /></button>',
+        nextArrow: '<button type="button" class="slider-btn slider-btn-next cases-btn"><img src="img/right-arrow.svg" alt="Следующее" /></button>'
       });
     });
 
@@ -216,8 +216,8 @@ $(document).ready(function() {
       $('.case-slider4').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow: '<button type="button" class="slider-btn slider-btn-prev cases-btn"><img src="../img/left-arrow.svg" alt="Предыдущее" /></button>',
-        nextArrow: '<button type="button" class="slider-btn slider-btn-next cases-btn"><img src="../img/right-arrow.svg" alt="Следующее" /></button>'
+        prevArrow: '<button type="button" class="slider-btn slider-btn-prev cases-btn"><img src="img/left-arrow.svg" alt="Предыдущее" /></button>',
+        nextArrow: '<button type="button" class="slider-btn slider-btn-next cases-btn"><img src="img/right-arrow.svg" alt="Следующее" /></button>'
       });
     });
 
