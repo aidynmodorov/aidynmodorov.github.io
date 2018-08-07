@@ -406,7 +406,8 @@
 					</div>
 				</div>
 				<div class="col-lg-8">
-					<h3>Оставьте заявку на расчет Вашего индивидуального проекта</h3>
+					<h3>Оставьте заявку на расчет Вашего индивидуального проекта<div class="services-price__right"><p><span>1000</span> тг/м<sup>2</sup></p></div></h3>
+					
 				</div>
 				<div class="col-lg-2">
 					<div class="projection-img">
@@ -415,7 +416,7 @@
 				</div>
 				<div class="col-12">
 					<div class="projection-calc">
-						<form action="#" method="POST">
+						<form action="#" method="POST" id="project-form">
 							<div class="row justify-content-center">
 								<div class="col-lg-10">
 									<div class="tabs_two">
@@ -430,8 +431,8 @@
 
 												<div class="calculation-item">
 													<div class="calculation-item-check">
-														<label for="room1" class="label-cbx">
-															<input id="room1" type="checkbox" class="invisible" name="Холл" onchange="showOrHide('room1', 'counter1');">
+														<label for="ch1" class="label-cbx">
+															<input id="ch1" type="checkbox" class="invisible chk" name="Холл" value="выбрано" >
 															<div class="checkbox">
 																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
@@ -439,15 +440,10 @@
 															</div>
 															<span>Холл</span>
 														</label>
-														<!-- <div class="number" id="counter1">
-															<span class="minus">-</span>
-															<input type="text" value="1" name="Количество холла"/>
-															<span class="plus">+</span>
-														</div> -->
 													</div>
 													<div class="calculation-item-check">
-														<label for="room2" class="label-cbx">
-															<input id="room2" type="checkbox" class="invisible" name="Зал">
+														<label for="ch2" class="label-cbx">
+															<input id="ch2" type="checkbox" class="invisible chk" name="Зал" value="выбрано" >
 															<div class="checkbox">
 																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																	<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
@@ -455,15 +451,10 @@
 															</div>
 															<span>Зал</span>
 														</label>
-														<!-- <div class="number" id="counter2">
-															<span class="minus">-</span>
-															<input type="text" value="" name="Количество залов"/>
-															<span class="plus">+</span>
-														</div> -->
 													</div>
 													<div class="calculation-item-check">
-														<label for="gostinaya" class="label-cbx">
-															<input id="gostinaya" type="checkbox" class="invisible" name="Гостиная">
+														<label for="ch3" class="label-cbx">
+															<input id="ch3" type="checkbox" class="invisible chk" name="Гостиная" value="выбрано">
 															<div class="checkbox">
 																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																	<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
@@ -474,7 +465,7 @@
 													</div>
 													<div class="calculation-item-check">
 														<label for="cabinet" class="label-cbx">
-															<input id="cabinet" type="checkbox" class="invisible" name="Кабинет">
+															<input id="cabinet" type="checkbox" class="invisible chk" name="Кабинет" value="выбрано">
 															<div class="checkbox">
 																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
@@ -485,7 +476,7 @@
 													</div>
 													<div class="calculation-item-check">
 														<label for="kladovaya" class="label-cbx">
-															<input id="kladovaya" type="checkbox" class="invisible" name="Кладовая">
+															<input id="kladovaya" type="checkbox" class="invisible chk" name="Кладовая" value="выбрано">
 															<div class="checkbox">
 																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
@@ -496,7 +487,7 @@
 													</div>
 													<div class="calculation-item-check">
 														<label for="garderob" class="label-cbx">
-															<input id="garderob" type="checkbox" class="invisible" name="Гардероб">
+															<input id="garderob" type="checkbox" class="invisible chk" name="Гардероб" value="выбрано">
 															<div class="checkbox">
 																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
@@ -505,9 +496,67 @@
 															<span>Гардероб</span>
 														</label>
 													</div>
+												</div>
+
+												<div class="calculation-item">
+													<div class="calculation-item-check">
+														<label for="kitchen" class="label-cbx">
+															<input id="kitchen" type="checkbox" class="invisible chk" name="Кухня" value="выбрано">
+															<div class="checkbox">
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Кухня + Кухня-столовая</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="kitchen3" class="label-cbx">
+															<input id="kitchen3" type="checkbox" class="invisible chk" name="Столовая" value="выбрано">
+															<div class="checkbox">
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Столовая</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="sauna" class="label-cbx">
+															<input id="sauna" type="checkbox" class="invisible chk" name="Сауна" value="выбрано">
+															<div class="checkbox">
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Сауна</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="basseyn" class="label-cbx">
+															<input id="basseyn" type="checkbox" class="invisible chk" name="Бассейн" value="выбрано">
+															<div class="checkbox">
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Бассейн</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="bilyardnaya" class="label-cbx">
+															<input id="bilyardnaya" type="checkbox" class="invisible chk" name="Бильярдная" value="выбрано">
+															<div class="checkbox">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Бильярдная</span>
+														</label>
+													</div>
 													<div class="calculation-item-check">
 														<label for="biblioteka" class="label-cbx">
-															<input id="biblioteka" type="checkbox" class="invisible" name="Библиотека">
+															<input id="biblioteka" type="checkbox" class="invisible chk" name="Библиотека" value="выбрано">
 															<div class="checkbox">
 																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
@@ -520,77 +569,8 @@
 
 												<div class="calculation-item">
 													<div class="calculation-item-check">
-														<label for="kitchen" class="label-cbx">
-															<input id="kitchen" type="checkbox" class="invisible" name="Кухня">
-															<div class="checkbox">
-																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
-																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
-																</svg>
-															</div>
-															<span>Кухня</span>
-														</label>
-													</div>
-													<div class="calculation-item-check">
-														<label for="kitchen2" class="label-cbx">
-															<input id="kitchen2" type="checkbox" class="invisible" name="Кухня-столовая">
-															<div class="checkbox">
-																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
-																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
-																</svg>
-															</div>
-															<span>Кухня-столовая</span>
-														</label>
-													</div>
-													<div class="calculation-item-check">
-														<label for="kitchen3" class="label-cbx">
-															<input id="kitchen3" type="checkbox" class="invisible" name="Столовая">
-															<div class="checkbox">
-																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
-																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
-																</svg>
-															</div>
-															<span>Столовая</span>
-														</label>
-													</div>
-													<div class="calculation-item-check">
-														<label for="sauna" class="label-cbx">
-															<input id="sauna" type="checkbox" class="invisible" name="Сауна">
-															<div class="checkbox">
-																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
-																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
-																</svg>
-															</div>
-															<span>Сауна</span>
-														</label>
-													</div>
-													<div class="calculation-item-check">
-														<label for="basseyn" class="label-cbx">
-															<input id="basseyn" type="checkbox" class="invisible" name="Бассейн">
-															<div class="checkbox">
-																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
-																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
-																</svg>
-															</div>
-															<span>Бассейн</span>
-														</label>
-													</div>
-													<div class="calculation-item-check">
-														<label for="bilyardnaya" class="label-cbx">
-															<input id="bilyardnaya" type="checkbox" class="invisible" name="Бильярдная">
-															<div class="checkbox">
-															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
-																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
-																</svg>
-															</div>
-															<span>Бильярдная</span>
-														</label>
-													</div>
-												</div>
-
-												<div class="calculation-item">
-													<div class="calculation-item-check">
 														<label for="bedroom" class="label-cbx">
-															<input id="bedroom" type="checkbox" class="invisible" name="Спальня">
+															<input id="bedroom" type="checkbox" class="invisible chk" name="Спальня" value="выбрано">
 															<div class="checkbox">
 															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
@@ -599,42 +579,31 @@
 															<span>Спальня</span>
 														</label>
 													</div>
-													<div class="calculation-item-check">
+													<div class="calculation-item-check project-list">
 														<label for="bedroom2" class="label-cbx">
-															<input id="bedroom2" type="checkbox" class="invisible" name="Спальня с санузлом">
-															<div class="checkbox">
+															<input id="bedroom2" type="checkbox" class="invisible chk" name="с санузлом" value="выбрано">
+															<div class="checkbox checkbox1">
 															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
 																</svg>
 															</div>
-															<span>Спальня с санузлом</span>
+															<span>с санузлом</span>
 														</label>
 													</div>
-													<div class="calculation-item-check">
+													<div class="calculation-item-check project-list">
 														<label for="bedroom3" class="label-cbx">
-															<input id="bedroom3" type="checkbox" class="invisible" name="Спальня с санузлом и гардеробом">
-															<div class="checkbox">
+															<input id="bedroom3" type="checkbox" class="invisible chk" name="с гардеробом" value="выбрано">
+															<div class="checkbox checkbox1">
 																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
 																</svg>
 															</div>
-															<span>Спальня с санузлом и гардеробом</span>
-														</label>
-													</div>
-													<div class="calculation-item-check">
-														<label for="bedroom4" class="label-cbx">
-															<input id="bedroom4" type="checkbox" class="invisible" name="Спальня с гардеробом">
-															<div class="checkbox">
-															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
-																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
-																</svg>
-															</div>
-															<span>Спальня с гардеробом</span>
+															<span>с гардеробом</span>
 														</label>
 													</div>
 													<div class="calculation-item-check">
 														<label for="sportzal" class="label-cbx">
-															<input id="sportzal" type="checkbox" class="invisible" name="Спортзал">
+															<input id="sportzal" type="checkbox" class="invisible chk" name="Спортзал" value="выбрано">
 															<div class="checkbox">
 															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
@@ -645,7 +614,7 @@
 													</div>
 													<div class="calculation-item-check">
 														<label for="kinoteatr" class="label-cbx">
-															<input id="kinoteatr" type="checkbox" class="invisible" name="Кинотеатр">
+															<input id="kinoteatr" type="checkbox" class="invisible chk" name="Кинотеатр" value="выбрано">
 															<div class="checkbox">
 															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
@@ -659,7 +628,7 @@
 												<div class="calculation-item">
 													<div class="calculation-item-check">
 														<label for="sanusel" class="label-cbx">
-															<input id="sanusel" type="checkbox" class="invisible" name="Санузел">
+															<input id="sanusel" type="checkbox" class="invisible chk" name="Санузел" value="выбрано">
 															<div class="checkbox">
 															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
@@ -668,59 +637,70 @@
 															<span>Санузел</span>
 														</label>
 													</div>
-													<div class="calculation-item-check">
+													<div class="calculation-item-check project-list">
 														<label for="sanusel2" class="label-cbx">
-															<input id="sanusel2" type="checkbox" class="invisible" name="Санузел с душем">
-															<div class="checkbox">
+															<input id="sanusel2" type="checkbox" class="invisible chk" name="с душем" value="выбрано">
+															<div class="checkbox checkbox1">
 															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
 																</svg>
 															</div>
-															<span>Санузел с душем</span>
+															<span>с душем</span>
 														</label>
 													</div>
-													<div class="calculation-item-check">
+													<div class="calculation-item-check project-list">
 														<label for="sanusel3" class="label-cbx">
-															<input id="sanusel3" type="checkbox" class="invisible" name="Санузел с ванной">
-															<div class="checkbox">
+															<input id="sanusel3" type="checkbox" class="invisible chk" name="с ванной" value="выбрано">
+															<div class="checkbox checkbox1">
 															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
 																</svg>
 															</div>
-															<span>Санузел с ванной</span>
+															<span>с ванной</span>
 														</label>
 													</div>
-													<div class="calculation-item-check">
+													<div class="calculation-item-check project-list">
 														<label for="sanusel4" class="label-cbx">
-															<input id="sanusel4" type="checkbox" class="invisible" name="Санузел с постирочной">
-															<div class="checkbox">
+															<input id="sanusel4" type="checkbox" class="invisible chk" name="с постирочной" value="выбрано">
+															<div class="checkbox checkbox1">
 															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
 																</svg>
 															</div>
-															<span>Санузел с постирочной</span>
+															<span>с постирочной</span>
 														</label>
 													</div>
 													<div class="calculation-item-check">
 														<label for="garazh" class="label-cbx">
-															<input id="garazh" type="checkbox" class="invisible" name="Гараж на одну машину">
+															<input id="garazh" type="checkbox" class="invisible chk" name="Гараж" value="выбрано">
 															<div class="checkbox">
 															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
 																</svg>
 															</div>
-															<span>Гараж на одну машину</span>
+															<span>Гараж</span>
 														</label>
 													</div>
-													<div class="calculation-item-check">
-														<label for="garazh2" class="label-cbx">
-															<input id="garazh2" type="checkbox" class="invisible" name="Гараж на две машины">
-															<div class="checkbox">
+													<div class="calculation-item-check project-list">
+														<label for="garazh1" class="label-cbx">
+															<input id="garazh1" type="checkbox" class="invisible chk" name="на одну машины" value="выбрано">
+															<div class="checkbox checkbox1">
 															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
 																</svg>
 															</div>
-															<span>Гараж на две машины</span>
+															<span>на одну машину</span>
+														</label>
+													</div>
+													<div class="calculation-item-check project-list">
+														<label for="garazh2" class="label-cbx">
+															<input id="garazh2" type="checkbox" class="invisible chk" name="на две машины" value="выбрано">
+															<div class="checkbox checkbox1">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>на две машины</span>
 														</label>
 													</div>
 												</div>
@@ -733,8 +713,8 @@
 
 												<div class="calculation-item">
 													<div class="calculation-item-check">
-														<label for="holl2" class="label-cbx">
-															<input id="holl2" type="checkbox" class="invisible" name="Холл (2 этаж)">
+														<label for="ch21" class="label-cbx">
+															<input id="ch21" type="checkbox" class="invisible chk" name="Холл. 2 этаж" value="выбрано" >
 															<div class="checkbox">
 																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
@@ -744,8 +724,8 @@
 														</label>
 													</div>
 													<div class="calculation-item-check">
-														<label for="zal2" class="label-cbx">
-															<input id="zal2" type="checkbox" class="invisible" name="Зал(2 этаж)">
+														<label for="ch22" class="label-cbx">
+															<input id="ch22" type="checkbox" class="invisible chk" name="Зал. 2 этаж" value="выбрано" >
 															<div class="checkbox">
 																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																	<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
@@ -755,8 +735,8 @@
 														</label>
 													</div>
 													<div class="calculation-item-check">
-														<label for="gostinaya2" class="label-cbx">
-															<input id="gostinaya2" type="checkbox" class="invisible" name="Гостиная(2 этаж)">
+														<label for="ch23" class="label-cbx">
+															<input id="ch23" type="checkbox" class="invisible chk" name="Гостиная. 2 этаж" value="выбрано">
 															<div class="checkbox">
 																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																	<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
@@ -766,8 +746,8 @@
 														</label>
 													</div>
 													<div class="calculation-item-check">
-														<label for="cabinet2" class="label-cbx">
-															<input id="cabinet2" type="checkbox" class="invisible" name="Кабинет(2 этаж)">
+														<label for="24" class="label-cbx">
+															<input id="24" type="checkbox" class="invisible chk" name="Кабинет. 2 этаж" value="выбрано">
 															<div class="checkbox">
 																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
@@ -777,8 +757,8 @@
 														</label>
 													</div>
 													<div class="calculation-item-check">
-														<label for="kladovaya2" class="label-cbx">
-															<input id="kladovaya2" type="checkbox" class="invisible" name="Кладовая(2 этаж)">
+														<label for="25" class="label-cbx">
+															<input id="25" type="checkbox" class="invisible chk" name="Кладовая. 2 этаж" value="выбрано">
 															<div class="checkbox">
 																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
@@ -788,8 +768,8 @@
 														</label>
 													</div>
 													<div class="calculation-item-check">
-														<label for="garderob2" class="label-cbx">
-															<input id="garderob2" type="checkbox" class="invisible" name="Гардероб(2 этаж)">
+														<label for="26" class="label-cbx">
+															<input id="26" type="checkbox" class="invisible chk" name="Гардероб. 2 этаж" value="выбрано">
 															<div class="checkbox">
 																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
@@ -798,9 +778,67 @@
 															<span>Гардероб</span>
 														</label>
 													</div>
+												</div>
+
+												<div class="calculation-item">
+													<div class="calculation-item-check">
+														<label for="kitchen2" class="label-cbx">
+															<input id="kitchen2" type="checkbox" class="invisible chk" name="Кухня. 2 этаж" value="выбрано">
+															<div class="checkbox">
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Кухня + Кухня-столовая</span>
+														</label>
+													</div>
+												<div class="calculation-item-check">
+														<label for="kitchen23" class="label-cbx">
+															<input id="kitchen23" type="checkbox" class="invisible chk" name="Столовая. 2 этаж" value="выбрано">
+															<div class="checkbox">
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Столовая</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="sauna2" class="label-cbx">
+															<input id="sauna2" type="checkbox" class="invisible chk" name="Сауна. 2 этаж" value="выбрано">
+															<div class="checkbox">
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Сауна</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="basseyn2" class="label-cbx">
+															<input id="basseyn2" type="checkbox" class="invisible chk" name="Бассейн. 2 этаж" value="выбрано">
+															<div class="checkbox">
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Бассейн</span>
+														</label>
+													</div>
+													<div class="calculation-item-check">
+														<label for="bilyardnaya2" class="label-cbx">
+															<input id="bilyardnaya2" type="checkbox" class="invisible chk" name="Бильярдная. 2 этаж" value="выбрано">
+															<div class="checkbox">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
+																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
+																</svg>
+															</div>
+															<span>Бильярдная</span>
+														</label>
+													</div>
 													<div class="calculation-item-check">
 														<label for="biblioteka2" class="label-cbx">
-															<input id="biblioteka2" type="checkbox" class="invisible" name="Библиотека(2 этаж)">
+															<input id="biblioteka2" type="checkbox" class="invisible chk" name="Библиотека. 2 этаж" value="выбрано">
 															<div class="checkbox">
 																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
@@ -813,77 +851,8 @@
 
 												<div class="calculation-item">
 													<div class="calculation-item-check">
-														<label for="kitchen5" class="label-cbx">
-															<input id="kitchen5" type="checkbox" class="invisible" name="Кухня(2 этаж)">
-															<div class="checkbox">
-																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
-																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
-																</svg>
-															</div>
-															<span>Кухня</span>
-														</label>
-													</div>
-													<div class="calculation-item-check">
-														<label for="kitchen4" class="label-cbx">
-															<input id="kitchen4" type="checkbox" class="invisible" name="Кухня-столовая(2 этаж)">
-															<div class="checkbox">
-																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
-																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
-																</svg>
-															</div>
-															<span>Кухня-столовая</span>
-														</label>
-													</div>
-													<div class="calculation-item-check">
-														<label for="kitchen6" class="label-cbx">
-															<input id="kitchen6" type="checkbox" class="invisible" name="Столовая(2 этаж)">
-															<div class="checkbox">
-																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
-																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
-																</svg>
-															</div>
-															<span>Столовая</span>
-														</label>
-													</div>
-													<div class="calculation-item-check">
-														<label for="sauna2" class="label-cbx">
-															<input id="sauna2" type="checkbox" class="invisible" name="Сауна(2 этаж)">
-															<div class="checkbox">
-																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
-																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
-																</svg>
-															</div>
-															<span>Сауна</span>
-														</label>
-													</div>
-													<div class="calculation-item-check">
-														<label for="basseyn2" class="label-cbx">
-															<input id="basseyn2" type="checkbox" class="invisible" name="Бассейн(2 этаж)">
-															<div class="checkbox">
-																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
-																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
-																</svg>
-															</div>
-															<span>Бассейн</span>
-														</label>
-													</div>
-													<div class="calculation-item-check">
-														<label for="bilyardnaya2" class="label-cbx">
-															<input id="bilyardnaya2" type="checkbox" class="invisible" name="Бильярдная(2 этаж)">
-															<div class="checkbox">
-															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
-																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
-																</svg>
-															</div>
-															<span>Бильярдная</span>
-														</label>
-													</div>
-												</div>
-
-												<div class="calculation-item">
-													<div class="calculation-item-check">
-														<label for="bedroom78" class="label-cbx">
-															<input id="bedroom78" type="checkbox" class="invisible" name="Спальня(2 этаж)">
+														<label for="bedroom21" class="label-cbx">
+															<input id="bedroom21" type="checkbox" class="invisible chk" name="Спальня. 2 этаж" value="выбрано">
 															<div class="checkbox">
 															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
@@ -892,42 +861,32 @@
 															<span>Спальня</span>
 														</label>
 													</div>
-													<div class="calculation-item-check">
-														<label for="bedroom5" class="label-cbx">
-															<input id="bedroom5" type="checkbox" class="invisible" name="Спальня с санузлом(2 этаж)">
-															<div class="checkbox">
+													<div class="calculation-item-check project-list">
+														<label for="bedroom22" class="label-cbx">
+															<input id="bedroom22" type="checkbox" class="invisible chk" name="с санузлом" value="выбрано">
+															<div class="checkbox checkbox1">
 															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
 																</svg>
 															</div>
-															<span>Спальня с санузлом</span>
+															<span>с санузлом</span>
 														</label>
 													</div>
-													<div class="calculation-item-check">
-														<label for="bedroom6" class="label-cbx">
-															<input id="bedroom6" type="checkbox" class="invisible" name="Спальня с санузлом и гардеробом(2 этаж)">
-															<div class="checkbox">
+													<div class="calculation-item-check project-list">
+														<label for="bedroom23" class="label-cbx">
+															<input id="bedroom23" type="checkbox" class="invisible chk" name="с гардеробом" value="выбрано">
+															<div class="checkbox checkbox1">
 																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
 																</svg>
 															</div>
-															<span>Спальня с санузлом и гардеробом</span>
+															<span>с гардеробом</span>
 														</label>
 													</div>
-													<div class="calculation-item-check">
-														<label for="bedroom8" class="label-cbx">
-															<input id="bedroom8" type="checkbox" class="invisible" name="Спальня с гардеробом(2 этаж)">
-															<div class="checkbox">
-															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
-																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
-																</svg>
-															</div>
-															<span>Спальня с гардеробом</span>
-														</label>
-													</div>
+
 													<div class="calculation-item-check">
 														<label for="sportzal2" class="label-cbx">
-															<input id="sportzal2" type="checkbox" class="invisible" name="Спортзал(2 этаж)">
+															<input id="sportzal2" type="checkbox" class="invisible chk" name="Спортзал. 2 этаж" value="выбрано">
 															<div class="checkbox">
 															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
@@ -938,7 +897,7 @@
 													</div>
 													<div class="calculation-item-check">
 														<label for="kinoteatr2" class="label-cbx">
-															<input id="kinoteatr2" type="checkbox" class="invisible" name="Кинотеатр(2 этаж)">
+															<input id="kinoteatr2" type="checkbox" class="invisible chk" name="Кинотеатр. 2 этаж" value="выбрано">
 															<div class="checkbox">
 															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
@@ -951,8 +910,8 @@
 
 												<div class="calculation-item">
 													<div class="calculation-item-check">
-														<label for="sanusel9" class="label-cbx">
-															<input id="sanusel9" type="checkbox" class="invisible" name="Санузел(2 этаж)">
+														<label for="sanusel20" class="label-cbx">
+															<input id="sanusel20" type="checkbox" class="invisible chk" name="Санузел. 2 этаж" value="выбрано">
 															<div class="checkbox">
 															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
@@ -961,45 +920,56 @@
 															<span>Санузел</span>
 														</label>
 													</div>
-													<div class="calculation-item-check">
-														<label for="sanusel5" class="label-cbx">
-															<input id="sanusel5" type="checkbox" class="invisible" name="Санузел с душем(2 этаж)">
-															<div class="checkbox">
+													<div class="calculation-item-check project-list">
+														<label for="sanusel21" class="label-cbx">
+															<input id="sanusel21" type="checkbox" class="invisible chk" name="с душем" value="выбрано">
+															<div class="checkbox checkbox1">
 															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
 																</svg>
 															</div>
-															<span>Санузел с душем</span>
+															<span>с душем</span>
 														</label>
 													</div>
-													<div class="calculation-item-check">
-														<label for="sanusel7" class="label-cbx">
-															<input id="sanusel7" type="checkbox" class="invisible" name="Санузел с ванной(2 этаж)">
-															<div class="checkbox">
+													<div class="calculation-item-check project-list">
+														<label for="sanusel22" class="label-cbx">
+															<input id="sanusel22" type="checkbox" class="invisible chk" name="с ванной" value="выбрано">
+															<div class="checkbox checkbox1">
 															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
 																</svg>
 															</div>
-															<span>Санузел с ванной</span>
+															<span>с ванной</span>
 														</label>
 													</div>
-													<div class="calculation-item-check">
-														<label for="sanusel8" class="label-cbx">
-															<input id="sanusel8" type="checkbox" class="invisible" name="Санузел с постирочной(2 этаж)">
-															<div class="checkbox">
+													<div class="calculation-item-check project-list">
+														<label for="sanusel23" class="label-cbx">
+															<input id="sanusel23" type="checkbox" class="invisible chk" name="с постирочной" value="выбрано">
+															<div class="checkbox checkbox1">
 															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="32px" height="32px">
 																<path d="M0,0v60h60V0H0z M44.495,22.329l-16,18C28.101,40.772,27.552,41,26.999,41c-0.439,0-0.88-0.144-1.249-0.438l-10-8  c-0.862-0.689-1.002-1.948-0.312-2.811c0.689-0.862,1.949-1.003,2.811-0.313l8.517,6.813l14.739-16.581  c0.732-0.826,1.998-0.901,2.823-0.166C45.154,20.239,45.229,21.503,44.495,22.329z" fill="#222222"/>
 																</svg>
 															</div>
-															<span>Санузел с постирочной</span>
+															<span>с постирочной</span>
 														</label>
 													</div>
+
 												</div>
 
 											</div>
 										</div>
 									</div>
 								</div>
+							</div>
+						</div>
+					</div>
+
+					
+
+					<div class="container">
+						<div class="row">
+
+
 								<div class="col-12 projection-submit">
 									<div class="popup-success">
 										<span>
@@ -1036,6 +1006,40 @@
 							</div>
 						</form>
 					</div>
+
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<div class="flipbook-title">
+									<h3 class="text-center">Посмотрите пример нашей работы</h3>
+									<p>Листайте проект как книгу</p>
+								</div>
+							</div>
+						</div>
+					</div>
+						<div class="flipbook-wrap">
+
+								<div id="canvas">
+
+										<div class="zoom-icon zoom-icon-in" style="display: none;"></div>
+
+											<div class="magazine-viewport">
+												<div class="container">
+													<div class="magazine">
+														<!-- Next button -->
+														<div ignore="1" class="next-button">
+															<img src="img/pics/tool.png" style="left:60px; top:50px;position: absolute; width: 118px;height: 114px;max-width:118px;">
+															<div style="font-size: 30px; font-weight: 900; height: 40px; margin-left: 10px; margin-top: 130px; width: 40px; cursor:pointer;">►</div>
+														</div>
+														<!-- Previous button -->
+														<div ignore="1" class="previous-button"><div style="font-size: 30px; font-weight: 900; height: 40px; margin-left: 8px; margin-top: 130px; width: 40px; cursor:pointer;">◄</div></div>
+													</div>
+												</div>
+											</div>
+
+									</div>
+
+								</div>
 				</div>
 			</div>
 		</div>
@@ -1048,7 +1052,7 @@
 				<div class="col-md-7">
 					<div class="services-item-img">
 						<img src="img/finished_project.png" alt="Готовый проект">
-						<div class="services-price"><p>от <span>100 000</span> тг</p></div>
+						<div class="services-price"><p><span>500</span> тг/м<sup>2</sup></p></div>
 					</div>
 				</div>
 				<div class="col-md-5">
@@ -1093,7 +1097,7 @@
 				<div class="col-md-7">
 					<div class="services-item-img__right">
 						<img src="img/working_project.png" alt="Рабочий проект">
-						<div class="services-price__right"><p>от <span>100 000</span> тг</p></div>
+						<div class="services-price__right"><p>от <span>150 000</span> тг/раздел</p></div>
 					</div>
 				</div>
 			</div>
@@ -1101,7 +1105,7 @@
 				<div class="col-md-7">
 					<div class="services-item-img">
 						<img src="img/design.png" alt="Дизайн интерьера">
-						<div class="services-price"><p>от <span>100 000</span> тг</p></div>
+						<div class="services-price"><p><span>5000</span> тг/м<sup>2</sup></p></div>
 					</div>
 				</div>
 				<div class="col-md-5">
@@ -1127,7 +1131,7 @@
 				<div class="col-md-7">
 					<div class="services-item-img__right">
 						<img src="img/building.png" alt="Рабочий проект">
-						<div class="services-price__right"><p>от <span>100 000</span> тг</p></div>
+						<div class="services-price__right building-price"><p><span>Договорная</span></p></div>
 					</div>
 				</div>
 			</div>
@@ -1150,6 +1154,7 @@
 						<h3>Эскизный проект + раздел рабочего проекта</h3>
 						<p>Разработка эскизного проекта Вашего будущего дома и какой-либо раздел рабочего проекта. Если нет необходимости в остальных разделах.</p>
 						<span>от 100 000 тнг</span>
+						<div class="discont">Скидка 10%</div>
 						<a href="" class="button offers-btn order-offer">Подробнее</a>
 					</div>
 				</div>
@@ -1158,6 +1163,7 @@
 						<h3>Эскизный проект + Рабочий проект</h3>
 						<p>Комплексная разработка эскизного и рабочего проекта Вашего дома по специальной цене</p>
 						<span>от 100 000 тнг</span>
+						<div class="discont">Скидка 15%</div>
 						<a href="" class="button offers-btn order-offer1">Подробнее</a>
 					</div>
 				</div>
@@ -1166,6 +1172,7 @@
 						<h3>Полный пакет услуг "Под ключ"</h3>
 						<p>Вам не придется выяснять внештатные ситуации с множеством подрядчиков. Мы ответим за все.</p>
 						<span>от 100 000 тнг</span>
+						<div class="discont">Скидка 20%</div>
 						<a href="" class="button offers-btn order-offer2">Подробнее</a>
 					</div>
 				</div>
@@ -1239,57 +1246,57 @@
 				</div>
 				<div class="row start-wrap">
 				<div class="col-md-4 no-padding">
-					<div class="start-item">
+					<div class="start-item start-item-1">
 						<p>Ознакомление с конструктивными решениями домов (конструкции, фундаменты, стены, перекрытия, кровля, инженерные системы)</p>
 						<div class="start-number">01</div>
 					</div>
 				</div>
 				<div class="col-md-4 no-padding">
-					<div class="start-item">
+					<div class="start-item start-item-2">
 						<p>Опросный лист (анкета заполнения данных о будущих жильцах)</p>
 						<div class="start-number">02</div>
 					</div>
 				</div>
 				<div class="col-md-4 no-padding">
-					<div class="start-item">
+					<div class="start-item start-item-3">
 						<p>Разработка нескольких вариантов планировок (рекорд 10 вариантов)</p>
 						<div class="start-number">03</div>
 						<div class="circle"></div>
 					</div>
 				</div>
 				<div class="col-md-4 no-padding">
-					<div class="start-item">
+					<div class="start-item start-item-4">
 						<p>Ознакомление с фасадными материалами и примерами решения фасада</p>
 						<div class="start-number">04</div>
 					</div>
 				</div>
 				<div class="col-md-4 no-padding">
-					<div class="start-item start-item-five">
+					<div class="start-item start-item-5">
 						<p>Разработка фасадного решения (рекорд 13 вариантов)</p>
 						<div class="start-number">05</div>
 					</div>
 				</div>
 				<div class="col-md-4 no-padding">
-					<div class="start-item">
+					<div class="start-item start-item-6">
 						<p>Разработка генплана и хозяйственно-бытовую постройку</p>
 						<div class="start-number">06</div>
 						<div class="circle"></div>
 					</div>
 				</div>
 				<div class="col-md-4 no-padding">
-					<div class="start-item">
+					<div class="start-item start-item-7">
 						<p>Расчеты нагрузок и инженерных коммуникации</p>
 						<div class="start-number">07</div>
 					</div>
 				</div>
 				<div class="col-md-4 no-padding">
-					<div class="start-item">
+					<div class="start-item start-item-8">
 						<p>Дизайн интерьера</p>
 						<div class="start-number">08</div>
 					</div>
 				</div>
 				<div class="col-md-4 no-padding">
-					<div class="start-item">
+					<div class="start-item start-item-9">
 						<p>Строительство</p>
 						<div class="start-number">09</div>
 					</div>
@@ -1389,42 +1396,38 @@
 			<div class="row justify-content-center">
 				<div class="col-12">
 					<div class="section-title cases-title">
-						<h2>Кейсы</h2>
+						<h2>Отзывы наших клиентов</h2>
 					</div>
 				</div>
 				<div class="cases-slider">
-					<div class="cases-slider-item" style="background-image: url(img/cases/1.jpg);">
-						<div class="cases-overlay"></div>
-						<!-- <img src="img/cases/1.jpg" alt=""> -->
-						<a href="mobile-friendly-page.html" data-mfp-src="#cases-popup" class="open-popup-link">Подробнее</a>
+					<div class="cases-slider-item">
+						<a href="mobile-friendly-page.html" data-mfp-src="img/reviews/1.jpg" class="open-popup-link"><img src="img/reviews/1.jpg" alt=""></a>
 					</div>
-					<div class="cases-slider-item" style="background-image: url(img/cases/2.jpg);">
-						<div class="cases-overlay"></div>
-						<!-- <img src="img/cases/2.jpg" alt=""> -->
-						<a href="mobile-friendly-page.html" data-mfp-src="#cases-popup2" class="open-popup-link2">Подробнее</a>
+					<div class="cases-slider-item">
+						<a href="mobile-friendly-page.html" data-mfp-src="img/reviews/1.jpg" class="open-popup-link"><img src="img/reviews/1.jpg" alt=""></a>
 					</div>
-					<div class="cases-slider-item" style="background-image: url(img/cases/3.jpg);">
-						<div class="cases-overlay"></div>
-						<!-- <img src="img/cases/3.jpg" alt=""> -->
-						<a href="mobile-friendly-page.html" data-mfp-src="#cases-popup3" class="open-popup-link3">Подробнее</a>
+					<div class="cases-slider-item">
+						<a href="mobile-friendly-page.html" data-mfp-src="img/reviews/1.jpg" class="open-popup-link"><img src="img/reviews/1.jpg" alt=""></a>
 					</div>
-					<div class="cases-slider-item" style="background-image: url(img/cases/4.jpg);">
-						<div class="cases-overlay"></div>
-						<!-- <img src="img/cases/4.jpg" alt=""> -->
-						<a href="mobile-friendly-page.html" data-mfp-src="#cases-popup4" class="open-popup-link4">Подробнее</a>
+					<div class="cases-slider-item">
+						<a href="mobile-friendly-page.html" data-mfp-src="img/reviews/1.jpg" class="open-popup-link"><img src="img/reviews/1.jpg" alt=""></a>
 					</div>
 				</div>
 				<div class="col-lg-8">
 					<div class="cases-numbers">
 						<div class="cases-numbers-area">
 							<img src="img/blue_shadow.png" alt="">
-							1345
+							1351,22
 							<small>м<sup>2</sup></small>
 							<div class="cases-numbers-text">общая<br>площадь</div>
 						</div>
 						<div class="cases-numbers-area cases-numbers-project">
-							6
-							<div class="cases-numbers-text">проектов<br>выполнено</div>
+							2
+							<div class="cases-numbers-text">авторских<br>проектов<br>выполнено</div>
+						</div>
+						<div class="cases-numbers-area cases-numbers-project">
+							8
+							<div class="cases-numbers-text">проектов<br>домов</div>
 						</div>
 					</div>
 				</div>
